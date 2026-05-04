@@ -1,0 +1,40 @@
+# Build
+build/
+dist/
+Debug/
+Release/
+
+# AVR outputs
+*.o
+*.obj
+*.elf
+*.hex
+*.eep
+*.map
+*.lst
+*.d
+*.a
+
+# Temp
+*.tmp
+*.bak
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# Generated docs
+docs/html/
+docs/latex/
+
+# Pastas de recursos privados
+img/
+html/
+latex/
+
+# Arquivos de configuração e templates do Doxygen
+Doxyfile
+header.html
+footer.html
+custom_styles.css
