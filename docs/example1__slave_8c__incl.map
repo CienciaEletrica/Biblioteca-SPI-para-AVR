@@ -1,0 +1,18 @@
+<map id="examples/example1_slave.c" name="examples/example1_slave.c">
+<area shape="rect" id="Node000001" title="Exemplo SPI Slave: Resposta dinâmica baseada em processamento." alt="" coords="147,5,333,32"/>
+<area shape="rect" id="Node000002" href="$spi_8h.html" title="Interface pública (API) da biblioteca SPI para microcontroladores AVR." alt="" coords="118,80,167,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="221,34,173,73,169,69,225,31"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="204,229,268,256"/>
+<area shape="poly" id="edge8_Node000001_Node000006" title=" " alt="" coords="242,31,239,215,234,213,237,34"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="277,80,378,107"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="256,30,304,70,298,70,255,35"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="112,229,176,256"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="150,105,166,154,166,187,158,217,153,214,161,186,161,155,147,110"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,229,80,256"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="116,106,84,126,67,140,54,156,44,185,42,214,37,213,39,184,50,153,64,136,81,121,119,102"/>
+<area shape="rect" id="Node000005" href="$spi__types_8h.html" title="Definições de tipos, enums e estruturas para a biblioteca SPI." alt="" coords="64,155,152,181"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="138,105,123,142,118,139,135,109"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="115,180,133,216,128,215,113,184"/>
+<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="99,181,66,220,62,216,94,183"/>
+<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="131,179,203,221,198,222,129,184"/>
+</map>

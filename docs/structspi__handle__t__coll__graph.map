@@ -1,0 +1,7 @@
+<map id="spi_handle_t" name="spi_handle_t">
+<area shape="rect" id="Node000001" title="Estrutura de controle (Handle) do driver SPI." alt="" coords="5,203,100,229"/>
+<area shape="rect" id="Node000002" href="$structspi__config__t.html" title="Estrutura de configuração para inicialização do SPI." alt="" coords="7,104,98,131"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,145,55,203,50,202,50,148"/>
+<area shape="rect" id="Node000003" href="$structspi__pins__t.html" title="Mapeamento de hardware para os pinos do barramento." alt="" coords="12,5,93,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="53,45,55,104,50,103,52,50"/>
+</map>

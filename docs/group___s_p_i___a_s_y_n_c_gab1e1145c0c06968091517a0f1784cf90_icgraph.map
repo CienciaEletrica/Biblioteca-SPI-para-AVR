@@ -1,0 +1,9 @@
+<map id="spi_rx_flush" name="spi_rx_flush">
+<area shape="rect" id="Node000001" title="Limpa o buffer de recepção (descarta dados)." alt="" coords="213,31,304,57"/>
+<area shape="rect" id="Node000002" href="$example3_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Ponto de entrada do teste de estresse." alt="" coords="109,5,158,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,32,159,26,159,21,200,31"/>
+<area shape="rect" id="Node000003" href="$group___s_p_i___i_n_i_t.html#gad9402c2ef9fda902cd461c0048fa5c89" title="Inicializa o módulo SPI." alt="" coords="103,56,165,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="200,56,166,66,165,60,195,57"/>
+<area shape="rect" id="Node000004" href="$example1__master_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Ponto de entrada do exemplo Master." alt="" coords="5,56,55,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="84,70,55,72,55,67,89,68"/>
+</map>

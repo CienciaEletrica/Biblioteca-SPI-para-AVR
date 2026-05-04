@@ -1,0 +1,13 @@
+<map id="spi_tx_available" name="spi_tx_available">
+<area shape="rect" id="Node000001" title="Verifica o espaço pendente no buffer de transmissão." alt="" coords="329,56,443,83"/>
+<area shape="rect" id="Node000002" href="$example3_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Ponto de entrada do teste de estresse." alt="" coords="193,5,242,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="322,51,243,29,243,23,327,50"/>
+<area shape="rect" id="Node000003" href="$group___s_p_i___a_s_y_n_c.html#gaa9fa3d0d9a19bee52b8b2b89e7739ff2" title="Verifica se o módulo está processando alguma transmissão." alt="" coords="173,56,263,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="311,70,263,72,263,67,317,69"/>
+<area shape="rect" id="Node000006" href="$group___s_p_i___l_o_w_l_e_v_e_l.html#gabf331ee9e740be966eb93ce34fbff366" title="Verifica se há espaço para uma quantidade específica de bytes no TX." alt="" coords="155,107,281,133"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="327,87,265,109,264,103,322,88"/>
+<area shape="rect" id="Node000004" href="$example1__master_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Ponto de entrada do exemplo Master." alt="" coords="31,31,81,57"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="155,62,81,50,81,45,159,58"/>
+<area shape="rect" id="Node000005" href="$group___s_p_i___i_n_i_t.html#ga94336ad392aba5ff1c163cf8127a1477" title="Altera dinamicamente o divisor de clock do SPI." alt="" coords="5,81,107,108"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="155,80,108,89,106,84,160,78"/>
+</map>

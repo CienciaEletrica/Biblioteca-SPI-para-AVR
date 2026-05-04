@@ -1,0 +1,9 @@
+<map id="spi_hw_deselect_slave" name="spi_hw_deselect_slave">
+<area shape="rect" id="Node000001" title="Sobe o pino de Chip Select do escravo atual." alt="" coords="290,31,446,57"/>
+<area shape="rect" id="Node000002" href="$spi_8c.html#af9cad97352f5ba9bbd800446131125a6" title="Interrupt Service Routine para o término de transferência SPI." alt="" coords="150,5,194,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="272,32,195,24,195,19,277,31"/>
+<area shape="rect" id="Node000003" href="$group___s_p_i___m_a_s_t_e_r.html#gaf49ef2f6f68799d64ef1beb73957fcd8" title="Desativa o dispositivo escravo atual (coloca CS em nível alto)." alt="" coords="103,56,242,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="277,56,243,63,242,58,272,56"/>
+<area shape="rect" id="Node000004" href="$example2_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Ponto de entrada do exemplo DAC." alt="" coords="5,56,55,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="85,70,55,72,55,67,90,68"/>
+</map>

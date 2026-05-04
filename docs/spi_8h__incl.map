@@ -1,0 +1,13 @@
+<map id="inc/spi.h" name="inc/spi.h">
+<area shape="rect" id="Node000001" title="Interface pública (API) da biblioteca SPI para microcontroladores AVR." alt="" coords="90,5,161,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,155,70,181"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,35,92,55,72,81,57,111,47,141,42,139,52,109,67,79,88,52,113,30"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="182,155,256,181"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="140,30,163,52,184,79,200,109,213,141,207,139,195,111,179,81,159,55,139,35"/>
+<area shape="rect" id="Node000004" href="$spi__types_8h.html" title="Definições de tipos, enums e estruturas para a biblioteca SPI." alt="" coords="81,80,170,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="127,30,128,65,123,64,124,35"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="113,106,66,147,63,143,108,108"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="143,105,193,145,188,145,141,110"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="93,155,158,181"/>
+<area shape="poly" id="edge6_Node000004_Node000005" title=" " alt="" coords="127,105,128,140,123,138,124,109"/>
+</map>

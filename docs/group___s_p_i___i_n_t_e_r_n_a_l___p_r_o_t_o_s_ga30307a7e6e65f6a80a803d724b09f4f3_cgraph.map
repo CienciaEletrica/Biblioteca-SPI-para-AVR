@@ -1,0 +1,7 @@
+<map id="spi_hw_start_tx_pipeline" name="spi_hw_start_tx_pipeline">
+<area shape="rect" id="Node000001" title="Inicia o primeiro byte de uma sequência de transmissão." alt="" coords="5,5,170,32"/>
+<area shape="rect" id="Node000002" href="$group___s_p_i___b_u_f_f_e_r___i_n_t_e_r_n_a_l.html#ga9eb832ea6e4deb5d067f69c9192b0b32" title="Remove um byte da fila de transmissão." alt="" coords="218,5,330,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,16,205,19,199,19,170,21"/>
+<area shape="rect" id="Node000003" href="$group___s_p_i___b_u_f_f_e_r___i_n_t_e_r_n_a_l.html#gababc053045f0c05b31e334632f2dc0fb" title="Calcula o próximo índice do buffer circular." alt="" coords="378,5,473,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="330,16,365,19,360,19,330,21"/>
+</map>

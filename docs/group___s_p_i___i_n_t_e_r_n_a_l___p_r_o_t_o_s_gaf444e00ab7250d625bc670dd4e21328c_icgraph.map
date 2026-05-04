@@ -1,0 +1,14 @@
+<map id="spi_hw_select_slave" name="spi_hw_select_slave">
+<area shape="rect" id="Node000001" title="Controle de hardware para Chip Select." alt="" coords="432,31,575,57"/>
+<area shape="rect" id="Node000002" href="$group___s_p_i___m_a_s_t_e_r.html#gab2d834030e3fe4c4ffc10253b35882e3" title="Seleciona um dispositivo escravo (coloca CS em nível baixo)." alt="" coords="259,5,384,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="414,32,385,30,385,25,419,32"/>
+<area shape="rect" id="Node000004" href="$group___s_p_i___a_s_y_n_c.html#ga5667e88be47d87c48a22117c8a8c3cb5" title="Enfileira um byte para transmissão assíncrona." alt="" coords="264,56,379,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="419,56,380,64,380,59,414,56"/>
+<area shape="rect" id="Node000003" href="$example1__master_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Ponto de entrada do exemplo Master." alt="" coords="132,5,182,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="241,19,182,21,182,16,246,18"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="259,51,181,29,182,23,264,50"/>
+<area shape="rect" id="Node000005" href="$group___s_p_i___a_s_y_n_c.html#ga7c5cd5d59e430d3366bb96ef93c417a9" title="Inicia uma transação multi&#45;byte assíncrona." alt="" coords="103,56,211,83"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="246,69,211,72,211,67,251,69"/>
+<area shape="rect" id="Node000006" href="$example2_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Ponto de entrada do exemplo DAC." alt="" coords="5,56,55,83"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="84,70,55,72,55,67,89,68"/>
+</map>

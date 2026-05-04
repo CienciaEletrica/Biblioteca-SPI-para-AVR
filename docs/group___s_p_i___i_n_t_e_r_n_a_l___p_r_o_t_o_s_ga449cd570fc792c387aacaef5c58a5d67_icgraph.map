@@ -1,0 +1,7 @@
+<map id="spi_hw_apply_config" name="spi_hw_apply_config">
+<area shape="rect" id="Node000001" title="Sincroniza registradores do AVR com spi.config." alt="" coords="213,5,355,32"/>
+<area shape="rect" id="Node000002" href="$group___s_p_i___i_n_i_t.html#gad9402c2ef9fda902cd461c0048fa5c89" title="Inicializa o módulo SPI." alt="" coords="103,5,165,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,19,166,21,166,16,200,19"/>
+<area shape="rect" id="Node000003" href="$example1__master_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Ponto de entrada do exemplo Master." alt="" coords="5,5,55,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="84,20,55,21,55,16,89,18"/>
+</map>

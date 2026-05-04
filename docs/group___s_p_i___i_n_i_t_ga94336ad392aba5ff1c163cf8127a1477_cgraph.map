@@ -1,0 +1,7 @@
+<map id="spi_set_clock" name="spi_set_clock">
+<area shape="rect" id="Node000001" title="Altera dinamicamente o divisor de clock do SPI." alt="" coords="5,5,107,32"/>
+<area shape="rect" id="Node000002" href="$group___s_p_i___a_s_y_n_c.html#gaa9fa3d0d9a19bee52b8b2b89e7739ff2" title="Verifica se o módulo está processando alguma transmissão." alt="" coords="155,5,245,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,16,142,18,136,19,107,21"/>
+<area shape="rect" id="Node000003" href="$group___s_p_i___a_s_y_n_c.html#gaab1d347c86fb34f3cd07b2de726fa2e9" title="Verifica o espaço pendente no buffer de transmissão." alt="" coords="293,5,407,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="245,16,280,19,275,19,246,21"/>
+</map>

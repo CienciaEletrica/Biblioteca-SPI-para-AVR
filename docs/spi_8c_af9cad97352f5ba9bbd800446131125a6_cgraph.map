@@ -1,0 +1,14 @@
+<map id="ISR" name="ISR">
+<area shape="rect" id="Node000001" title="Interrupt Service Routine para o término de transferência SPI." alt="" coords="5,81,50,108"/>
+<area shape="rect" id="Node000002" href="$group___s_p_i___i_n_t_e_r_n_a_l___p_r_o_t_o_s.html#ga71e76125efbe8d9f1dd3d519613cb652" title="Sobe o pino de Chip Select do escravo atual." alt="" coords="103,5,259,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="42,79,67,60,96,42,113,36,109,40,99,46,70,64,46,83"/>
+<area shape="rect" id="Node000003" href="$group___s_p_i___i_n_t_e_r_n_a_l___p_r_o_t_o_s.html#ga4ccfd9c55f4d277c322b1d2354d75c66" title="Recupera o hardware de uma colisão de escrita (WCOL)." alt="" coords="98,56,264,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="49,89,84,84,80,88,51,94"/>
+<area shape="rect" id="Node000004" href="$group___s_p_i___b_u_f_f_e_r___i_n_t_e_r_n_a_l.html#ga82e736d319c4516104fe3d6dbcb42a32" title="Adiciona um byte recebido à fila RX (chamado na ISR)." alt="" coords="125,107,237,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="49,96,111,106,108,110,50,101"/>
+<area shape="rect" id="Node000006" href="$group___s_p_i___b_u_f_f_e_r___i_n_t_e_r_n_a_l.html#ga9eb832ea6e4deb5d067f69c9192b0b32" title="Remove um byte da fila de transmissão." alt="" coords="125,157,237,184"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="45,106,70,125,99,143,114,151,108,152,96,148,67,130,44,111"/>
+<area shape="rect" id="Node000005" href="$group___s_p_i___b_u_f_f_e_r___i_n_t_e_r_n_a_l.html#gababc053045f0c05b31e334632f2dc0fb" title="Calcula o próximo índice do buffer circular." alt="" coords="312,132,407,159"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="237,125,299,136,294,137,237,131"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="237,160,294,154,299,154,238,165"/>
+</map>

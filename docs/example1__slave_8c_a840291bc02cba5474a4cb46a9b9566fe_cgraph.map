@@ -1,0 +1,18 @@
+<map id="main" name="main">
+<area shape="rect" id="Node000001" title="Ponto de entrada do exemplo Slave." alt="" coords="5,56,55,83"/>
+<area shape="rect" id="Node000002" href="$example1__slave_8c.html#aa61f0e6c6d4d093d42af9fae60c968b0" title="Callback de recepção para o modo Slave." alt="" coords="103,5,210,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="54,57,109,36,106,41,57,62"/>
+<area shape="rect" id="Node000003" href="$group___s_p_i___l_o_w_l_e_v_e_l.html#ga1db15283d17f408f4abf224b9c05f0d9" title="Pré&#45;carrega o registrador de dados (SPDR) no modo Slave." alt="" coords="266,5,392,32"/>
+<area shape="poly" id="edge8_Node000001_Node000003" title=" " alt="" coords="54,64,210,41,254,34,250,37,210,47,56,69"/>
+<area shape="rect" id="Node000004" href="$group___s_p_i___i_n_i_t.html#gad9402c2ef9fda902cd461c0048fa5c89" title="Inicializa o módulo SPI." alt="" coords="125,107,188,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="55,76,113,100,109,103,55,82"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="210,16,253,17,248,20,211,21"/>
+<area shape="rect" id="Node000005" href="$group___s_p_i___i_n_t_e_r_n_a_l___p_r_o_t_o_s.html#ga449cd570fc792c387aacaef5c58a5d67" title="Sincroniza as configurações da struct com os registradores SPCR e SPSR." alt="" coords="258,56,400,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="187,108,269,86,264,89,189,113"/>
+<area shape="rect" id="Node000006" href="$group___s_p_i___i_n_t_e_r_n_a_l___p_r_o_t_o_s.html#ga63ee202e30ff6afe6667c7155c63aa2d" title="Configura a direção dos pinos físicos (DDR) baseada no modo Master/Slave." alt="" coords="270,107,388,133"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="188,117,257,119,253,121,189,123"/>
+<area shape="rect" id="Node000007" href="$group___s_p_i___a_s_y_n_c.html#gab1e1145c0c06968091517a0f1784cf90" title="Limpa o buffer de recepção (descarta dados)." alt="" coords="284,157,375,184"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="188,126,271,152,266,154,188,132"/>
+<area shape="rect" id="Node000008" href="$group___s_p_i___a_s_y_n_c.html#gaf278870417819cf590a1b39d4eb3c4a5" title="Limpa o buffer de transmissão e interrompe envios pendentes." alt="" coords="284,208,375,235"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="174,131,212,162,259,194,272,202,266,201,257,198,209,167,172,137"/>
+</map>

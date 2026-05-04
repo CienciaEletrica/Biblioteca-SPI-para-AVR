@@ -1,0 +1,13 @@
+<map id="spi_tx_flush" name="spi_tx_flush">
+<area shape="rect" id="Node000001" title="Limpa o buffer de transmissão e interrompe envios pendentes." alt="" coords="259,56,350,83"/>
+<area shape="rect" id="Node000002" href="$example3_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Ponto de entrada do teste de estresse." alt="" coords="132,5,182,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="247,51,182,30,182,24,252,50"/>
+<area shape="rect" id="Node000003" href="$group___s_p_i___i_n_i_t.html#gad9402c2ef9fda902cd461c0048fa5c89" title="Inicializa o módulo SPI." alt="" coords="126,56,188,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="241,70,189,72,188,67,246,69"/>
+<area shape="rect" id="Node000005" href="$group___s_p_i___a_s_y_n_c.html#ga7c5cd5d59e430d3366bb96ef93c417a9" title="Inicia uma transação multi&#45;byte assíncrona." alt="" coords="103,107,211,133"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="252,88,199,109,197,103,246,89"/>
+<area shape="rect" id="Node000004" href="$example1__master_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Ponto de entrada do exemplo Master." alt="" coords="5,56,55,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="109,71,56,72,55,67,112,67"/>
+<area shape="rect" id="Node000006" href="$example2_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Ponto de entrada do exemplo DAC." alt="" coords="5,107,55,133"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="84,121,55,123,55,117,89,119"/>
+</map>

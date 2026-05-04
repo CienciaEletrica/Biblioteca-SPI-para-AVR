@@ -1,0 +1,5 @@
+<map id="spi_rx_read" name="spi_rx_read">
+<area shape="rect" id="Node000001" title="Lê um byte do buffer de recepção." alt="" coords="5,5,94,32"/>
+<area shape="rect" id="Node000002" href="$group___s_p_i___b_u_f_f_e_r___i_n_t_e_r_n_a_l.html#gababc053045f0c05b31e334632f2dc0fb" title="Calcula o próximo índice do buffer circular." alt="" coords="142,5,237,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,16,128,18,123,19,94,21"/>
+</map>

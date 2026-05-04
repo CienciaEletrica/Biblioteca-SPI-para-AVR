@@ -1,0 +1,45 @@
+<map id="main" name="main">
+<area shape="rect" id="Node000001" title="Ponto de entrada do exemplo Master." alt="" coords="5,335,55,361"/>
+<area shape="rect" id="Node000002" href="$group___s_p_i___i_n_i_t.html#gad9402c2ef9fda902cd461c0048fa5c89" title="Inicializa o módulo SPI." alt="" coords="135,107,197,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="32,334,54,260,74,213,101,169,132,141,129,145,105,172,79,216,59,262,37,335"/>
+<area shape="rect" id="Node000007" href="$group___s_p_i___a_s_y_n_c.html#gaa9fa3d0d9a19bee52b8b2b89e7739ff2" title="Verifica se o módulo está processando alguma transmissão." alt="" coords="121,183,211,209"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="33,333,56,279,76,247,101,219,109,215,106,219,104,223,80,250,61,281,38,335"/>
+<area shape="rect" id="Node000009" href="$group___s_p_i___m_a_s_t_e_r.html#ga3312b5d618b5c128b7d16cb63bfc0239" title="Registra um pino de Chip Select (CS) para um dispositivo escravo." alt="" coords="103,233,229,260"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="41,333,67,305,101,277,122,265,119,270,104,281,71,309,45,336"/>
+<area shape="rect" id="Node000010" href="$group___s_p_i___a_s_y_n_c.html#gaf7c63fb3650bcece7c5c89b775b7f072" title="Lê um byte do buffer de recepção." alt="" coords="501,309,590,336"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="54,335,102,320,208,308,314,305,410,308,489,316,484,317,409,314,314,311,208,313,103,325,57,339"/>
+<area shape="rect" id="Node000012" href="$group___s_p_i___m_a_s_t_e_r.html#gab2d834030e3fe4c4ffc10253b35882e3" title="Seleciona um dispositivo escravo (coloca CS em nível baixo)." alt="" coords="103,335,228,361"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="54,346,90,346,86,350,57,350"/>
+<area shape="rect" id="Node000014" href="$group___s_p_i___a_s_y_n_c.html#ga5667e88be47d87c48a22117c8a8c3cb5" title="Enfileira um byte para transmissão assíncrona." alt="" coords="108,385,224,412"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="55,354,116,378,111,381,56,360"/>
+<area shape="rect" id="Node000017" href="$example1__master_8c.html#a0c0ca72359ddf28dcd15900dfba19343" title="Inicializa a UART0 a 9600 bps." alt="" coords="132,436,200,463"/>
+<area shape="poly" id="edge19_Node000001_Node000017" title=" " alt="" coords="41,359,69,390,104,422,120,432,115,433,101,426,65,394,41,364"/>
+<area shape="rect" id="Node000018" href="$example1__master_8c.html#ac0f988e6b39a10eb1b4f67dd657373bb" title="Envia um valor de 8 bits em formato hexadecimal." alt="" coords="118,487,214,513"/>
+<area shape="poly" id="edge20_Node000001_Node000018" title=" " alt="" coords="36,359,61,415,80,446,104,473,110,479,105,479,101,477,76,449,56,417,35,364"/>
+<area shape="rect" id="Node000020" href="$example1__master_8c.html#ae52facc0a56086a365bb0018160d8d71" title="Envia uma string via UART." alt="" coords="128,537,204,564"/>
+<area shape="poly" id="edge22_Node000001_Node000020" title=" " alt="" coords="33,359,42,394,55,437,75,483,105,523,117,534,111,534,101,527,70,486,50,439,37,395,33,365"/>
+<area shape="rect" id="Node000003" href="$group___s_p_i___i_n_t_e_r_n_a_l___p_r_o_t_o_s.html#ga449cd570fc792c387aacaef5c58a5d67" title="Sincroniza as configurações da struct com os registradores SPCR e SPSR." alt="" coords="288,5,430,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="182,104,223,73,276,42,293,36,289,40,278,46,226,78,186,108"/>
+<area shape="rect" id="Node000004" href="$group___s_p_i___i_n_t_e_r_n_a_l___p_r_o_t_o_s.html#ga63ee202e30ff6afe6667c7155c63aa2d" title="Configura a direção dos pinos físicos (DDR) baseada no modo Master/Slave." alt="" coords="300,56,418,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="196,110,293,85,289,89,199,114"/>
+<area shape="rect" id="Node000005" href="$group___s_p_i___a_s_y_n_c.html#gab1e1145c0c06968091517a0f1784cf90" title="Limpa o buffer de recepção (descarta dados)." alt="" coords="314,107,405,133"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="196,118,300,118,296,122,198,122"/>
+<area shape="rect" id="Node000006" href="$group___s_p_i___a_s_y_n_c.html#gaf278870417819cf590a1b39d4eb3c4a5" title="Limpa o buffer de transmissão e interrompe envios pendentes." alt="" coords="314,157,405,184"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="197,125,300,153,296,156,198,131"/>
+<area shape="rect" id="Node000008" href="$group___s_p_i___a_s_y_n_c.html#gaab1d347c86fb34f3cd07b2de726fa2e9" title="Verifica o espaço pendente no buffer de transmissão." alt="" coords="302,208,416,235"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="211,199,289,210,284,213,212,204"/>
+<area shape="rect" id="Node000011" href="$group___s_p_i___b_u_f_f_e_r___i_n_t_e_r_n_a_l.html#gababc053045f0c05b31e334632f2dc0fb" title="Calcula o próximo índice do buffer circular." alt="" coords="650,385,745,412"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="575,334,658,378,653,378,574,339"/>
+<area shape="rect" id="Node000013" href="$group___s_p_i___i_n_t_e_r_n_a_l___p_r_o_t_o_s.html#gaf444e00ab7250d625bc670dd4e21328c" title="Baixa o pino de Chip Select do escravo especificado." alt="" coords="288,335,430,361"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="228,345,275,347,270,349,230,351"/>
+<area shape="poly" id="edge14_Node000014_Node000011" title=" " alt="" coords="224,396,635,396,633,401,224,401"/>
+<area shape="poly" id="edge15_Node000014_Node000013" title=" " alt="" coords="219,382,293,364,289,367,221,387"/>
+<area shape="rect" id="Node000015" href="$group___s_p_i___i_n_t_e_r_n_a_l___p_r_o_t_o_s.html#ga30307a7e6e65f6a80a803d724b09f4f3" title="Inicia o pipeline de transmissão carregando o primeiro byte no SPDR." alt="" coords="277,436,441,463"/>
+<area shape="poly" id="edge16_Node000014_Node000015" title=" " alt="" coords="220,410,294,431,289,432,220,415"/>
+<area shape="rect" id="Node000016" href="$group___s_p_i___b_u_f_f_e_r___i_n_t_e_r_n_a_l.html#ga9eb832ea6e4deb5d067f69c9192b0b32" title="Remove um byte da fila de transmissão." alt="" coords="489,436,602,463"/>
+<area shape="poly" id="edge17_Node000015_Node000016" title=" " alt="" coords="441,447,476,449,471,450,442,452"/>
+<area shape="poly" id="edge18_Node000016_Node000011" title=" " alt="" coords="587,433,638,418,643,417,589,438"/>
+<area shape="rect" id="Node000019" href="$example1__master_8c.html#aa599232c1438c5addd971e05e1dd46a2" title="Envia um caractere via UART." alt="" coords="322,512,397,539"/>
+<area shape="poly" id="edge21_Node000018_Node000019" title=" " alt="" coords="214,504,309,518,304,519,214,509"/>
+<area shape="poly" id="edge23_Node000020_Node000019" title=" " alt="" coords="204,543,303,532,309,532,204,548"/>
+</map>

@@ -1,0 +1,113 @@
+/* Estilo Personalizado - Ciência Elétrica */
+:root {
+    --primary-color: #004a80; /* Azul Engenharia */
+    --secondary-color: #f8f9fa;
+    --accent-color: #0073e6;
+    --text-color: #333;
+}
+
+/* Ajustes no Título e Cabeçalho */
+#titlearea {
+    background: linear-gradient(90deg, #ffffff 0%, #e6f2ff 100%);
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 10px;
+}
+
+#projectname {
+    color: var(--primary-color) !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#projectbrief {
+    color: #666 !important;
+    font-style: italic;
+}
+
+/* Melhoria nos botões e abas */
+.tabs, .tablist {
+    background-image: none !important;
+    background-color: var(--primary-color) !important;
+}
+
+.tablist li a {
+    color: white !important;
+    text-shadow: none !important;
+}
+
+.tablist li.current a {
+    background-color: var(--accent-color) !important;
+    font-weight: bold;
+}
+
+/* Rodapé */
+.navpath ul {
+    background-color: #f1f1f1;
+    border-top: 1px solid #ddd;
+}
+
+.footer {
+    color: #555;
+    font-size: 0.9em;
+}
+
+.footer b {
+    color: var(--primary-color);
+}
+
+/* ===== Formatação de Código em Exemplos ===== */
+
+/* Caixa de código - fragment */
+.fragment {
+    background-color: #f5f5f5 !important;
+    border: 1px solid #ddd !important;
+    border-radius: 6px !important;
+    padding: 15px !important;
+    margin: 10px 0 !important;
+    overflow-x: auto !important;
+    font-family: 'Courier New', Courier, monospace !important;
+    font-size: 0.9em !important;
+    line-height: 1.4 !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+}
+
+/* Cada linha do código */
+.fragment .line {
+    white-space: pre-wrap !important;
+    word-wrap: break-word !important;
+    padding-left: 2em !important;
+    text-indent: -2em !important;
+    min-height: 1.4em !important;
+    display: block !important;
+    margin: 0 !important;
+}
+
+/* Números de linha (se existirem) */
+.line .lineno {
+    font-family: 'Courier New', Courier, monospace !important;
+    color: #999 !important;
+    font-weight: normal !important;
+    text-align: right !important;
+    min-width: 40px !important;
+    display: inline-block !important;
+    padding-right: 10px !important;
+    margin-right: 5px !important;
+    border-right: 1px solid #ddd !important;
+    user-select: none !important;
+}
+
+/* Tags de código inline */
+code {
+    font-family: 'Courier New', Courier, monospace !important;
+    background-color: #f0f0f0 !important;
+    border-radius: 3px !important;
+    padding: 2px 6px !important;
+}
+
+/* Preserve code blocks */
+pre {
+    white-space: pre !important;
+    overflow-x: auto !important;
+    font-family: 'Courier New', Courier, monospace !important;
+    font-size: 0.9em !important;
+    line-height: 1.4 !important;
+}

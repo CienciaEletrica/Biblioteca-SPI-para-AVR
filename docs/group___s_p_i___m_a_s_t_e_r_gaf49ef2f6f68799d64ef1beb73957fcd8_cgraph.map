@@ -1,0 +1,5 @@
+<map id="spi_deselect_device" name="spi_deselect_device">
+<area shape="rect" id="Node000001" title="Desativa o dispositivo escravo atual (coloca CS em nível alto)." alt="" coords="5,5,145,32"/>
+<area shape="rect" id="Node000002" href="$group___s_p_i___i_n_t_e_r_n_a_l___p_r_o_t_o_s.html#ga71e76125efbe8d9f1dd3d519613cb652" title="Sobe o pino de Chip Select do escravo atual." alt="" coords="193,5,349,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,16,180,19,175,19,145,21"/>
+</map>

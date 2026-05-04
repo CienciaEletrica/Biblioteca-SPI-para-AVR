@@ -1,0 +1,5 @@
+<map id="spi_hw_recover_collision" name="spi_hw_recover_collision">
+<area shape="rect" id="Node000001" title="Tenta recuperar o estado do driver após erro de colisão." alt="" coords="98,5,264,32"/>
+<area shape="rect" id="Node000002" href="$spi_8c.html#af9cad97352f5ba9bbd800446131125a6" title="Interrupt Service Routine para o término de transferência SPI." alt="" coords="5,5,50,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,20,50,21,50,16,85,18"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="spi_slave_preload" name="spi_slave_preload">
+<area shape="rect" id="Node000001" title="Pré&#45;carrega o registrador de dados (SPDR) no modo Slave." alt="" coords="258,5,383,32"/>
+<area shape="rect" id="Node000002" href="$example1__slave_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Ponto de entrada do exemplo Slave." alt="" coords="5,5,55,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="242,21,55,21,55,16,243,16"/>
+<area shape="rect" id="Node000003" href="$example1__slave_8c.html#aa61f0e6c6d4d093d42af9fae60c968b0" title="Callback de recepção para o modo Slave." alt="" coords="103,31,210,57"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="245,30,211,38,210,33,240,31"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="85,31,55,26,55,21,90,29"/>
+</map>

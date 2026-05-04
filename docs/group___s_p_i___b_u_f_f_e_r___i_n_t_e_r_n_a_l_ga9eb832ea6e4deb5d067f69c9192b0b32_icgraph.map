@@ -1,0 +1,15 @@
+<map id="spi_tx_dequeue" name="spi_tx_dequeue">
+<area shape="rect" id="Node000001" title="Remove um byte da fila de transmissão." alt="" coords="635,31,747,57"/>
+<area shape="rect" id="Node000002" href="$spi_8c.html#af9cad97352f5ba9bbd800446131125a6" title="Interrupt Service Routine para o término de transferência SPI." alt="" coords="482,5,527,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="617,34,527,24,527,19,622,34"/>
+<area shape="rect" id="Node000003" href="$group___s_p_i___i_n_t_e_r_n_a_l___p_r_o_t_o_s.html#ga30307a7e6e65f6a80a803d724b09f4f3" title="Inicia o primeiro byte de uma sequência de transmissão." alt="" coords="422,56,587,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="622,53,587,61,587,55,617,54"/>
+<area shape="rect" id="Node000004" href="$group___s_p_i___a_s_y_n_c.html#ga5667e88be47d87c48a22117c8a8c3cb5" title="Enfileira um byte para transmissão assíncrona." alt="" coords="259,56,374,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="404,69,375,72,375,67,410,69"/>
+<area shape="rect" id="Node000005" href="$example1__master_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Ponto de entrada do exemplo Master." alt="" coords="132,31,182,57"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="241,58,182,51,182,45,246,57"/>
+<area shape="rect" id="Node000006" href="$group___s_p_i___a_s_y_n_c.html#ga7c5cd5d59e430d3366bb96ef93c417a9" title="Inicia uma transação multi&#45;byte assíncrona." alt="" coords="103,81,211,108"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="246,81,212,89,211,83,241,81"/>
+<area shape="rect" id="Node000007" href="$example2_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Ponto de entrada do exemplo DAC." alt="" coords="5,81,55,108"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="84,96,55,97,55,92,89,94"/>
+</map>

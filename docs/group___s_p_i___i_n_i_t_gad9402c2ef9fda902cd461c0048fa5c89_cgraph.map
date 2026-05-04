@@ -1,0 +1,11 @@
+<map id="spi_init" name="spi_init">
+<area shape="rect" id="Node000001" title="Inicializa o módulo SPI." alt="" coords="5,81,68,108"/>
+<area shape="rect" id="Node000002" href="$group___s_p_i___i_n_t_e_r_n_a_l___p_r_o_t_o_s.html#ga449cd570fc792c387aacaef5c58a5d67" title="Sincroniza as configurações da struct com os registradores SPCR e SPSR." alt="" coords="116,5,258,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,79,114,42,130,36,126,40,117,46,58,83"/>
+<area shape="rect" id="Node000003" href="$group___s_p_i___i_n_t_e_r_n_a_l___p_r_o_t_o_s.html#ga63ee202e30ff6afe6667c7155c63aa2d" title="Configura a direção dos pinos físicos (DDR) baseada no modo Master/Slave." alt="" coords="128,56,246,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="67,87,115,80,111,84,69,92"/>
+<area shape="rect" id="Node000004" href="$group___s_p_i___a_s_y_n_c.html#gab1e1145c0c06968091517a0f1784cf90" title="Limpa o buffer de recepção (descarta dados)." alt="" coords="141,107,232,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="68,97,128,108,124,111,68,103"/>
+<area shape="rect" id="Node000005" href="$group___s_p_i___a_s_y_n_c.html#gaf278870417819cf590a1b39d4eb3c4a5" title="Limpa o buffer de transmissão e interrompe envios pendentes." alt="" coords="141,157,232,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="57,106,117,143,131,151,126,151,114,148,56,111"/>
+</map>

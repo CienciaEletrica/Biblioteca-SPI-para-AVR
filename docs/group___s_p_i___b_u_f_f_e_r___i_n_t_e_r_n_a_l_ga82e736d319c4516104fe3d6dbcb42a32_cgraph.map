@@ -1,0 +1,5 @@
+<map id="spi_rx_enqueue" name="spi_rx_enqueue">
+<area shape="rect" id="Node000001" title="Adiciona um byte recebido à fila RX (chamado na ISR)." alt="" coords="5,5,118,32"/>
+<area shape="rect" id="Node000002" href="$group___s_p_i___b_u_f_f_e_r___i_n_t_e_r_n_a_l.html#gababc053045f0c05b31e334632f2dc0fb" title="Calcula o próximo índice do buffer circular." alt="" coords="166,5,261,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="118,16,153,18,147,19,118,21"/>
+</map>

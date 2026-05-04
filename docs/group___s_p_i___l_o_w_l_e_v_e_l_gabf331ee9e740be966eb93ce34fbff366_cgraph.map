@@ -1,0 +1,5 @@
+<map id="spi_tx_has_space" name="spi_tx_has_space">
+<area shape="rect" id="Node000001" title="Verifica se há espaço para uma quantidade específica de bytes no TX." alt="" coords="5,5,132,32"/>
+<area shape="rect" id="Node000002" href="$group___s_p_i___a_s_y_n_c.html#gaab1d347c86fb34f3cd07b2de726fa2e9" title="Verifica o espaço pendente no buffer de transmissão." alt="" coords="180,5,294,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,16,166,18,161,19,132,21"/>
+</map>

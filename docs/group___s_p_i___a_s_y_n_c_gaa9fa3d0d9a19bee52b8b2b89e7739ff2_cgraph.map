@@ -1,0 +1,5 @@
+<map id="spi_is_busy" name="spi_is_busy">
+<area shape="rect" id="Node000001" title="Verifica se o módulo está processando alguma transmissão." alt="" coords="5,5,96,32"/>
+<area shape="rect" id="Node000002" href="$group___s_p_i___a_s_y_n_c.html#gaab1d347c86fb34f3cd07b2de726fa2e9" title="Verifica o espaço pendente no buffer de transmissão." alt="" coords="144,5,258,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,16,131,18,125,19,96,21"/>
+</map>

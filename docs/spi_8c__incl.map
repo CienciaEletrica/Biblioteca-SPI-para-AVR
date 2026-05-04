@@ -1,0 +1,26 @@
+<map id="src/spi.c" name="src/spi.c">
+<area shape="rect" id="Node000001" title="Implementação completa do driver SPI para microcontroladores AVR." alt="" coords="268,5,340,32"/>
+<area shape="rect" id="Node000002" href="$spi_8h.html" title="Interface pública (API) da biblioteca SPI para microcontroladores AVR." alt="" coords="104,80,154,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="272,34,170,78,167,74,275,31"/>
+<area shape="rect" id="Node000007" href="$spi__internal_8h.html" title="Definições e funções de uso INTERNO da biblioteca SPI." alt="" coords="255,80,353,107"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="305,30,306,65,301,63,302,35"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="242,155,344,181"/>
+<area shape="poly" id="edge12_Node000001_Node000008" title=" " alt="" coords="286,31,263,55,245,81,242,97,247,113,269,145,264,144,242,116,237,97,240,79,259,51,282,34"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="368,155,437,181"/>
+<area shape="poly" id="edge14_Node000001_Node000009" title=" " alt="" coords="320,30,345,52,367,78,384,109,396,141,391,139,379,111,363,82,341,55,319,35"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="428,80,521,107"/>
+<area shape="poly" id="edge13_Node000001_Node000010" title=" " alt="" coords="334,30,433,73,428,74,333,35"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="104,229,168,256"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="127,105,122,141,121,181,129,215,124,214,116,182,116,140,124,109"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,229,80,256"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="124,108,60,217,55,215,119,106"/>
+<area shape="rect" id="Node000005" href="$spi__types_8h.html" title="Definições de tipos, enums e estruturas para a biblioteca SPI." alt="" coords="130,155,219,181"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="138,105,161,141,156,141,136,110"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="170,180,152,217,148,214,166,183"/>
+<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="154,183,80,224,77,219,149,181"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="192,229,256,256"/>
+<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="184,180,209,217,204,216,182,184"/>
+<area shape="poly" id="edge9_Node000007_Node000005" title=" " alt="" coords="284,106,212,149,209,144,279,108"/>
+<area shape="poly" id="edge10_Node000007_Node000008" title=" " alt="" coords="304,105,299,141,295,138,300,109"/>
+<area shape="poly" id="edge11_Node000007_Node000009" title=" " alt="" coords="322,105,376,145,371,145,320,110"/>
+</map>

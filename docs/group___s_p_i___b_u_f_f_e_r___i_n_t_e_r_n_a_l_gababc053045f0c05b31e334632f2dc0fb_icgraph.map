@@ -1,0 +1,28 @@
+<map id="spi_buf_next" name="spi_buf_next">
+<area shape="rect" id="Node000001" title="Calcula o próximo índice do buffer circular." alt="" coords="795,132,890,159"/>
+<area shape="rect" id="Node000002" href="$group___s_p_i___b_u_f_f_e_r___i_n_t_e_r_n_a_l.html#ga21653571743b2c7dd79691c3c1a17990" title="Extrai um byte da fila RX para a aplicação." alt="" coords="635,5,747,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="817,119,785,88,745,53,719,35,720,30,749,49,788,84,822,121"/>
+<area shape="rect" id="Node000003" href="$group___s_p_i___b_u_f_f_e_r___i_n_t_e_r_n_a_l.html#ga82e736d319c4516104fe3d6dbcb42a32" title="Adiciona um byte recebido à fila RX (chamado na ISR)." alt="" coords="635,107,747,133"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="777,135,747,132,747,127,782,135"/>
+<area shape="rect" id="Node000005" href="$group___s_p_i___a_s_y_n_c.html#gaf7c63fb3650bcece7c5c89b775b7f072" title="Lê um byte do buffer de recepção." alt="" coords="272,69,361,96"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="806,123,779,109,746,97,694,86,640,78,532,72,435,74,362,80,360,75,435,69,532,67,640,73,695,80,748,92,781,105,812,123"/>
+<area shape="rect" id="Node000007" href="$group___s_p_i___b_u_f_f_e_r___i_n_t_e_r_n_a_l.html#ga9eb832ea6e4deb5d067f69c9192b0b32" title="Remove um byte da fila de transmissão." alt="" coords="635,157,747,184"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="782,155,748,164,747,159,777,156"/>
+<area shape="rect" id="Node000009" href="$group___s_p_i___a_s_y_n_c.html#ga5667e88be47d87c48a22117c8a8c3cb5" title="Enfileira um byte para transmissão assíncrona." alt="" coords="259,157,374,184"/>
+<area shape="poly" id="edge14_Node000001_Node000009" title=" " alt="" coords="812,167,781,186,748,199,658,216,586,218,514,211,422,199,365,187,365,182,423,193,514,206,586,213,657,211,746,193,779,181,807,168"/>
+<area shape="rect" id="Node000012" href="$group___s_p_i___b_u_f_f_e_r___i_n_t_e_r_n_a_l.html#gab47c332d2d9ce5626758ec73ff01e40f" title="Adiciona um byte à fila de transmissão." alt="" coords="635,259,747,285"/>
+<area shape="poly" id="edge13_Node000001_Node000012" title=" " alt="" coords="822,170,788,207,749,242,720,261,718,256,745,238,785,203,817,172"/>
+<area shape="rect" id="Node000004" href="$spi_8c.html#af9cad97352f5ba9bbd800446131125a6" title="Interrupt Service Routine para o término de transferência SPI." alt="" coords="482,107,527,133"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="617,120,527,123,527,117,622,120"/>
+<area shape="rect" id="Node000006" href="$example1__master_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Ponto de entrada do exemplo Master." alt="" coords="132,81,182,108"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="254,89,183,95,181,90,259,86"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="621,153,527,129,527,123,627,152"/>
+<area shape="rect" id="Node000008" href="$group___s_p_i___i_n_t_e_r_n_a_l___p_r_o_t_o_s.html#ga30307a7e6e65f6a80a803d724b09f4f3" title="Inicia o primeiro byte de uma sequência de transmissão." alt="" coords="422,157,587,184"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="617,171,587,173,587,168,622,170"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="404,171,375,173,374,168,410,170"/>
+<area shape="poly" id="edge10_Node000009_Node000006" title=" " alt="" coords="270,151,181,109,182,103,275,149"/>
+<area shape="rect" id="Node000010" href="$group___s_p_i___a_s_y_n_c.html#ga7c5cd5d59e430d3366bb96ef93c417a9" title="Inicia uma transação multi&#45;byte assíncrona." alt="" coords="103,157,211,184"/>
+<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="241,171,212,173,211,168,246,170"/>
+<area shape="rect" id="Node000011" href="$example2_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Ponto de entrada do exemplo DAC." alt="" coords="5,157,55,184"/>
+<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="85,172,56,173,54,168,89,169"/>
+</map>

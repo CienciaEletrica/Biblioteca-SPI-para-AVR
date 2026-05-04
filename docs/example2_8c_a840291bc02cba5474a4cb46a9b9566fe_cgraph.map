@@ -1,0 +1,40 @@
+<map id="main" name="main">
+<area shape="rect" id="Node000001" title="Ponto de entrada do exemplo DAC." alt="" coords="5,259,55,285"/>
+<area shape="rect" id="Node000002" href="$group___s_p_i___m_a_s_t_e_r.html#gaf49ef2f6f68799d64ef1beb73957fcd8" title="Desativa o dispositivo escravo atual (coloca CS em nível alto)." alt="" coords="103,56,242,83"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="35,257,62,206,101,144,148,92,145,96,105,147,67,208,40,259"/>
+<area shape="rect" id="Node000004" href="$group___s_p_i___i_n_i_t.html#gad9402c2ef9fda902cd461c0048fa5c89" title="Inicializa o módulo SPI." alt="" coords="141,157,204,184"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="48,256,141,191,139,196,52,260"/>
+<area shape="rect" id="Node000009" href="$group___s_p_i___a_s_y_n_c.html#gaa9fa3d0d9a19bee52b8b2b89e7739ff2" title="Verifica se o módulo está processando alguma transmissão." alt="" coords="127,335,218,361"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="48,283,104,320,117,328,111,329,101,325,48,288"/>
+<area shape="rect" id="Node000011" href="$group___s_p_i___m_a_s_t_e_r.html#ga3312b5d618b5c128b7d16cb63bfc0239" title="Registra um pino de Chip Select (CS) para um dispositivo escravo." alt="" coords="109,385,236,412"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="38,283,65,327,83,351,104,371,112,378,106,377,101,375,79,354,60,330,37,288"/>
+<area shape="rect" id="Node000012" href="$group___s_p_i___m_a_s_t_e_r.html#gab2d834030e3fe4c4ffc10253b35882e3" title="Seleciona um dispositivo escravo (coloca CS em nível baixo)." alt="" coords="110,284,235,311"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="54,274,96,282,92,285,56,279"/>
+<area shape="rect" id="Node000014" href="$group___s_p_i___a_s_y_n_c.html#ga7c5cd5d59e430d3366bb96ef93c417a9" title="Inicia uma transação multi&#45;byte assíncrona." alt="" coords="118,233,226,260"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="54,265,104,257,101,261,56,270"/>
+<area shape="rect" id="Node000003" href="$group___s_p_i___i_n_t_e_r_n_a_l___p_r_o_t_o_s.html#ga71e76125efbe8d9f1dd3d519613cb652" title="Sobe o pino de Chip Select do escravo atual." alt="" coords="290,5,446,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="226,53,301,35,297,38,228,58"/>
+<area shape="rect" id="Node000005" href="$group___s_p_i___i_n_t_e_r_n_a_l___p_r_o_t_o_s.html#ga449cd570fc792c387aacaef5c58a5d67" title="Sincroniza as configurações da struct com os registradores SPCR e SPSR." alt="" coords="297,157,439,184"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="203,168,284,169,279,172,205,173"/>
+<area shape="rect" id="Node000006" href="$group___s_p_i___i_n_t_e_r_n_a_l___p_r_o_t_o_s.html#ga63ee202e30ff6afe6667c7155c63aa2d" title="Configura a direção dos pinos físicos (DDR) baseada no modo Master/Slave." alt="" coords="310,56,427,83"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="190,155,234,124,289,92,306,87,302,90,291,97,237,128,194,159"/>
+<area shape="rect" id="Node000007" href="$group___s_p_i___a_s_y_n_c.html#gab1e1145c0c06968091517a0f1784cf90" title="Limpa o buffer de recepção (descarta dados)." alt="" coords="322,107,414,133"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="203,160,310,134,305,137,205,165"/>
+<area shape="rect" id="Node000008" href="$group___s_p_i___a_s_y_n_c.html#gaf278870417819cf590a1b39d4eb3c4a5" title="Limpa o buffer de transmissão e interrompe envios pendentes." alt="" coords="322,208,414,235"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="204,176,310,205,305,207,204,181"/>
+<area shape="rect" id="Node000010" href="$group___s_p_i___a_s_y_n_c.html#gaab1d347c86fb34f3cd07b2de726fa2e9" title="Verifica o espaço pendente no buffer de transmissão." alt="" coords="311,360,425,387"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="218,351,298,364,293,364,218,356"/>
+<area shape="rect" id="Node000013" href="$group___s_p_i___i_n_t_e_r_n_a_l___p_r_o_t_o_s.html#gaf444e00ab7250d625bc670dd4e21328c" title="Baixa o pino de Chip Select do escravo especificado." alt="" coords="505,309,648,336"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="235,299,491,315,488,319,236,304"/>
+<area shape="poly" id="edge14_Node000014_Node000008" title=" " alt="" coords="226,237,310,228,305,230,228,242"/>
+<area shape="rect" id="Node000015" href="$group___s_p_i___a_s_y_n_c.html#ga5667e88be47d87c48a22117c8a8c3cb5" title="Enfileira um byte para transmissão assíncrona." alt="" coords="310,259,426,285"/>
+<area shape="poly" id="edge15_Node000014_Node000015" title=" " alt="" coords="227,251,297,262,292,263,227,256"/>
+<area shape="poly" id="edge17_Node000015_Node000013" title=" " alt="" coords="426,283,507,305,501,305,426,289"/>
+<area shape="rect" id="Node000016" href="$group___s_p_i___b_u_f_f_e_r___i_n_t_e_r_n_a_l.html#gababc053045f0c05b31e334632f2dc0fb" title="Calcula o próximo índice do buffer circular." alt="" coords="867,233,962,260"/>
+<area shape="poly" id="edge16_Node000015_Node000016" title=" " alt="" coords="426,267,854,248,850,251,426,272"/>
+<area shape="rect" id="Node000017" href="$group___s_p_i___i_n_t_e_r_n_a_l___p_r_o_t_o_s.html#ga30307a7e6e65f6a80a803d724b09f4f3" title="Inicia o pipeline de transmissão carregando o primeiro byte no SPDR." alt="" coords="494,208,659,235"/>
+<area shape="poly" id="edge18_Node000015_Node000017" title=" " alt="" coords="426,255,507,238,501,240,427,261"/>
+<area shape="rect" id="Node000018" href="$group___s_p_i___b_u_f_f_e_r___i_n_t_e_r_n_a_l.html#ga9eb832ea6e4deb5d067f69c9192b0b32" title="Remove um byte da fila de transmissão." alt="" coords="707,208,819,235"/>
+<area shape="poly" id="edge19_Node000017_Node000018" title=" " alt="" coords="659,219,694,221,688,222,659,224"/>
+<area shape="poly" id="edge20_Node000018_Node000016" title=" " alt="" coords="819,228,855,236,849,236,819,233"/>
+</map>

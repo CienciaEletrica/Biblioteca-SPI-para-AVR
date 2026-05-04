@@ -1,0 +1,5 @@
+<map id="spi_write_multi" name="spi_write_multi">
+<area shape="rect" id="Node000001" title="Inicia uma transação multi&#45;byte assíncrona." alt="" coords="103,5,211,32"/>
+<area shape="rect" id="Node000002" href="$example2_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Ponto de entrada do exemplo DAC." alt="" coords="5,5,55,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="84,20,55,21,55,16,89,18"/>
+</map>

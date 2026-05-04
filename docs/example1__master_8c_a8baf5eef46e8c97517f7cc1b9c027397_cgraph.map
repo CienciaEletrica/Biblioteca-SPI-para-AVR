@@ -1,0 +1,5 @@
+<map id="uart_putnewline" name="uart_putnewline">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,118,32"/>
+<area shape="rect" id="Node000002" href="$example1__master_8c.html#aa599232c1438c5addd971e05e1dd46a2" title="Envia um caractere via UART." alt="" coords="166,5,241,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="118,16,153,18,147,19,118,21"/>
+</map>

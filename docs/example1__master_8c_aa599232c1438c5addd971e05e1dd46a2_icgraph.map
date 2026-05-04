@@ -1,0 +1,14 @@
+<map id="uart_putc" name="uart_putc">
+<area shape="rect" id="Node000001" title="Envia um caractere via UART." alt="" coords="263,56,338,83"/>
+<area shape="rect" id="Node000002" href="$example1__master_8c.html#ac0f988e6b39a10eb1b4f67dd657373bb" title="Envia um valor de 8 bits em formato hexadecimal." alt="" coords="111,5,207,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="246,51,198,35,198,30,251,50"/>
+<area shape="rect" id="Node000004" href="$example1__master_8c.html#a8baf5eef46e8c97517f7cc1b9c027397" title=" " alt="" coords="103,107,215,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="251,87,199,109,197,104,246,88"/>
+<area shape="rect" id="Node000006" href="$example1__master_8c.html#ae52facc0a56086a365bb0018160d8d71" title="Envia uma string via UART." alt="" coords="121,56,196,83"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="245,70,197,72,196,67,250,69"/>
+<area shape="rect" id="Node000003" href="$example1__master_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Ponto de entrada do exemplo Master." alt="" coords="5,31,55,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="94,33,56,42,54,37,97,29"/>
+<area shape="rect" id="Node000005" href="$example3_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Ponto de entrada do teste de estresse." alt="" coords="5,107,55,133"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="85,121,55,123,55,117,90,119"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="104,61,56,51,55,46,108,57"/>
+</map>

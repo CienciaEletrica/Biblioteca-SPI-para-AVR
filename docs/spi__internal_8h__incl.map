@@ -1,0 +1,15 @@
+<map id="inc/spi_internal.h" name="inc/spi_internal.h">
+<area shape="rect" id="Node000001" title="Definições e funções de uso INTERNO da biblioteca SPI." alt="" coords="190,5,309,32"/>
+<area shape="rect" id="Node000002" href="$spi__types_8h.html" title="Definições de tipos, enums e estruturas para a biblioteca SPI." alt="" coords="87,80,175,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="227,34,166,74,163,69,231,31"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="199,80,300,107"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="251,30,252,66,247,63,248,35"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="325,80,393,107"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="269,30,330,71,325,71,268,35"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,155,70,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="117,107,67,147,64,143,112,108"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="94,155,168,181"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="133,105,133,140,128,138,129,109"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="192,155,256,181"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="148,105,199,145,194,145,146,110"/>
+</map>
