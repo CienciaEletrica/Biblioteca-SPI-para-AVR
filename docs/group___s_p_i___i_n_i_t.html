@@ -1,0 +1,261 @@
+<!-- HTML header for doxygen 1.16.1-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta charset="utf-8">
+<title>Biblioteca SPI AVR: Inicialização e Configuração</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="custom_styles.css" rel="stylesheet" type="text/css" />
+<link href="custom_styles.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+  <table cellspacing="0" cellpadding="0" style="width: 100%; border: none;">
+   <tbody>
+   <tr style="height: 80px;"> 
+    <td id="projectlogo" style="width: 80px; padding: 10px;">
+      <!-- O Doxygen tira o caminho 'img/' ao copiar, então usamos apenas o nome -->
+      <img alt="Logo" src="FIGURA2.png" style="height: 60px !important; width: auto !important; display: block;"/>
+    </td>
+    <td id="projectalign" style="padding-left: 0.5em; vertical-align: middle;">
+     <div id="projectname" style="font-size: 1.6em; font-weight: bold;">Driver SPI - YouTube: Ci&ecirc;ncia El&eacute;trica</div>
+     <div id="projectbrief" style="font-size: 1em; opacity: 0.8;">Biblioteca Otimizada para Microcontroladores AVR</div>
+    </td>
+   </tr>
+   </tbody>
+  </table>
+</div>
+<!-- Gerado por Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Busca',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('group___s_p_i___i_n_i_t.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Inicialização e Configuração </div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:gad9402c2ef9fda902cd461c0048fa5c89" id="r_gad9402c2ef9fda902cd461c0048fa5c89"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#gad9402c2ef9fda902cd461c0048fa5c89">spi_init</a> (const <a class="el" href="structspi__config__t.html">spi_config_t</a> *cfg)</td></tr>
+<tr class="memdesc:gad9402c2ef9fda902cd461c0048fa5c89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicializa o módulo SPI.  <br /></td></tr>
+<tr class="memitem:ga94336ad392aba5ff1c163cf8127a1477" id="r_ga94336ad392aba5ff1c163cf8127a1477"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ga94336ad392aba5ff1c163cf8127a1477">spi_set_clock</a> (<a class="el" href="spi__types_8h.html#a720de0c75c95328e740d889e93498a1f">spi_clock_div_t</a> new_div)</td></tr>
+<tr class="memdesc:ga94336ad392aba5ff1c163cf8127a1477"><td class="mdescLeft">&#160;</td><td class="mdescRight">Altera dinamicamente o divisor de clock do SPI.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descrição detalhada</h2>
+<div class="textblock"></div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Funções</h2>
+<a id="gad9402c2ef9fda902cd461c0048fa5c89" name="gad9402c2ef9fda902cd461c0048fa5c89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad9402c2ef9fda902cd461c0048fa5c89">&#9670;&#160;</a></span>spi_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spi_init </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structspi__config__t.html">spi_config_t</a> *</td>          <td class="paramname"><span class="paramname"><em>cfg</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inicializa o módulo SPI. </p>
+<p>Configura o hardware SPI de acordo com a estrutura fornecida. No ATmega328P, configura automaticamente PB5 (SCK), PB3 (MOSI), PB4 (MISO) e PB2 (SS).</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cfg</td><td>Ponteiro para a estrutura <a class="el" href="structspi__config__t.html" title="spi_config_t">spi_config_t</a> com os parâmetros desejados. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>true se a inicialização foi bem-sucedida. </dd>
+<dd>
+false se houver parâmetros inválidos ou erro de hardware.</dd></dl>
+<dl class="section note"><dt>Observação</dt><dd>Habilita pull-up no pino SS para evitar entrada acidental em modo slave. </dd></dl>
+<dl class="section examples"><dt>Exemplos</dt><dd><a class="el" href="example1_master_8c-example.html#a8">example1_master.c</a>, <a class="el" href="example1_slave_8c-example.html#a7">example1_slave.c</a>, <a class="el" href="example2_8c-example.html#a6">example2.c</a> e <a class="el" href="example3_8c-example.html#a9">example3.c</a>.</dd>
+</dl>
+
+<p class="definition">Definição na linha <a class="el" href="spi_8c_source.html#l00144">144</a> do arquivo <a class="el" href="spi_8c_source.html">spi.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  144</span>                                       {</div>
+<div class="line"><span class="lineno">  145</span>    <span class="keywordflow">if</span> (!cfg) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  146</span>    <a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.config = *cfg;</div>
+<div class="line"><span class="lineno">  147</span>    <span class="comment">// Reset estado e buffers    </span></div>
+<div class="line"><span class="lineno">  148</span>    <a class="code hl_function" href="group___s_p_i___a_s_y_n_c.html#gaf278870417819cf590a1b39d4eb3c4a5" title="Limpa o buffer de transmissão e interrompe envios pendentes.">spi_tx_flush</a>();</div>
+<div class="line"><span class="lineno">  149</span>    <a class="code hl_function" href="group___s_p_i___a_s_y_n_c.html#gab1e1145c0c06968091517a0f1784cf90" title="Limpa o buffer de recepção (descarta dados).">spi_rx_flush</a>();</div>
+<div class="line"><span class="lineno">  150</span>    </div>
+<div class="line"><span class="lineno">  151</span>    <a class="code hl_function" href="group___s_p_i___i_n_t_e_r_n_a_l___p_r_o_t_o_s.html#ga63ee202e30ff6afe6667c7155c63aa2d" title="Configura a direção dos pinos físicos (DDR) baseada no modo Master/Slave.">spi_hw_init_pins</a>(cfg);</div>
+<div class="line"><span class="lineno">  152</span>    <a class="code hl_function" href="group___s_p_i___i_n_t_e_r_n_a_l___p_r_o_t_o_s.html#ga449cd570fc792c387aacaef5c58a5d67" title="Sincroniza as configurações da struct com os registradores SPCR e SPSR.">spi_hw_apply_config</a>();</div>
+<div class="line"><span class="lineno">  153</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  154</span>}</div>
+</div><!-- fragment -->
+<p class="reference">Referenciado(a) por <a class="el" href="example1__master_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções utilizadas por essa função:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="group___s_p_i___i_n_i_t_gad9402c2ef9fda902cd461c0048fa5c89_cgraph.svg" width="264" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Esse é o diagrama das funções que utilizam essa função:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="group___s_p_i___i_n_i_t_gad9402c2ef9fda902cd461c0048fa5c89_icgraph.svg" width="171" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ga94336ad392aba5ff1c163cf8127a1477" name="ga94336ad392aba5ff1c163cf8127a1477"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga94336ad392aba5ff1c163cf8127a1477">&#9670;&#160;</a></span>spi_set_clock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spi_set_clock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="spi__types_8h.html#a720de0c75c95328e740d889e93498a1f">spi_clock_div_t</a></td>          <td class="paramname"><span class="paramname"><em>new_div</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Altera dinamicamente o divisor de clock do SPI. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">new_div</td><td>Novo divisor de clock (baseado em <a class="el" href="spi__types_8h.html#a720de0c75c95328e740d889e93498a1f" title="spi_clock_div_t">spi_clock_div_t</a>). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Observação</dt><dd>Esta função aguarda qualquer transmissão em andamento terminar antes de aplicar.</dd></dl>
+<p>Altera dinamicamente o divisor de clock do SPI.</p>
+<p>Esta função garante que a mudança de velocidade não ocorra durante uma transmissão ativa, o que causaria corrupção de dados ou comportamento errático no escravo.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">new_div</td><td>Novo divisor de clock baseado em <a class="el" href="spi__types_8h.html#a720de0c75c95328e740d889e93498a1f" title="spi_clock_div_t">spi_clock_div_t</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definição na linha <a class="el" href="spi_8c_source.html#l00279">279</a> do arquivo <a class="el" href="spi_8c_source.html">spi.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  279</span>                                            {</div>
+<div class="line"><span class="lineno">  280</span>    <span class="comment">// 1. Segurança: Aguarda qualquer transmissão em background terminar.</span></div>
+<div class="line"><span class="lineno">  281</span>    <span class="keywordflow">while</span> (<a class="code hl_function" href="group___s_p_i___a_s_y_n_c.html#gaa9fa3d0d9a19bee52b8b2b89e7739ff2" title="Verifica se o módulo está processando alguma transmissão.">spi_is_busy</a>());</div>
+<div class="line"><span class="lineno">  282</span> </div>
+<div class="line"><span class="lineno">  283</span>    <span class="comment">// 2. Cálculo dos bits conforme o enum definido em spi_types.h</span></div>
+<div class="line"><span class="lineno">  284</span>    uint8_t spr_bits = 0;</div>
+<div class="line"><span class="lineno">  285</span>    <span class="keywordtype">bool</span> double_speed = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  286</span> </div>
+<div class="line"><span class="lineno">  287</span>    <span class="keywordflow">switch</span> (new_div) {</div>
+<div class="line"><span class="lineno">  288</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="spi__types_8h.html#a720de0c75c95328e740d889e93498a1fa7b84901cd71a8099088e62358cb1b812">SPI_CLOCK_DIV_2</a>:   double_speed = <span class="keyword">true</span>; spr_bits = 0; <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  289</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="spi__types_8h.html#a720de0c75c95328e740d889e93498a1fa4804ba90b831d3f49fec8d7cf0d8a9cf">SPI_CLOCK_DIV_4</a>:   spr_bits = 0; <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  290</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="spi__types_8h.html#a720de0c75c95328e740d889e93498a1faed362f983772afe5dd3160b0f96f3b56">SPI_CLOCK_DIV_16</a>:  spr_bits = 1; <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  291</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="spi__types_8h.html#a720de0c75c95328e740d889e93498a1fa920e7f1a9ad810c7bbc14f9506246aa9">SPI_CLOCK_DIV_64</a>:  spr_bits = 2; <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  292</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="spi__types_8h.html#a720de0c75c95328e740d889e93498a1fabe662fb48fdb1486df522a5949cdd331">SPI_CLOCK_DIV_128</a>: spr_bits = 3; <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  293</span>    }</div>
+<div class="line"><span class="lineno">  294</span> </div>
+<div class="line"><span class="lineno">  295</span>    <span class="comment">// 3. SEÇÃO CRÍTICA: Aplicação atômica nos registradores de hardware</span></div>
+<div class="line"><span class="lineno">  296</span>    ATOMIC_BLOCK(ATOMIC_RESTORESTATE) {</div>
+<div class="line"><span class="lineno">  297</span>        <span class="comment">// Atualiza a cópia na struct global para manter consistência</span></div>
+<div class="line"><span class="lineno">  298</span>        <a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.config.clock_div = new_div;</div>
+<div class="line"><span class="lineno">  299</span> </div>
+<div class="line"><span class="lineno">  300</span>        <span class="comment">// Limpa apenas os bits SPR1 e SPR0 (bits 1 e 0 do SPCR) e aplica os novos</span></div>
+<div class="line"><span class="lineno">  301</span>        SPCR = (SPCR &amp; ~((1 &lt;&lt; SPR1) | (1 &lt;&lt; SPR0))) | (spr_bits &amp; 0x03);</div>
+<div class="line"><span class="lineno">  302</span> </div>
+<div class="line"><span class="lineno">  303</span>        <span class="comment">// Ajusta o bit SPI2X no SPSR (bit 0)</span></div>
+<div class="line"><span class="lineno">  304</span>        <span class="keywordflow">if</span> (double_speed) {</div>
+<div class="line"><span class="lineno">  305</span>            SPSR |= (1 &lt;&lt; SPI2X);</div>
+<div class="line"><span class="lineno">  306</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  307</span>            SPSR &amp;= ~(1 &lt;&lt; SPI2X);</div>
+<div class="line"><span class="lineno">  308</span>        }</div>
+<div class="line"><span class="lineno">  309</span>    }</div>
+<div class="line"><span class="lineno">  310</span>}</div>
+</div><!-- fragment --><div class="dynheader">
+Este é o diagrama das funções utilizadas por essa função:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="group___s_p_i___i_n_i_t_ga94336ad392aba5ff1c163cf8127a1477_cgraph.svg" width="414" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- HTML footer for doxygen 1.16.1-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">
+      Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 | 
+      Desenvolvido por <b>Tiago Henrique dos Santos - Ci&ecirc;ncia El&eacute;trica</b>
+    </li>
+  </ul>
+</div>
+</body>
+</html>

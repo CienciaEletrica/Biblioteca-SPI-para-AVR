@@ -1,0 +1,208 @@
+<!-- HTML header for doxygen 1.16.1-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta charset="utf-8">
+<title>Biblioteca SPI AVR: Funções de Baixo Nível / Utilitárias</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="custom_styles.css" rel="stylesheet" type="text/css" />
+<link href="custom_styles.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+  <table cellspacing="0" cellpadding="0" style="width: 100%; border: none;">
+   <tbody>
+   <tr style="height: 80px;"> 
+    <td id="projectlogo" style="width: 80px; padding: 10px;">
+      <!-- O Doxygen tira o caminho 'img/' ao copiar, então usamos apenas o nome -->
+      <img alt="Logo" src="FIGURA2.png" style="height: 60px !important; width: auto !important; display: block;"/>
+    </td>
+    <td id="projectalign" style="padding-left: 0.5em; vertical-align: middle;">
+     <div id="projectname" style="font-size: 1.6em; font-weight: bold;">Driver SPI - YouTube: Ci&ecirc;ncia El&eacute;trica</div>
+     <div id="projectbrief" style="font-size: 1em; opacity: 0.8;">Biblioteca Otimizada para Microcontroladores AVR</div>
+    </td>
+   </tr>
+   </tbody>
+  </table>
+</div>
+<!-- Gerado por Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Busca',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('group___s_p_i___l_o_w_l_e_v_e_l.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Funções de Baixo Nível / Utilitárias </div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:ga1db15283d17f408f4abf224b9c05f0d9" id="r_ga1db15283d17f408f4abf224b9c05f0d9"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ga1db15283d17f408f4abf224b9c05f0d9">spi_slave_preload</a> (uint8_t dummy)</td></tr>
+<tr class="memdesc:ga1db15283d17f408f4abf224b9c05f0d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pré-carrega o registrador de dados (SPDR) no modo Slave.  <br /></td></tr>
+<tr class="memitem:gabf331ee9e740be966eb93ce34fbff366" id="r_gabf331ee9e740be966eb93ce34fbff366"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#gabf331ee9e740be966eb93ce34fbff366">spi_tx_has_space</a> (uint8_t count)</td></tr>
+<tr class="memdesc:gabf331ee9e740be966eb93ce34fbff366"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica se há espaço para uma quantidade específica de bytes no TX.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descrição detalhada</h2>
+<div class="textblock"></div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Funções</h2>
+<a id="ga1db15283d17f408f4abf224b9c05f0d9" name="ga1db15283d17f408f4abf224b9c05f0d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1db15283d17f408f4abf224b9c05f0d9">&#9670;&#160;</a></span>spi_slave_preload()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spi_slave_preload </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>dummy</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pré-carrega o registrador de dados (SPDR) no modo Slave. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dummy</td><td>Valor a ser enviado quando o Master iniciar o clock. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Observação</dt><dd>Evita o envio de lixo eletrônico no primeiro ciclo de clock do Master. </dd></dl>
+<dl class="section examples"><dt>Exemplos</dt><dd><a class="el" href="example1_slave_8c-example.html#a2">example1_slave.c</a>.</dd>
+</dl>
+
+<p class="definition">Definição na linha <a class="el" href="spi_8c_source.html#l00261">261</a> do arquivo <a class="el" href="spi_8c_source.html">spi.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  261</span>                                      {</div>
+<div class="line"><span class="lineno">  262</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.config.mode == <a class="code hl_enumvalue" href="spi__types_8h.html#ac4b206a51636d91c5cffcbcee458c3cbad1131ed33ad43ab3f667070b04454439">SPI_MODE_SLAVE</a>) <a class="code hl_define" href="group___s_p_i___h_w___m_a_c_r_o_s.html#ga3b213e86f2a10a2c3198e51502aec25e">SPI_HW_WRITE_DATA</a>(dummy);</div>
+<div class="line"><span class="lineno">  263</span>}</div>
+</div><!-- fragment -->
+<p class="reference">Referenciado(a) por <a class="el" href="example1__slave_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main()</a> e <a class="el" href="example1__slave_8c.html#aa61f0e6c6d4d093d42af9fae60c968b0">slave_callback()</a>.</p>
+<div class="dynheader">
+Esse é o diagrama das funções que utilizam essa função:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="group___s_p_i___l_o_w_l_e_v_e_l_ga1db15283d17f408f4abf224b9c05f0d9_icgraph.svg" width="390" height="63"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="gabf331ee9e740be966eb93ce34fbff366" name="gabf331ee9e740be966eb93ce34fbff366"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabf331ee9e740be966eb93ce34fbff366">&#9670;&#160;</a></span>spi_tx_has_space()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spi_tx_has_space </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>count</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verifica se há espaço para uma quantidade específica de bytes no TX. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">count</td><td>Quantidade de bytes a verificar. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>true se há espaço disponível. </dd></dl>
+
+<p class="definition">Definição na linha <a class="el" href="spi_8c_source.html#l00265">265</a> do arquivo <a class="el" href="spi_8c_source.html">spi.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  265</span>                                     {</div>
+<div class="line"><span class="lineno">  266</span>    uint8_t avail = <a class="code hl_define" href="group___s_p_i___c_o_n_f_i_g___c_o_n_s_t_s.html#gaeb11fa6162c55c5a74ec27b0551ae82b" title="Tamanho do buffer de transmissão (TX).">SPI_TX_BUFFER_SIZE</a> - 1 - <a class="code hl_function" href="group___s_p_i___a_s_y_n_c.html#gaab1d347c86fb34f3cd07b2de726fa2e9" title="Verifica o espaço pendente no buffer de transmissão.">spi_tx_available</a>();</div>
+<div class="line"><span class="lineno">  267</span>    <span class="keywordflow">return</span> avail &gt;= count;</div>
+<div class="line"><span class="lineno">  268</span>}</div>
+</div><!-- fragment --><div class="dynheader">
+Este é o diagrama das funções utilizadas por essa função:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="group___s_p_i___l_o_w_l_e_v_e_l_gabf331ee9e740be966eb93ce34fbff366_cgraph.svg" width="300" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- HTML footer for doxygen 1.16.1-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">
+      Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 | 
+      Desenvolvido por <b>Tiago Henrique dos Santos - Ci&ecirc;ncia El&eacute;trica</b>
+    </li>
+  </ul>
+</div>
+</body>
+</html>

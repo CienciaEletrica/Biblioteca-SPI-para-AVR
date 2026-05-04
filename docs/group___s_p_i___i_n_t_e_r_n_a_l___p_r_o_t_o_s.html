@@ -1,0 +1,443 @@
+<!-- HTML header for doxygen 1.16.1-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta charset="utf-8">
+<title>Biblioteca SPI AVR: Protótipos Internos</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="custom_styles.css" rel="stylesheet" type="text/css" />
+<link href="custom_styles.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+  <table cellspacing="0" cellpadding="0" style="width: 100%; border: none;">
+   <tbody>
+   <tr style="height: 80px;"> 
+    <td id="projectlogo" style="width: 80px; padding: 10px;">
+      <!-- O Doxygen tira o caminho 'img/' ao copiar, então usamos apenas o nome -->
+      <img alt="Logo" src="FIGURA2.png" style="height: 60px !important; width: auto !important; display: block;"/>
+    </td>
+    <td id="projectalign" style="padding-left: 0.5em; vertical-align: middle;">
+     <div id="projectname" style="font-size: 1.6em; font-weight: bold;">Driver SPI - YouTube: Ci&ecirc;ncia El&eacute;trica</div>
+     <div id="projectbrief" style="font-size: 1em; opacity: 0.8;">Biblioteca Otimizada para Microcontroladores AVR</div>
+    </td>
+   </tr>
+   </tbody>
+  </table>
+</div>
+<!-- Gerado por Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Busca',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('group___s_p_i___i_n_t_e_r_n_a_l___p_r_o_t_o_s.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Protótipos Internos </div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Funções implementadas em <a class="el" href="spi_8c.html" title="Implementação completa do driver SPI para microcontroladores AVR.">spi.c</a> para controle de hardware.  
+<a href="#details">Mais...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:ga449cd570fc792c387aacaef5c58a5d67" id="r_ga449cd570fc792c387aacaef5c58a5d67"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ga449cd570fc792c387aacaef5c58a5d67">spi_hw_apply_config</a> (void)</td></tr>
+<tr class="memdesc:ga449cd570fc792c387aacaef5c58a5d67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sincroniza registradores do AVR com spi.config.  <br /></td></tr>
+<tr class="memitem:ga63ee202e30ff6afe6667c7155c63aa2d" id="r_ga63ee202e30ff6afe6667c7155c63aa2d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ga63ee202e30ff6afe6667c7155c63aa2d">spi_hw_init_pins</a> (const <a class="el" href="structspi__config__t.html">spi_config_t</a> *cfg)</td></tr>
+<tr class="memdesc:ga63ee202e30ff6afe6667c7155c63aa2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configura direção dos pinos MOSI/MISO/SCK/SS.  <br /></td></tr>
+<tr class="memitem:gaf444e00ab7250d625bc670dd4e21328c" id="r_gaf444e00ab7250d625bc670dd4e21328c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#gaf444e00ab7250d625bc670dd4e21328c">spi_hw_select_slave</a> (uint8_t id)</td></tr>
+<tr class="memdesc:gaf444e00ab7250d625bc670dd4e21328c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Controle de hardware para Chip Select.  <br /></td></tr>
+<tr class="memitem:ga71e76125efbe8d9f1dd3d519613cb652" id="r_ga71e76125efbe8d9f1dd3d519613cb652"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ga71e76125efbe8d9f1dd3d519613cb652">spi_hw_deselect_slave</a> (void)</td></tr>
+<tr class="memdesc:ga71e76125efbe8d9f1dd3d519613cb652"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sobe o pino de Chip Select do escravo atual.  <br /></td></tr>
+<tr class="memitem:ga30307a7e6e65f6a80a803d724b09f4f3" id="r_ga30307a7e6e65f6a80a803d724b09f4f3"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ga30307a7e6e65f6a80a803d724b09f4f3">spi_hw_start_tx_pipeline</a> (void)</td></tr>
+<tr class="memdesc:ga30307a7e6e65f6a80a803d724b09f4f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicia o primeiro byte de uma sequência de transmissão.  <br /></td></tr>
+<tr class="memitem:ga4503da71a9cf86afaf14568b6013ee55" id="r_ga4503da71a9cf86afaf14568b6013ee55"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ga4503da71a9cf86afaf14568b6013ee55">spi_hw_handle_transfer_complete</a> (void)</td></tr>
+<tr class="memdesc:ga4503da71a9cf86afaf14568b6013ee55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lógica central executada a cada byte concluído na ISR.  <br /></td></tr>
+<tr class="memitem:ga4ccfd9c55f4d277c322b1d2354d75c66" id="r_ga4ccfd9c55f4d277c322b1d2354d75c66"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ga4ccfd9c55f4d277c322b1d2354d75c66">spi_hw_recover_collision</a> (void)</td></tr>
+<tr class="memdesc:ga4ccfd9c55f4d277c322b1d2354d75c66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tenta recuperar o estado do driver após erro de colisão.  <br /></td></tr>
+<tr class="memitem:ga89eb00084e1a7eba2bd746eed8fd1738" id="r_ga89eb00084e1a7eba2bd746eed8fd1738"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ga89eb00084e1a7eba2bd746eed8fd1738">spi_hw_slave_preload</a> (uint8_t dummy)</td></tr>
+<tr class="memdesc:ga89eb00084e1a7eba2bd746eed8fd1738"><td class="mdescLeft">&#160;</td><td class="mdescRight">Carrega dado no SPDR sem disparar clock (Modo Slave).  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Funções implementadas em <a class="el" href="spi_8c.html" title="Implementação completa do driver SPI para microcontroladores AVR.">spi.c</a> para controle de hardware. </p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Funções</h2>
+<a id="ga449cd570fc792c387aacaef5c58a5d67" name="ga449cd570fc792c387aacaef5c58a5d67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga449cd570fc792c387aacaef5c58a5d67">&#9670;&#160;</a></span>spi_hw_apply_config()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spi_hw_apply_config </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sincroniza registradores do AVR com spi.config. </p>
+<p>Sincroniza registradores do AVR com spi.config. </p>
+
+<p class="definition">Definição na linha <a class="el" href="spi_8c_source.html#l00068">68</a> do arquivo <a class="el" href="spi_8c_source.html">spi.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   68</span>                               {</div>
+<div class="line"><span class="lineno">   69</span>    uint8_t spcr_val = (1 &lt;&lt; SPE); <span class="comment">// Habilita o hardware SPI</span></div>
+<div class="line"><span class="lineno">   70</span> </div>
+<div class="line"><span class="lineno">   71</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.config.mode == <a class="code hl_enumvalue" href="spi__types_8h.html#ac4b206a51636d91c5cffcbcee458c3cbae68a8adf6e5b67a7bdbe9526b15dae99">SPI_MODE_MASTER</a>) spcr_val |= (1 &lt;&lt; MSTR);</div>
+<div class="line"><span class="lineno">   72</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.config.bit_order == <a class="code hl_typedef" href="spi__types_8h.html#aedf1a7f0d28d6a254da6f23757031a5a">SPI_ORDER_LSB_FIRST</a>) spcr_val |= (1 &lt;&lt; DORD);</div>
+<div class="line"><span class="lineno">   73</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.config.cpol) spcr_val |= (1 &lt;&lt; CPOL);</div>
+<div class="line"><span class="lineno">   74</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.config.cpha) spcr_val |= (1 &lt;&lt; CPHA);</div>
+<div class="line"><span class="lineno">   75</span> </div>
+<div class="line"><span class="lineno">   76</span>    uint8_t spr = 0;</div>
+<div class="line"><span class="lineno">   77</span>    <span class="keywordtype">bool</span> spi2x = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   78</span> </div>
+<div class="line"><span class="lineno">   79</span>    <span class="comment">// Mapeamento do divisor de clock para os bits SPR0, SPR1 e SPI2X</span></div>
+<div class="line"><span class="lineno">   80</span>    <span class="keywordflow">switch</span> (<a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.config.clock_div) {</div>
+<div class="line"><span class="lineno">   81</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="spi__types_8h.html#a720de0c75c95328e740d889e93498a1fa7b84901cd71a8099088e62358cb1b812">SPI_CLOCK_DIV_2</a>:   spi2x = <span class="keyword">true</span>; spr = 0; <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   82</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="spi__types_8h.html#a720de0c75c95328e740d889e93498a1fa4804ba90b831d3f49fec8d7cf0d8a9cf">SPI_CLOCK_DIV_4</a>:   spr = 0; <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   83</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="spi__types_8h.html#a720de0c75c95328e740d889e93498a1faed362f983772afe5dd3160b0f96f3b56">SPI_CLOCK_DIV_16</a>:  spr = 1; <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   84</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="spi__types_8h.html#a720de0c75c95328e740d889e93498a1fa920e7f1a9ad810c7bbc14f9506246aa9">SPI_CLOCK_DIV_64</a>:  spr = 2; <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   85</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="spi__types_8h.html#a720de0c75c95328e740d889e93498a1fabe662fb48fdb1486df522a5949cdd331">SPI_CLOCK_DIV_128</a>: spr = 3; <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   86</span>    }</div>
+<div class="line"><span class="lineno">   87</span> </div>
+<div class="line"><span class="lineno">   88</span>    spcr_val |= (spr &lt;&lt; SPR0);</div>
+<div class="line"><span class="lineno">   89</span>    SPCR = spcr_val;</div>
+<div class="line"><span class="lineno">   90</span> </div>
+<div class="line"><span class="lineno">   91</span>    <span class="keywordflow">if</span> (spi2x) SPSR |= (1 &lt;&lt; SPI2X);</div>
+<div class="line"><span class="lineno">   92</span>    <span class="keywordflow">else</span> SPSR &amp;= ~(1 &lt;&lt; SPI2X);</div>
+<div class="line"><span class="lineno">   93</span> </div>
+<div class="line"><span class="lineno">   94</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.config.use_interrupt) SPCR |= (1 &lt;&lt; SPIE);</div>
+<div class="line"><span class="lineno">   95</span>}</div>
+</div><!-- fragment -->
+<p class="reference">Referenciado(a) por <a class="el" href="group___s_p_i___i_n_i_t.html#gad9402c2ef9fda902cd461c0048fa5c89">spi_init()</a>.</p>
+<div class="dynheader">
+Esse é o diagrama das funções que utilizam essa função:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="group___s_p_i___i_n_t_e_r_n_a_l___p_r_o_t_o_s_ga449cd570fc792c387aacaef5c58a5d67_icgraph.svg" width="362" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ga71e76125efbe8d9f1dd3d519613cb652" name="ga71e76125efbe8d9f1dd3d519613cb652"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga71e76125efbe8d9f1dd3d519613cb652">&#9670;&#160;</a></span>spi_hw_deselect_slave()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spi_hw_deselect_slave </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sobe o pino de Chip Select do escravo atual. </p>
+
+<p class="definition">Definição na linha <a class="el" href="spi_8c_source.html#l00110">110</a> do arquivo <a class="el" href="spi_8c_source.html">spi.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  110</span>                                 {</div>
+<div class="line"><span class="lineno">  111</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.current_slave_id &gt;= <a class="code hl_define" href="group___s_p_i___c_o_n_f_i_g___c_o_n_s_t_s.html#ga8ac11978461f9a19f5c9584ed42cda15" title="Quantidade máxima de escravos gerenciáveis pelo driver.">SPI_MAX_SLAVES</a> || <a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.slaves[<a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.current_slave_id].port == <a class="code hl_define" href="spi__types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4" title="Definição padrão de NULL caso não esteja presente.">NULL</a>) <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  112</span>    *(<a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.slaves[<a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.current_slave_id].port) |= <a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.slaves[<a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.current_slave_id].pin_mask; <span class="comment">// CS = HIGH</span></div>
+<div class="line"><span class="lineno">  113</span>    <a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.current_slave_id = 255u;</div>
+<div class="line"><span class="lineno">  114</span>}</div>
+</div><!-- fragment -->
+<p class="reference">Referenciado(a) por <a class="el" href="spi_8c.html#af9cad97352f5ba9bbd800446131125a6">ISR()</a> e <a class="el" href="group___s_p_i___m_a_s_t_e_r.html#gaf49ef2f6f68799d64ef1beb73957fcd8">spi_deselect_device()</a>.</p>
+<div class="dynheader">
+Esse é o diagrama das funções que utilizam essa função:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="group___s_p_i___i_n_t_e_r_n_a_l___p_r_o_t_o_s_ga71e76125efbe8d9f1dd3d519613cb652_icgraph.svg" width="452" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ga4503da71a9cf86afaf14568b6013ee55" name="ga4503da71a9cf86afaf14568b6013ee55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4503da71a9cf86afaf14568b6013ee55">&#9670;&#160;</a></span>spi_hw_handle_transfer_complete()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spi_hw_handle_transfer_complete </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lógica central executada a cada byte concluído na ISR. </p>
+
+</div>
+</div>
+<a id="ga63ee202e30ff6afe6667c7155c63aa2d" name="ga63ee202e30ff6afe6667c7155c63aa2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga63ee202e30ff6afe6667c7155c63aa2d">&#9670;&#160;</a></span>spi_hw_init_pins()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spi_hw_init_pins </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structspi__config__t.html">spi_config_t</a> *</td>          <td class="paramname"><span class="paramname"><em>cfg</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Configura direção dos pinos MOSI/MISO/SCK/SS. </p>
+<p>Configura direção dos pinos MOSI/MISO/SCK/SS.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cfg</td><td>Ponteiro para as configurações de pinos. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definição na linha <a class="el" href="spi_8c_source.html#l00049">49</a> do arquivo <a class="el" href="spi_8c_source.html">spi.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   49</span>                                               {</div>
+<div class="line"><span class="lineno">   50</span>    <span class="keyword">volatile</span> uint8_t *ddr = cfg-&gt;<a class="code hl_variable" href="structspi__config__t.html#a5aea443c6087b1339a3845127d36ce43">pins</a>.<a class="code hl_variable" href="structspi__pins__t.html#abf81abe75f543a8f46d32c8ce25ef806">port</a> - 1; <span class="comment">// DDR é sempre PORT - 1 em AVR</span></div>
+<div class="line"><span class="lineno">   51</span>    </div>
+<div class="line"><span class="lineno">   52</span>    <span class="keywordflow">if</span> (cfg-&gt;<a class="code hl_variable" href="structspi__config__t.html#a34292db8def7b178a50899e578cdceaa">mode</a> == <a class="code hl_enumvalue" href="spi__types_8h.html#ac4b206a51636d91c5cffcbcee458c3cbae68a8adf6e5b67a7bdbe9526b15dae99">SPI_MODE_MASTER</a>) {</div>
+<div class="line"><span class="lineno">   53</span>        <span class="comment">// Master: SCK, MOSI e SS como saída. MISO como entrada.</span></div>
+<div class="line"><span class="lineno">   54</span>        *ddr |= (1 &lt;&lt; cfg-&gt;<a class="code hl_variable" href="structspi__config__t.html#a5aea443c6087b1339a3845127d36ce43">pins</a>.<a class="code hl_variable" href="structspi__pins__t.html#a37a8335d0c83cbca4c1c12dd42f157e8">mosi_pin</a>) | (1 &lt;&lt; cfg-&gt;<a class="code hl_variable" href="structspi__config__t.html#a5aea443c6087b1339a3845127d36ce43">pins</a>.<a class="code hl_variable" href="structspi__pins__t.html#a9be9892986b09d512930526dc6974a55">sck_pin</a>) | (1 &lt;&lt; cfg-&gt;<a class="code hl_variable" href="structspi__config__t.html#a5aea443c6087b1339a3845127d36ce43">pins</a>.<a class="code hl_variable" href="structspi__pins__t.html#ac2524ba7e470c1c691f489b17993ca0a">ss_pin</a>);</div>
+<div class="line"><span class="lineno">   55</span>        *ddr &amp;= ~(1 &lt;&lt; cfg-&gt;<a class="code hl_variable" href="structspi__config__t.html#a5aea443c6087b1339a3845127d36ce43">pins</a>.<a class="code hl_variable" href="structspi__pins__t.html#abedc8046e7bee2401a5b69b68df8969e">miso_pin</a>);</div>
+<div class="line"><span class="lineno">   56</span>        *(cfg-&gt;<a class="code hl_variable" href="structspi__config__t.html#a5aea443c6087b1339a3845127d36ce43">pins</a>.<a class="code hl_variable" href="structspi__pins__t.html#abf81abe75f543a8f46d32c8ce25ef806">port</a>) |= (1 &lt;&lt; cfg-&gt;<a class="code hl_variable" href="structspi__config__t.html#a5aea443c6087b1339a3845127d36ce43">pins</a>.<a class="code hl_variable" href="structspi__pins__t.html#ac2524ba7e470c1c691f489b17993ca0a">ss_pin</a>); <span class="comment">// Pull-up / High no SS</span></div>
+<div class="line"><span class="lineno">   57</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   58</span>        *ddr &amp;= ~((1 &lt;&lt; cfg-&gt;<a class="code hl_variable" href="structspi__config__t.html#a5aea443c6087b1339a3845127d36ce43">pins</a>.<a class="code hl_variable" href="structspi__pins__t.html#a37a8335d0c83cbca4c1c12dd42f157e8">mosi_pin</a>) | (1 &lt;&lt; cfg-&gt;<a class="code hl_variable" href="structspi__config__t.html#a5aea443c6087b1339a3845127d36ce43">pins</a>.<a class="code hl_variable" href="structspi__pins__t.html#a9be9892986b09d512930526dc6974a55">sck_pin</a>) | (1 &lt;&lt; cfg-&gt;<a class="code hl_variable" href="structspi__config__t.html#a5aea443c6087b1339a3845127d36ce43">pins</a>.<a class="code hl_variable" href="structspi__pins__t.html#ac2524ba7e470c1c691f489b17993ca0a">ss_pin</a>));</div>
+<div class="line"><span class="lineno">   59</span>        *ddr |= (1 &lt;&lt; cfg-&gt;<a class="code hl_variable" href="structspi__config__t.html#a5aea443c6087b1339a3845127d36ce43">pins</a>.<a class="code hl_variable" href="structspi__pins__t.html#abedc8046e7bee2401a5b69b68df8969e">miso_pin</a>);</div>
+<div class="line"><span class="lineno">   60</span>        *(cfg-&gt;<a class="code hl_variable" href="structspi__config__t.html#a5aea443c6087b1339a3845127d36ce43">pins</a>.<a class="code hl_variable" href="structspi__pins__t.html#abf81abe75f543a8f46d32c8ce25ef806">port</a>) |= (1 &lt;&lt; cfg-&gt;<a class="code hl_variable" href="structspi__config__t.html#a5aea443c6087b1339a3845127d36ce43">pins</a>.<a class="code hl_variable" href="structspi__pins__t.html#ac2524ba7e470c1c691f489b17993ca0a">ss_pin</a>); <span class="comment">// Pull-up no SS entrada</span></div>
+<div class="line"><span class="lineno">   61</span>    }</div>
+<div class="line"><span class="lineno">   62</span>}</div>
+</div><!-- fragment -->
+<p class="reference">Referenciado(a) por <a class="el" href="group___s_p_i___i_n_i_t.html#gad9402c2ef9fda902cd461c0048fa5c89">spi_init()</a>.</p>
+<div class="dynheader">
+Esse é o diagrama das funções que utilizam essa função:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="group___s_p_i___i_n_t_e_r_n_a_l___p_r_o_t_o_s_ga63ee202e30ff6afe6667c7155c63aa2d_icgraph.svg" width="336" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ga4ccfd9c55f4d277c322b1d2354d75c66" name="ga4ccfd9c55f4d277c322b1d2354d75c66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4ccfd9c55f4d277c322b1d2354d75c66">&#9670;&#160;</a></span>spi_hw_recover_collision()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spi_hw_recover_collision </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tenta recuperar o estado do driver após erro de colisão. </p>
+<p>Tenta recuperar o estado do driver após erro de colisão. </p>
+
+<p class="definition">Definição na linha <a class="el" href="spi_8c_source.html#l00133">133</a> do arquivo <a class="el" href="spi_8c_source.html">spi.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  133</span>                                    {</div>
+<div class="line"><span class="lineno">  134</span>    <span class="comment">// Limpa flag WCOL lendo SPSR e SPDR</span></div>
+<div class="line"><span class="lineno">  135</span>    (void)SPSR;</div>
+<div class="line"><span class="lineno">  136</span>    (void)<a class="code hl_define" href="group___s_p_i___h_w___m_a_c_r_o_s.html#ga256a16287e402998597f865791bd142c">SPI_HW_READ_DATA</a>();</div>
+<div class="line"><span class="lineno">  137</span>    <span class="comment">// Pode tentar reiniciar pipeline ou apenas sinalizar erro</span></div>
+<div class="line"><span class="lineno">  138</span>    <a class="code hl_variable" href="spi__internal_8h.html#a1fd14a1eeedd317516e19c6de4010a48" title="Estado atual do driver (definido no spi.c).">spi_state</a> = <a class="code hl_enumvalue" href="spi__internal_8h.html#ad1b95dd811b5effd79e4ae0872001158a88b2ab0cca7e4795a02876d28ae27510">SPI_STATE_ERROR_COLLISION</a>;</div>
+<div class="line"><span class="lineno">  139</span>}</div>
+</div><!-- fragment -->
+<p class="reference">Referenciado(a) por <a class="el" href="spi_8c.html#af9cad97352f5ba9bbd800446131125a6">ISR()</a>.</p>
+<div class="dynheader">
+Esse é o diagrama das funções que utilizam essa função:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="group___s_p_i___i_n_t_e_r_n_a_l___p_r_o_t_o_s_ga4ccfd9c55f4d277c322b1d2354d75c66_icgraph.svg" width="270" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="gaf444e00ab7250d625bc670dd4e21328c" name="gaf444e00ab7250d625bc670dd4e21328c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf444e00ab7250d625bc670dd4e21328c">&#9670;&#160;</a></span>spi_hw_select_slave()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spi_hw_select_slave </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Controle de hardware para Chip Select. </p>
+<p>Controle de hardware para Chip Select.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>ID do escravo (0 a SPI_MAX_SLAVES-1). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definição na linha <a class="el" href="spi_8c_source.html#l00101">101</a> do arquivo <a class="el" href="spi_8c_source.html">spi.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  101</span>                                     {</div>
+<div class="line"><span class="lineno">  102</span>    <span class="keywordflow">if</span> (<span class="keywordtype">id</span> &gt;= <a class="code hl_define" href="group___s_p_i___c_o_n_f_i_g___c_o_n_s_t_s.html#ga8ac11978461f9a19f5c9584ed42cda15" title="Quantidade máxima de escravos gerenciáveis pelo driver.">SPI_MAX_SLAVES</a> || <a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.slaves[<span class="keywordtype">id</span>].port == <a class="code hl_define" href="spi__types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4" title="Definição padrão de NULL caso não esteja presente.">NULL</a>) <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  103</span>    *(<a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.slaves[id].port) &amp;= ~(<a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.slaves[<span class="keywordtype">id</span>].pin_mask); <span class="comment">// CS = LOW</span></div>
+<div class="line"><span class="lineno">  104</span>    <a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.current_slave_id = id;</div>
+<div class="line"><span class="lineno">  105</span>}</div>
+</div><!-- fragment -->
+<p class="reference">Referenciado(a) por <a class="el" href="group___s_p_i___m_a_s_t_e_r.html#gab2d834030e3fe4c4ffc10253b35882e3">spi_select_device()</a> e <a class="el" href="group___s_p_i___a_s_y_n_c.html#ga5667e88be47d87c48a22117c8a8c3cb5">spi_write_async()</a>.</p>
+<div class="dynheader">
+Esse é o diagrama das funções que utilizam essa função:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="group___s_p_i___i_n_t_e_r_n_a_l___p_r_o_t_o_s_gaf444e00ab7250d625bc670dd4e21328c_icgraph.svg" width="580" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ga89eb00084e1a7eba2bd746eed8fd1738" name="ga89eb00084e1a7eba2bd746eed8fd1738"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga89eb00084e1a7eba2bd746eed8fd1738">&#9670;&#160;</a></span>spi_hw_slave_preload()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spi_hw_slave_preload </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>dummy</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Carrega dado no SPDR sem disparar clock (Modo Slave). </p>
+
+</div>
+</div>
+<a id="ga30307a7e6e65f6a80a803d724b09f4f3" name="ga30307a7e6e65f6a80a803d724b09f4f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga30307a7e6e65f6a80a803d724b09f4f3">&#9670;&#160;</a></span>spi_hw_start_tx_pipeline()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spi_hw_start_tx_pipeline </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inicia o primeiro byte de uma sequência de transmissão. </p>
+<p>Inicia o primeiro byte de uma sequência de transmissão.</p>
+<dl class="section return"><dt>Retorna</dt><dd>true se um byte foi disparado para o hardware. </dd></dl>
+
+<p class="definition">Definição na linha <a class="el" href="spi_8c_source.html#l00120">120</a> do arquivo <a class="el" href="spi_8c_source.html">spi.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  120</span>                                    {</div>
+<div class="line"><span class="lineno">  121</span>    uint8_t byte_to_send;</div>
+<div class="line"><span class="lineno">  122</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="group___s_p_i___b_u_f_f_e_r___i_n_t_e_r_n_a_l.html#ga9eb832ea6e4deb5d067f69c9192b0b32" title="Remove um byte da fila de transmissão.">spi_tx_dequeue</a>(&amp;byte_to_send)) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  123</span>    <a class="code hl_define" href="group___s_p_i___h_w___m_a_c_r_o_s.html#ga3b213e86f2a10a2c3198e51502aec25e">SPI_HW_WRITE_DATA</a>(byte_to_send);</div>
+<div class="line"><span class="lineno">  124</span>    <a class="code hl_variable" href="spi__internal_8h.html#a1fd14a1eeedd317516e19c6de4010a48" title="Estado atual do driver (definido no spi.c).">spi_state</a> = <a class="code hl_enumvalue" href="spi__internal_8h.html#ad1b95dd811b5effd79e4ae0872001158ace71c6d6db4fafc3d9c450d9637eb96a">SPI_STATE_TX_ACTIVE</a>;</div>
+<div class="line"><span class="lineno">  125</span>    <a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.busy = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  126</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  127</span>}</div>
+</div><!-- fragment -->
+<p class="reference">Referenciado(a) por <a class="el" href="group___s_p_i___a_s_y_n_c.html#ga5667e88be47d87c48a22117c8a8c3cb5">spi_write_async()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções utilizadas por essa função:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="group___s_p_i___i_n_t_e_r_n_a_l___p_r_o_t_o_s_ga30307a7e6e65f6a80a803d724b09f4f3_cgraph.svg" width="479" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Esse é o diagrama das funções que utilizam essa função:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="group___s_p_i___i_n_t_e_r_n_a_l___p_r_o_t_o_s_ga30307a7e6e65f6a80a803d724b09f4f3_icgraph.svg" width="592" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- HTML footer for doxygen 1.16.1-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">
+      Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 | 
+      Desenvolvido por <b>Tiago Henrique dos Santos - Ci&ecirc;ncia El&eacute;trica</b>
+    </li>
+  </ul>
+</div>
+</body>
+</html>

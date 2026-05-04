@@ -1,0 +1,478 @@
+<!-- HTML header for doxygen 1.16.1-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta charset="utf-8">
+<title>Biblioteca SPI AVR: Referência do Arquivo inc/spi_types.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="custom_styles.css" rel="stylesheet" type="text/css" />
+<link href="custom_styles.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+  <table cellspacing="0" cellpadding="0" style="width: 100%; border: none;">
+   <tbody>
+   <tr style="height: 80px;"> 
+    <td id="projectlogo" style="width: 80px; padding: 10px;">
+      <!-- O Doxygen tira o caminho 'img/' ao copiar, então usamos apenas o nome -->
+      <img alt="Logo" src="FIGURA2.png" style="height: 60px !important; width: auto !important; display: block;"/>
+    </td>
+    <td id="projectalign" style="padding-left: 0.5em; vertical-align: middle;">
+     <div id="projectname" style="font-size: 1.6em; font-weight: bold;">Driver SPI - YouTube: Ci&ecirc;ncia El&eacute;trica</div>
+     <div id="projectbrief" style="font-size: 1em; opacity: 0.8;">Biblioteca Otimizada para Microcontroladores AVR</div>
+    </td>
+   </tr>
+   </tbody>
+  </table>
+</div>
+<!-- Gerado por Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Busca',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('spi__types_8h.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Referência do Arquivo spi_types.h</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Definições de tipos, enums e estruturas para a biblioteca SPI.  
+<a href="#details">Mais...</a></p>
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &lt;avr/io.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Gráfico de dependência de inclusões para spi_types.h:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="spi__types_8h__incl.svg" width="262" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Este grafo mostra quais arquivos estão direta ou indiretamente relacionados com esse arquivo:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="spi__types_8h__dep__incl.svg" width="856" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<p><a href="spi__types_8h_source.html">Ir para o código-fonte desse arquivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Estruturas de Dados</h2></td></tr>
+<tr class="memitem:spi_5Fpins_5Ft" id="r_spi_5Fpins_5Ft"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structspi__pins__t.html">spi_pins_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mapeamento de hardware para os pinos do barramento.  <a href="structspi__pins__t.html#details">Mais...</a><br /></td></tr>
+<tr class="memitem:spi_5Fconfig_5Ft" id="r_spi_5Fconfig_5Ft"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structspi__config__t.html">spi_config_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estrutura de configuração para inicialização do SPI.  <a href="structspi__config__t.html#details">Mais...</a><br /></td></tr>
+<tr class="memitem:spi_5Fhandle_5Ft" id="r_spi_5Fhandle_5Ft"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structspi__handle__t.html">spi_handle_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estrutura de controle (Handle) do driver SPI.  <a href="structspi__handle__t.html#details">Mais...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+Definições e Macros</h2></td></tr>
+<tr class="memitem:a070d2ce7b6bb7e5c05602aa8c308d0c4" id="r_a070d2ce7b6bb7e5c05602aa8c308d0c4"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>&#160;&#160;&#160;((void *)0)</td></tr>
+<tr class="memdesc:a070d2ce7b6bb7e5c05602aa8c308d0c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definição padrão de NULL caso não esteja presente.  <br /></td></tr>
+<tr class="memitem:gaeb11fa6162c55c5a74ec27b0551ae82b" id="r_gaeb11fa6162c55c5a74ec27b0551ae82b"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="group___s_p_i___c_o_n_f_i_g___c_o_n_s_t_s.html#gaeb11fa6162c55c5a74ec27b0551ae82b">SPI_TX_BUFFER_SIZE</a>&#160;&#160;&#160;32u</td></tr>
+<tr class="memdesc:gaeb11fa6162c55c5a74ec27b0551ae82b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tamanho do buffer de transmissão (TX).  <br /></td></tr>
+<tr class="memitem:ga5ba945af79c56dd7edc827c5c354b651" id="r_ga5ba945af79c56dd7edc827c5c354b651"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="group___s_p_i___c_o_n_f_i_g___c_o_n_s_t_s.html#ga5ba945af79c56dd7edc827c5c354b651">SPI_RX_BUFFER_SIZE</a>&#160;&#160;&#160;32u</td></tr>
+<tr class="memdesc:ga5ba945af79c56dd7edc827c5c354b651"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tamanho do buffer de recepção (RX).  <br /></td></tr>
+<tr class="memitem:ga8ac11978461f9a19f5c9584ed42cda15" id="r_ga8ac11978461f9a19f5c9584ed42cda15"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="group___s_p_i___c_o_n_f_i_g___c_o_n_s_t_s.html#ga8ac11978461f9a19f5c9584ed42cda15">SPI_MAX_SLAVES</a>&#160;&#160;&#160;4u</td></tr>
+<tr class="memdesc:ga8ac11978461f9a19f5c9584ed42cda15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Quantidade máxima de escravos gerenciáveis pelo driver.  <br /></td></tr>
+<tr id="define-members-0" class="groupHeader"><td colspan="2"><div class="groupHeader">Macros de Status</div></td></tr>
+<tr class="memitem:a4da7a261ad31fccef0ee929b006f9e7e" id="r_a4da7a261ad31fccef0ee929b006f9e7e"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a4da7a261ad31fccef0ee929b006f9e7e">SPI_BUFFER_MASK</a>(size)</td></tr>
+<tr class="memdesc:a4da7a261ad31fccef0ee929b006f9e7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Máscara para cálculo de índice circular.  <br /></td></tr>
+<tr class="memitem:a3b064959d09fcba5c4f9c303353022fb" id="r_a3b064959d09fcba5c4f9c303353022fb"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a3b064959d09fcba5c4f9c303353022fb">SPI_TX_AVAILABLE</a>()</td></tr>
+<tr class="memdesc:a3b064959d09fcba5c4f9c303353022fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna a quantidade de bytes ocupados no buffer TX.  <br /></td></tr>
+<tr class="memitem:a7c0268b9495164127b74cadd3b5a6496" id="r_a7c0268b9495164127b74cadd3b5a6496"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a7c0268b9495164127b74cadd3b5a6496">SPI_RX_AVAILABLE</a>()</td></tr>
+<tr class="memdesc:a7c0268b9495164127b74cadd3b5a6496"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna a quantidade de bytes prontos para leitura no buffer RX.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Definições de Tipos</h2></td></tr>
+<tr class="memitem:aedf1a7f0d28d6a254da6f23757031a5a" id="r_aedf1a7f0d28d6a254da6f23757031a5a"><td class="memItemLeft">typedef enum <a class="el" href="#a720de0c75c95328e740d889e93498a1f">spi_clock_div_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#aedf1a7f0d28d6a254da6f23757031a5a">SPI_ORDER_LSB_FIRST</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerações</h2></td></tr>
+<tr class="memitem:ac4b206a51636d91c5cffcbcee458c3cb" id="r_ac4b206a51636d91c5cffcbcee458c3cb"><td class="memItemLeft">enum &#160;</td><td class="memItemRight"><a class="el" href="#ac4b206a51636d91c5cffcbcee458c3cb">spi_mode_t</a> { <br />
+&#160;&#160;<a class="el" href="#ac4b206a51636d91c5cffcbcee458c3cbae68a8adf6e5b67a7bdbe9526b15dae99">SPI_MODE_MASTER</a> = 1
+, <br />
+&#160;&#160;<a class="el" href="#ac4b206a51636d91c5cffcbcee458c3cbad1131ed33ad43ab3f667070b04454439">SPI_MODE_SLAVE</a> = 0
+<br />
+ }</td></tr>
+<tr class="memdesc:ac4b206a51636d91c5cffcbcee458c3cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modos de operação do periférico SPI.  <a href="#ac4b206a51636d91c5cffcbcee458c3cb">Mais...</a><br /></td></tr>
+<tr class="memitem:a720de0c75c95328e740d889e93498a1f" id="r_a720de0c75c95328e740d889e93498a1f"><td class="memItemLeft">enum &#160;</td><td class="memItemRight"><a class="el" href="#a720de0c75c95328e740d889e93498a1f">spi_clock_div_t</a> { <br />
+&#160;&#160;<a class="el" href="#a720de0c75c95328e740d889e93498a1fa4804ba90b831d3f49fec8d7cf0d8a9cf">SPI_CLOCK_DIV_4</a> = 0b000
+, <br />
+&#160;&#160;<a class="el" href="#a720de0c75c95328e740d889e93498a1faed362f983772afe5dd3160b0f96f3b56">SPI_CLOCK_DIV_16</a> = 0b001
+, <br />
+&#160;&#160;<a class="el" href="#a720de0c75c95328e740d889e93498a1fa920e7f1a9ad810c7bbc14f9506246aa9">SPI_CLOCK_DIV_64</a> = 0b010
+, <br />
+&#160;&#160;<a class="el" href="#a720de0c75c95328e740d889e93498a1fabe662fb48fdb1486df522a5949cdd331">SPI_CLOCK_DIV_128</a> = 0b011
+, <br />
+&#160;&#160;<a class="el" href="#a720de0c75c95328e740d889e93498a1fa7b84901cd71a8099088e62358cb1b812">SPI_CLOCK_DIV_2</a> = 0b100
+<br />
+ }</td></tr>
+<tr class="memdesc:a720de0c75c95328e740d889e93498a1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opções de prescaler para o clock SPI (Modo Master).  <a href="#a720de0c75c95328e740d889e93498a1f">Mais...</a><br /></td></tr>
+<tr class="memitem:a856ecadf3d7fe18c4fc3ae56500f8982" id="r_a856ecadf3d7fe18c4fc3ae56500f8982"><td class="memItemLeft">enum &#160;</td><td class="memItemRight"><a class="el" href="#a856ecadf3d7fe18c4fc3ae56500f8982">spi_status_t</a> { <br />
+&#160;&#160;<a class="el" href="#a856ecadf3d7fe18c4fc3ae56500f8982a2b1fe832bba9b2799c09ddec72f7df75">SPI_OK</a> = 0
+, <br />
+&#160;&#160;<a class="el" href="#a856ecadf3d7fe18c4fc3ae56500f8982a77af10511cd7c60df95c66e904a13643">SPI_BUSY</a> = -1
+, <br />
+&#160;&#160;<a class="el" href="#a856ecadf3d7fe18c4fc3ae56500f8982ab445f59f608d2533ad8b4d8ba1eaa46b">SPI_TIMEOUT</a> = -2
+, <br />
+&#160;&#160;<a class="el" href="#a856ecadf3d7fe18c4fc3ae56500f8982a4bdafb0ff3f238727aebdcaa05cb75dc">SPI_OVERFLOW</a> = -3
+, <br />
+&#160;&#160;<a class="el" href="#a856ecadf3d7fe18c4fc3ae56500f8982aa3a5d71fc3d01697c740b1ee5e078004">SPI_NO_SLAVE</a> = -4
+, <br />
+&#160;&#160;<a class="el" href="#a856ecadf3d7fe18c4fc3ae56500f8982a35f95d121dd4776640f41dec3a20b67f">SPI_INVALID_PARAM</a> = -5
+<br />
+ }</td></tr>
+<tr class="memdesc:a856ecadf3d7fe18c4fc3ae56500f8982"><td class="mdescLeft">&#160;</td><td class="mdescRight">Códigos de status e erros das operações SPI.  <a href="#a856ecadf3d7fe18c4fc3ae56500f8982">Mais...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variáveis</h2></td></tr>
+<tr class="memitem:a4d456f5e22be0581636447731caa2e83" id="r_a4d456f5e22be0581636447731caa2e83"><td class="memItemLeft"><a class="el" href="structspi__handle__t.html">spi_handle_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#a4d456f5e22be0581636447731caa2e83">spi</a></td></tr>
+<tr class="memdesc:a4d456f5e22be0581636447731caa2e83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instância única do driver SPI.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Definições de tipos, enums e estruturas para a biblioteca SPI. </p>
+<p>Projetada para microcontroladores AVR (ATmega48/88/168/328). Foca em baixo consumo de recursos e segurança em ambientes com interrupção.</p>
+<dl class="section note"><dt>Observação</dt><dd>Tamanhos de buffer devem ser potências de 2 para otimização de performance.</dd></dl>
+<dl class="section author"><dt>Autor</dt><dd>Engenheiro Embarcado </dd></dl>
+<dl class="section date"><dt>Data</dt><dd>2025-2026 </dd></dl>
+
+<p class="definition">Definição no arquivo <a class="el" href="spi__types_8h_source.html">spi_types.h</a>.</p>
+</div><a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Definições e macros</h2>
+<a id="a070d2ce7b6bb7e5c05602aa8c308d0c4" name="a070d2ce7b6bb7e5c05602aa8c308d0c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a070d2ce7b6bb7e5c05602aa8c308d0c4">&#9670;&#160;</a></span>NULL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NULL&#160;&#160;&#160;((void *)0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definição padrão de NULL caso não esteja presente. </p>
+<dl class="section examples"><dt>Exemplos</dt><dd><a class="el" href="example2_8c-example.html#_a5">example2.c</a> e <a class="el" href="example3_8c-example.html#_a8">example3.c</a>.</dd>
+</dl>
+
+<p class="definition">Definição na linha <a class="el" href="spi__types_8h_source.html#l00022">22</a> do arquivo <a class="el" href="spi__types_8h_source.html">spi_types.h</a>.</p>
+
+<p class="reference">Referenciado(a) por <a class="el" href="example2_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main()</a>, <a class="el" href="group___s_p_i___i_n_t_e_r_n_a_l___p_r_o_t_o_s.html#ga71e76125efbe8d9f1dd3d519613cb652">spi_hw_deselect_slave()</a> e <a class="el" href="group___s_p_i___i_n_t_e_r_n_a_l___p_r_o_t_o_s.html#gaf444e00ab7250d625bc670dd4e21328c">spi_hw_select_slave()</a>.</p>
+
+</div>
+</div>
+<a id="a4da7a261ad31fccef0ee929b006f9e7e" name="a4da7a261ad31fccef0ee929b006f9e7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4da7a261ad31fccef0ee929b006f9e7e">&#9670;&#160;</a></span>SPI_BUFFER_MASK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPI_BUFFER_MASK</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>size</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valor:</b><div class="fragment"><div class="line">((size) - 1u)</div>
+</div><!-- fragment -->
+<p>Máscara para cálculo de índice circular. </p>
+
+<p class="definition">Definição na linha <a class="el" href="spi__types_8h_source.html#l00168">168</a> do arquivo <a class="el" href="spi__types_8h_source.html">spi_types.h</a>.</p>
+
+</div>
+</div>
+<a id="a7c0268b9495164127b74cadd3b5a6496" name="a7c0268b9495164127b74cadd3b5a6496"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c0268b9495164127b74cadd3b5a6496">&#9670;&#160;</a></span>SPI_RX_AVAILABLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPI_RX_AVAILABLE</td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valor:</b><div class="fragment"><div class="line">((uint8_t)(<a class="code hl_variable" href="#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.rx_head - <a class="code hl_variable" href="#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.rx_tail))</div>
+</div><!-- fragment -->
+<p>Retorna a quantidade de bytes prontos para leitura no buffer RX. </p>
+
+<p class="definition">Definição na linha <a class="el" href="spi__types_8h_source.html#l00174">174</a> do arquivo <a class="el" href="spi__types_8h_source.html">spi_types.h</a>.</p>
+
+</div>
+</div>
+<a id="a3b064959d09fcba5c4f9c303353022fb" name="a3b064959d09fcba5c4f9c303353022fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b064959d09fcba5c4f9c303353022fb">&#9670;&#160;</a></span>SPI_TX_AVAILABLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPI_TX_AVAILABLE</td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valor:</b><div class="fragment"><div class="line">((uint8_t)(<a class="code hl_variable" href="#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.tx_head - <a class="code hl_variable" href="#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.tx_tail))</div>
+</div><!-- fragment -->
+<p>Retorna a quantidade de bytes ocupados no buffer TX. </p>
+
+<p class="definition">Definição na linha <a class="el" href="spi__types_8h_source.html#l00171">171</a> do arquivo <a class="el" href="spi__types_8h_source.html">spi_types.h</a>.</p>
+
+</div>
+</div>
+<a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Definições dos tipos</h2>
+<a id="aedf1a7f0d28d6a254da6f23757031a5a" name="aedf1a7f0d28d6a254da6f23757031a5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedf1a7f0d28d6a254da6f23757031a5a">&#9670;&#160;</a></span>SPI_ORDER_LSB_FIRST</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef  enum <a class="el" href="#a720de0c75c95328e740d889e93498a1f">spi_clock_div_t</a> <a class="el" href="#aedf1a7f0d28d6a254da6f23757031a5a">SPI_ORDER_LSB_FIRST</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valor inicial:</b><div class="fragment"><div class="line">= 1</div>
+<div class="line">} spi_bit_order_t</div>
+</div><!-- fragment --><p>&lt; Bit mais significativo enviado primeiro. Bit menos significativo enviado primeiro. </p>
+
+</div>
+</div>
+<a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">Enumerações</h2>
+<a id="a720de0c75c95328e740d889e93498a1f" name="a720de0c75c95328e740d889e93498a1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a720de0c75c95328e740d889e93498a1f">&#9670;&#160;</a></span>spi_clock_div_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a720de0c75c95328e740d889e93498a1f">spi_clock_div_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Opções de prescaler para o clock SPI (Modo Master). </p>
+<p>Os valores mapeiam a combinação dos bits SPR1:0 e SPI2X. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumeradores</th></tr><tr><td class="fieldname"><a id="a720de0c75c95328e740d889e93498a1fa4804ba90b831d3f49fec8d7cf0d8a9cf" name="a720de0c75c95328e740d889e93498a1fa4804ba90b831d3f49fec8d7cf0d8a9cf"></a>SPI_CLOCK_DIV_4&#160;</td><td class="fielddoc"><p>fosc / 4 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a720de0c75c95328e740d889e93498a1faed362f983772afe5dd3160b0f96f3b56" name="a720de0c75c95328e740d889e93498a1faed362f983772afe5dd3160b0f96f3b56"></a>SPI_CLOCK_DIV_16&#160;</td><td class="fielddoc"><p>fosc / 16 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a720de0c75c95328e740d889e93498a1fa920e7f1a9ad810c7bbc14f9506246aa9" name="a720de0c75c95328e740d889e93498a1fa920e7f1a9ad810c7bbc14f9506246aa9"></a>SPI_CLOCK_DIV_64&#160;</td><td class="fielddoc"><p>fosc / 64 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a720de0c75c95328e740d889e93498a1fabe662fb48fdb1486df522a5949cdd331" name="a720de0c75c95328e740d889e93498a1fabe662fb48fdb1486df522a5949cdd331"></a>SPI_CLOCK_DIV_128&#160;</td><td class="fielddoc"><p>fosc / 128 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a720de0c75c95328e740d889e93498a1fa7b84901cd71a8099088e62358cb1b812" name="a720de0c75c95328e740d889e93498a1fa7b84901cd71a8099088e62358cb1b812"></a>SPI_CLOCK_DIV_2&#160;</td><td class="fielddoc"><p>fosc / 2 (Modo Double Speed) </p>
+</td></tr>
+</table>
+
+<p class="definition">Definição na linha <a class="el" href="spi__types_8h_source.html#l00066">66</a> do arquivo <a class="el" href="spi__types_8h_source.html">spi_types.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   66</span>             {</div>
+<div class="line"><span class="lineno">   67</span>    <a class="code hl_enumvalue" href="#a720de0c75c95328e740d889e93498a1fa4804ba90b831d3f49fec8d7cf0d8a9cf">SPI_CLOCK_DIV_4</a>     = 0b000,    <span class="comment">/**&lt; fosc / 4   */</span></div>
+<div class="line"><span class="lineno">   68</span>    <a class="code hl_enumvalue" href="#a720de0c75c95328e740d889e93498a1faed362f983772afe5dd3160b0f96f3b56">SPI_CLOCK_DIV_16</a>    = 0b001,    <span class="comment">/**&lt; fosc / 16  */</span></div>
+<div class="line"><span class="lineno">   69</span>    <a class="code hl_enumvalue" href="#a720de0c75c95328e740d889e93498a1fa920e7f1a9ad810c7bbc14f9506246aa9">SPI_CLOCK_DIV_64</a>    = 0b010,    <span class="comment">/**&lt; fosc / 64  */</span></div>
+<div class="line"><span class="lineno">   70</span>    <a class="code hl_enumvalue" href="#a720de0c75c95328e740d889e93498a1fabe662fb48fdb1486df522a5949cdd331">SPI_CLOCK_DIV_128</a>   = 0b011,    <span class="comment">/**&lt; fosc / 128 */</span></div>
+<div class="line"><span class="lineno">   71</span>    <a class="code hl_enumvalue" href="#a720de0c75c95328e740d889e93498a1fa7b84901cd71a8099088e62358cb1b812">SPI_CLOCK_DIV_2</a>     = 0b100     <span class="comment">/**&lt; fosc / 2 (Modo Double Speed) */</span></div>
+<div class="line"><span class="lineno">   72</span>} <a class="code hl_enumeration" href="#a720de0c75c95328e740d889e93498a1f" title="Opções de prescaler para o clock SPI (Modo Master).">spi_clock_div_t</a></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac4b206a51636d91c5cffcbcee458c3cb" name="ac4b206a51636d91c5cffcbcee458c3cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4b206a51636d91c5cffcbcee458c3cb">&#9670;&#160;</a></span>spi_mode_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ac4b206a51636d91c5cffcbcee458c3cb">spi_mode_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Modos de operação do periférico SPI. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumeradores</th></tr><tr><td class="fieldname"><a id="ac4b206a51636d91c5cffcbcee458c3cbae68a8adf6e5b67a7bdbe9526b15dae99" name="ac4b206a51636d91c5cffcbcee458c3cbae68a8adf6e5b67a7bdbe9526b15dae99"></a>SPI_MODE_MASTER&#160;</td><td class="fielddoc"><p>Mestre: gera o sinal de clock e controla o CS. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac4b206a51636d91c5cffcbcee458c3cbad1131ed33ad43ab3f667070b04454439" name="ac4b206a51636d91c5cffcbcee458c3cbad1131ed33ad43ab3f667070b04454439"></a>SPI_MODE_SLAVE&#160;</td><td class="fielddoc"><p>Escravo: reage ao sinal de clock externo. </p>
+</td></tr>
+</table>
+
+<p class="definition">Definição na linha <a class="el" href="spi__types_8h_source.html#l00057">57</a> do arquivo <a class="el" href="spi__types_8h_source.html">spi_types.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   57</span>             {</div>
+<div class="line"><span class="lineno">   58</span>    <a class="code hl_enumvalue" href="#ac4b206a51636d91c5cffcbcee458c3cbae68a8adf6e5b67a7bdbe9526b15dae99">SPI_MODE_MASTER</a> = 1,    <span class="comment">/**&lt; Mestre: gera o sinal de clock e controla o CS. */</span></div>
+<div class="line"><span class="lineno">   59</span>    <a class="code hl_enumvalue" href="#ac4b206a51636d91c5cffcbcee458c3cbad1131ed33ad43ab3f667070b04454439">SPI_MODE_SLAVE</a>  = 0     <span class="comment">/**&lt; Escravo: reage ao sinal de clock externo. */</span></div>
+<div class="line"><span class="lineno">   60</span>} <a class="code hl_enumeration" href="#ac4b206a51636d91c5cffcbcee458c3cb" title="Modos de operação do periférico SPI.">spi_mode_t</a>;</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a856ecadf3d7fe18c4fc3ae56500f8982" name="a856ecadf3d7fe18c4fc3ae56500f8982"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a856ecadf3d7fe18c4fc3ae56500f8982">&#9670;&#160;</a></span>spi_status_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a856ecadf3d7fe18c4fc3ae56500f8982">spi_status_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Códigos de status e erros das operações SPI. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumeradores</th></tr><tr><td class="fieldname"><a id="a856ecadf3d7fe18c4fc3ae56500f8982a2b1fe832bba9b2799c09ddec72f7df75" name="a856ecadf3d7fe18c4fc3ae56500f8982a2b1fe832bba9b2799c09ddec72f7df75"></a>SPI_OK&#160;</td><td class="fielddoc"><p>Operação concluída com sucesso. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a856ecadf3d7fe18c4fc3ae56500f8982a77af10511cd7c60df95c66e904a13643" name="a856ecadf3d7fe18c4fc3ae56500f8982a77af10511cd7c60df95c66e904a13643"></a>SPI_BUSY&#160;</td><td class="fielddoc"><p>Recurso ocupado ou transmissão em curso. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a856ecadf3d7fe18c4fc3ae56500f8982ab445f59f608d2533ad8b4d8ba1eaa46b" name="a856ecadf3d7fe18c4fc3ae56500f8982ab445f59f608d2533ad8b4d8ba1eaa46b"></a>SPI_TIMEOUT&#160;</td><td class="fielddoc"><p>Tempo limite de espera excedido. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a856ecadf3d7fe18c4fc3ae56500f8982a4bdafb0ff3f238727aebdcaa05cb75dc" name="a856ecadf3d7fe18c4fc3ae56500f8982a4bdafb0ff3f238727aebdcaa05cb75dc"></a>SPI_OVERFLOW&#160;</td><td class="fielddoc"><p>Buffer cheio, dados foram perdidos. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a856ecadf3d7fe18c4fc3ae56500f8982aa3a5d71fc3d01697c740b1ee5e078004" name="a856ecadf3d7fe18c4fc3ae56500f8982aa3a5d71fc3d01697c740b1ee5e078004"></a>SPI_NO_SLAVE&#160;</td><td class="fielddoc"><p>ID de escravo não registrado. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a856ecadf3d7fe18c4fc3ae56500f8982a35f95d121dd4776640f41dec3a20b67f" name="a856ecadf3d7fe18c4fc3ae56500f8982a35f95d121dd4776640f41dec3a20b67f"></a>SPI_INVALID_PARAM&#160;</td><td class="fielddoc"><p>Parâmetro de configuração inválido. </p>
+</td></tr>
+</table>
+
+<p class="definition">Definição na linha <a class="el" href="spi__types_8h_source.html#l00085">85</a> do arquivo <a class="el" href="spi__types_8h_source.html">spi_types.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   85</span>             {</div>
+<div class="line"><span class="lineno">   86</span>    <a class="code hl_enumvalue" href="#a856ecadf3d7fe18c4fc3ae56500f8982a2b1fe832bba9b2799c09ddec72f7df75">SPI_OK</a>              = 0,        <span class="comment">/**&lt; Operação concluída com sucesso. */</span></div>
+<div class="line"><span class="lineno">   87</span>    <a class="code hl_enumvalue" href="#a856ecadf3d7fe18c4fc3ae56500f8982a77af10511cd7c60df95c66e904a13643">SPI_BUSY</a>            = -1,       <span class="comment">/**&lt; Recurso ocupado ou transmissão em curso. */</span></div>
+<div class="line"><span class="lineno">   88</span>    <a class="code hl_enumvalue" href="#a856ecadf3d7fe18c4fc3ae56500f8982ab445f59f608d2533ad8b4d8ba1eaa46b">SPI_TIMEOUT</a>         = -2,       <span class="comment">/**&lt; Tempo limite de espera excedido. */</span></div>
+<div class="line"><span class="lineno">   89</span>    <a class="code hl_enumvalue" href="#a856ecadf3d7fe18c4fc3ae56500f8982a4bdafb0ff3f238727aebdcaa05cb75dc">SPI_OVERFLOW</a>        = -3,       <span class="comment">/**&lt; Buffer cheio, dados foram perdidos. */</span></div>
+<div class="line"><span class="lineno">   90</span>    <a class="code hl_enumvalue" href="#a856ecadf3d7fe18c4fc3ae56500f8982aa3a5d71fc3d01697c740b1ee5e078004">SPI_NO_SLAVE</a>        = -4,       <span class="comment">/**&lt; ID de escravo não registrado. */</span></div>
+<div class="line"><span class="lineno">   91</span>    <a class="code hl_enumvalue" href="#a856ecadf3d7fe18c4fc3ae56500f8982a35f95d121dd4776640f41dec3a20b67f">SPI_INVALID_PARAM</a>   = -5        <span class="comment">/**&lt; Parâmetro de configuração inválido. */</span></div>
+<div class="line"><span class="lineno">   92</span>} <a class="code hl_enumeration" href="#a856ecadf3d7fe18c4fc3ae56500f8982" title="Códigos de status e erros das operações SPI.">spi_status_t</a>;</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Variáveis</h2>
+<a id="a4d456f5e22be0581636447731caa2e83" name="a4d456f5e22be0581636447731caa2e83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d456f5e22be0581636447731caa2e83">&#9670;&#160;</a></span>spi</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structspi__handle__t.html">spi_handle_t</a> spi</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Instância única do driver SPI. </p>
+<p>Instância única do driver SPI.</p>
+<p>Armazena todo o contexto operacional, incluindo buffers e configurações. </p>
+
+<p class="definition">Definição na linha <a class="el" href="spi_8c_source.html#l00023">23</a> do arquivo <a class="el" href="spi_8c_source.html">spi.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   23</span>                 {</div>
+<div class="line"><span class="lineno">   24</span>    .config = {0},</div>
+<div class="line"><span class="lineno">   25</span>    .busy = <span class="keyword">false</span>,</div>
+<div class="line"><span class="lineno">   26</span>    .multi_cs_active = <span class="keyword">false</span>,</div>
+<div class="line"><span class="lineno">   27</span>    .tx_head = 0, .tx_tail = 0,</div>
+<div class="line"><span class="lineno">   28</span>    .rx_head = 0, .rx_tail = 0,</div>
+<div class="line"><span class="lineno">   29</span>    .tx_overflow = <span class="keyword">false</span>, .rx_overflow = <span class="keyword">false</span>,</div>
+<div class="line"><span class="lineno">   30</span>    .current_slave_id = 255u,</div>
+<div class="line"><span class="lineno">   31</span>    .timeout_default = 250u</div>
+<div class="line"><span class="lineno">   32</span>};</div>
+</div><!-- fragment -->
+<p class="reference">Referenciado(a) por <a class="el" href="spi_8c.html#af9cad97352f5ba9bbd800446131125a6">ISR()</a>, <a class="el" href="group___s_p_i___m_a_s_t_e_r.html#gaf49ef2f6f68799d64ef1beb73957fcd8">spi_deselect_device()</a>, <a class="el" href="group___s_p_i___a_s_y_n_c.html#gac03f9a6e554cd5703680083142752b4e">spi_had_overflow()</a>, <a class="el" href="group___s_p_i___i_n_t_e_r_n_a_l___p_r_o_t_o_s.html#ga449cd570fc792c387aacaef5c58a5d67">spi_hw_apply_config()</a>, <a class="el" href="group___s_p_i___i_n_t_e_r_n_a_l___p_r_o_t_o_s.html#ga71e76125efbe8d9f1dd3d519613cb652">spi_hw_deselect_slave()</a>, <a class="el" href="group___s_p_i___i_n_t_e_r_n_a_l___p_r_o_t_o_s.html#gaf444e00ab7250d625bc670dd4e21328c">spi_hw_select_slave()</a>, <a class="el" href="group___s_p_i___i_n_t_e_r_n_a_l___p_r_o_t_o_s.html#ga30307a7e6e65f6a80a803d724b09f4f3">spi_hw_start_tx_pipeline()</a>, <a class="el" href="group___s_p_i___i_n_i_t.html#gad9402c2ef9fda902cd461c0048fa5c89">spi_init()</a>, <a class="el" href="group___s_p_i___a_s_y_n_c.html#gaa9fa3d0d9a19bee52b8b2b89e7739ff2">spi_is_busy()</a>, <a class="el" href="group___s_p_i___m_a_s_t_e_r.html#ga3312b5d618b5c128b7d16cb63bfc0239">spi_register_slave()</a>, <a class="el" href="group___s_p_i___a_s_y_n_c.html#ga666a1ebeeac93226b693149a8af9992b">spi_rx_available()</a>, <a class="el" href="group___s_p_i___b_u_f_f_e_r___i_n_t_e_r_n_a_l.html#ga21653571743b2c7dd79691c3c1a17990">spi_rx_dequeue()</a>, <a class="el" href="group___s_p_i___b_u_f_f_e_r___i_n_t_e_r_n_a_l.html#ga82e736d319c4516104fe3d6dbcb42a32">spi_rx_enqueue()</a>, <a class="el" href="group___s_p_i___a_s_y_n_c.html#gab1e1145c0c06968091517a0f1784cf90">spi_rx_flush()</a>, <a class="el" href="group___s_p_i___a_s_y_n_c.html#gaf7c63fb3650bcece7c5c89b775b7f072">spi_rx_read()</a>, <a class="el" href="group___s_p_i___m_a_s_t_e_r.html#gab2d834030e3fe4c4ffc10253b35882e3">spi_select_device()</a>, <a class="el" href="group___s_p_i___i_n_i_t.html#ga94336ad392aba5ff1c163cf8127a1477">spi_set_clock()</a>, <a class="el" href="group___s_p_i___l_o_w_l_e_v_e_l.html#ga1db15283d17f408f4abf224b9c05f0d9">spi_slave_preload()</a>, <a class="el" href="group___s_p_i___b_l_o_c_k_i_n_g.html#ga9fda4b5bf0a787bbc4cfe5562f88e708">spi_transfer_blocking()</a>, <a class="el" href="group___s_p_i___a_s_y_n_c.html#gaab1d347c86fb34f3cd07b2de726fa2e9">spi_tx_available()</a>, <a class="el" href="group___s_p_i___b_u_f_f_e_r___i_n_t_e_r_n_a_l.html#ga9eb832ea6e4deb5d067f69c9192b0b32">spi_tx_dequeue()</a>, <a class="el" href="group___s_p_i___b_u_f_f_e_r___i_n_t_e_r_n_a_l.html#gab47c332d2d9ce5626758ec73ff01e40f">spi_tx_enqueue()</a>, <a class="el" href="group___s_p_i___a_s_y_n_c.html#gaf278870417819cf590a1b39d4eb3c4a5">spi_tx_flush()</a>, <a class="el" href="group___s_p_i___a_s_y_n_c.html#ga5667e88be47d87c48a22117c8a8c3cb5">spi_write_async()</a> e <a class="el" href="group___s_p_i___a_s_y_n_c.html#ga7c5cd5d59e430d3366bb96ef93c417a9">spi_write_multi()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- HTML footer for doxygen 1.16.1-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li><li class="navelem"><a href="spi__types_8h.html">spi_types.h</a></li>
+    <li class="footer">
+      Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 | 
+      Desenvolvido por <b>Tiago Henrique dos Santos - Ci&ecirc;ncia El&eacute;trica</b>
+    </li>
+  </ul>
+</div>
+</body>
+</html>

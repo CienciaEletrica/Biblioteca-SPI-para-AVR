@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['spi_5fbusy_0',['SPI_BUSY',['../spi__types_8h.html#a856ecadf3d7fe18c4fc3ae56500f8982a77af10511cd7c60df95c66e904a13643',1,'spi_types.h']]],
+  ['spi_5fclock_5fdiv_5f128_1',['SPI_CLOCK_DIV_128',['../spi__types_8h.html#a720de0c75c95328e740d889e93498a1fabe662fb48fdb1486df522a5949cdd331',1,'spi_types.h']]],
+  ['spi_5fclock_5fdiv_5f16_2',['SPI_CLOCK_DIV_16',['../spi__types_8h.html#a720de0c75c95328e740d889e93498a1faed362f983772afe5dd3160b0f96f3b56',1,'spi_types.h']]],
+  ['spi_5fclock_5fdiv_5f2_3',['SPI_CLOCK_DIV_2',['../spi__types_8h.html#a720de0c75c95328e740d889e93498a1fa7b84901cd71a8099088e62358cb1b812',1,'spi_types.h']]],
+  ['spi_5fclock_5fdiv_5f4_4',['SPI_CLOCK_DIV_4',['../spi__types_8h.html#a720de0c75c95328e740d889e93498a1fa4804ba90b831d3f49fec8d7cf0d8a9cf',1,'spi_types.h']]],
+  ['spi_5fclock_5fdiv_5f64_5',['SPI_CLOCK_DIV_64',['../spi__types_8h.html#a720de0c75c95328e740d889e93498a1fa920e7f1a9ad810c7bbc14f9506246aa9',1,'spi_types.h']]],
+  ['spi_5finvalid_5fparam_6',['SPI_INVALID_PARAM',['../spi__types_8h.html#a856ecadf3d7fe18c4fc3ae56500f8982a35f95d121dd4776640f41dec3a20b67f',1,'spi_types.h']]],
+  ['spi_5fmode_5fmaster_7',['SPI_MODE_MASTER',['../spi__types_8h.html#ac4b206a51636d91c5cffcbcee458c3cbae68a8adf6e5b67a7bdbe9526b15dae99',1,'spi_types.h']]],
+  ['spi_5fmode_5fslave_8',['SPI_MODE_SLAVE',['../spi__types_8h.html#ac4b206a51636d91c5cffcbcee458c3cbad1131ed33ad43ab3f667070b04454439',1,'spi_types.h']]],
+  ['spi_5fno_5fslave_9',['SPI_NO_SLAVE',['../spi__types_8h.html#a856ecadf3d7fe18c4fc3ae56500f8982aa3a5d71fc3d01697c740b1ee5e078004',1,'spi_types.h']]],
+  ['spi_5fok_10',['SPI_OK',['../spi__types_8h.html#a856ecadf3d7fe18c4fc3ae56500f8982a2b1fe832bba9b2799c09ddec72f7df75',1,'spi_types.h']]],
+  ['spi_5foverflow_11',['SPI_OVERFLOW',['../spi__types_8h.html#a856ecadf3d7fe18c4fc3ae56500f8982a4bdafb0ff3f238727aebdcaa05cb75dc',1,'spi_types.h']]],
+  ['spi_5fstate_5ferror_5fcollision_12',['SPI_STATE_ERROR_COLLISION',['../spi__internal_8h.html#ad1b95dd811b5effd79e4ae0872001158a88b2ab0cca7e4795a02876d28ae27510',1,'spi_internal.h']]],
+  ['spi_5fstate_5fidle_13',['SPI_STATE_IDLE',['../spi__internal_8h.html#ad1b95dd811b5effd79e4ae0872001158a4e4eea93b1bb05788c9590bbe319b23c',1,'spi_internal.h']]],
+  ['spi_5fstate_5ftx_5factive_14',['SPI_STATE_TX_ACTIVE',['../spi__internal_8h.html#ad1b95dd811b5effd79e4ae0872001158ace71c6d6db4fafc3d9c450d9637eb96a',1,'spi_internal.h']]],
+  ['spi_5fstate_5ftx_5flast_5fbyte_15',['SPI_STATE_TX_LAST_BYTE',['../spi__internal_8h.html#ad1b95dd811b5effd79e4ae0872001158a34630fac18dafad4e475e210f5a9f617',1,'spi_internal.h']]],
+  ['spi_5ftimeout_16',['SPI_TIMEOUT',['../spi__types_8h.html#a856ecadf3d7fe18c4fc3ae56500f8982ab445f59f608d2533ad8b4d8ba1eaa46b',1,'spi_types.h']]]
+];

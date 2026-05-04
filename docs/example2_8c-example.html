@@ -1,0 +1,221 @@
+<!-- HTML header for doxygen 1.16.1-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta charset="utf-8">
+<title>Biblioteca SPI AVR: example2.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="custom_styles.css" rel="stylesheet" type="text/css" />
+<link href="custom_styles.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+  <table cellspacing="0" cellpadding="0" style="width: 100%; border: none;">
+   <tbody>
+   <tr style="height: 80px;"> 
+    <td id="projectlogo" style="width: 80px; padding: 10px;">
+      <!-- O Doxygen tira o caminho 'img/' ao copiar, então usamos apenas o nome -->
+      <img alt="Logo" src="FIGURA2.png" style="height: 60px !important; width: auto !important; display: block;"/>
+    </td>
+    <td id="projectalign" style="padding-left: 0.5em; vertical-align: middle;">
+     <div id="projectname" style="font-size: 1.6em; font-weight: bold;">Driver SPI - YouTube: Ci&ecirc;ncia El&eacute;trica</div>
+     <div id="projectbrief" style="font-size: 1em; opacity: 0.8;">Biblioteca Otimizada para Microcontroladores AVR</div>
+    </td>
+   </tr>
+   </tbody>
+  </table>
+</div>
+<!-- Gerado por Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Busca',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('example2_8c-example.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">example2.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><span class="comment">/**</span></div>
+<div class="line"><span class="comment"> * @file    example2.c</span></div>
+<div class="line"><span class="comment"> * @author  Tiago Henrique dos Santos - Ciência Elétrica</span></div>
+<div class="line"><span class="comment"> * @brief   Exemplo: Interface com Conversor D/A MCP4921 (12 bits) via SPI.</span></div>
+<div class="line"><span class="comment"> * </span></div>
+<div class="line"><span class="comment"> * @details </span></div>
+<div class="line"><span class="comment"> * **Objetivos do Teste:**</span></div>
+<div class="line"><span class="comment"> * 1. Validar a transmissão multi-byte (16 bits) com controle manual de Chip Select.</span></div>
+<div class="line"><span class="comment"> * 2. Demonstrar a injeção de hardware (pins struct) para periféricos externos.</span></div>
+<div class="line"><span class="comment"> * 3. Gerar uma rampa de tensão analógica (0V a Vref) de forma assíncrona.</span></div>
+<div class="line"><span class="comment"> * </span></div>
+<div class="line"><span class="comment"> * **Conexões Sugeridas:**</span></div>
+<div class="line"><span class="comment"> * - AVR MOSI (PB3) -&gt; MCP4921 SDI</span></div>
+<div class="line"><span class="comment"> * - AVR SCK  (PB5) -&gt; MCP4921 SCK</span></div>
+<div class="line"><span class="comment"> * - AVR SS   (PB2) -&gt; MCP4921 CS</span></div>
+<div class="line"><span class="comment"> * - LDAC (MCP4921) -&gt; Conectar ao GND (para atualização imediata da saída)</span></div>
+<div class="line"><span class="comment"> * </span></div>
+<div class="line"><span class="comment"> * **Resultado Esperado:**</span></div>
+<div class="line"><span class="comment"> * - Observar uma rampa de tensão subindo degrau a degrau a cada 500ms no pino Vout do DAC.</span></div>
+<div class="line"><span class="comment"> * - O sinal de CS (PB2) deve permanecer em nível baixo durante o envio de ambos os bytes.</span></div>
+<div class="line"><span class="comment"> * </span></div>
+<div class="line"><span class="comment"> * @example example2.c</span></div>
+<div class="line"><span class="comment"> */</span></div>
+<div class="line"><span class="preprocessor">#define F_CPU 16000000UL</span></div>
+<div class="line"><span class="preprocessor">#include &lt;avr/io.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;util/delay.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;avr/interrupt.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="spi_8h.html" title="Interface pública (API) da biblioteca SPI para microcontroladores AVR.">spi.h</a>&quot;</span></div>
+<div class="line"><span class="comment"></span> </div>
+<div class="line"><span class="comment">/** </span></div>
+<div class="line"><span class="comment"> * @brief Variável estática para armazenar o valor digital do DAC (0 a 4095).</span></div>
+<div class="line"><span class="comment"> */</span></div>
+<div class="line"><span class="keyword">static</span> uint16_t <a id="_a0" name="_a0"></a><a class="code hl_variable" href="example2_8c.html#a9711231c27eb5b80f85226026e02c4bb" title="Variável estática para armazenar o valor digital do DAC (0 a 4095).">dac_value</a> = 0;</div>
+<div class="line"><span class="comment"></span> </div>
+<div class="line"><span class="comment">/**</span></div>
+<div class="line"><span class="comment"> * @brief Ponto de entrada do exemplo DAC.</span></div>
+<div class="line"><span class="comment"> */</span></div>
+<div class="line"><span class="keywordtype">int</span> <a id="a1" name="a1"></a><a class="code hl_function" href="example1__master_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Ponto de entrada do exemplo Master.">main</a>(<span class="keywordtype">void</span>) {<span class="comment"></span></div>
+<div class="line"><span class="comment">    /** </span></div>
+<div class="line"><span class="comment">     * @note Configuração SPI Master:</span></div>
+<div class="line"><span class="comment">     * - Clock de 125 kHz para garantir integridade em protoboards.</span></div>
+<div class="line"><span class="comment">     * - Modo SPI 0,0 (Polaridade 0, Fase 0) conforme datasheet do MCP4921.</span></div>
+<div class="line"><span class="comment">     */</span></div>
+<div class="line">    <a id="_a2" name="_a2"></a><a class="code hl_struct" href="structspi__config__t.html" title="Estrutura de configuração para inicialização do SPI.">spi_config_t</a> dac_cfg = {</div>
+<div class="line">        .mode           = <a id="_a3" name="_a3"></a><a class="code hl_enumvalue" href="spi__types_8h.html#ac4b206a51636d91c5cffcbcee458c3cbae68a8adf6e5b67a7bdbe9526b15dae99">SPI_MODE_MASTER</a>,</div>
+<div class="line">        .clock_div      = <a id="_a4" name="_a4"></a><a class="code hl_enumvalue" href="spi__types_8h.html#a720de0c75c95328e740d889e93498a1fabe662fb48fdb1486df522a5949cdd331">SPI_CLOCK_DIV_128</a>, <span class="comment">// 125 kHz (Seguro para prototipagem)</span></div>
+<div class="line">        .cpol           = 0,                 <span class="comment">// MCP4921 utiliza Modo 0,0</span></div>
+<div class="line">        .cpha           = 0,</div>
+<div class="line">        .bit_order      = SPI_ORDER_MSB_FIRST,</div>
+<div class="line">        .use_interrupt  = <span class="keyword">true</span>,              <span class="comment">// Uso de buffers TX/RX</span></div>
+<div class="line">        .rx_callback    = <a id="_a5" name="_a5"></a><a class="code hl_define" href="spi__types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4" title="Definição padrão de NULL caso não esteja presente.">NULL</a>,</div>
+<div class="line">        .pins = {</div>
+<div class="line">            .port     = &amp;PORTB,</div>
+<div class="line">            .mosi_pin = PB3,</div>
+<div class="line">            .miso_pin = PB4,</div>
+<div class="line">            .sck_pin  = PB5,</div>
+<div class="line">            .ss_pin   = PB2</div>
+<div class="line">        }</div>
+<div class="line">    };</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">/* Inicializa o driver SPI */</span></div>
+<div class="line">    <span class="keywordflow">if</span> (!<a id="a6" name="a6"></a><a class="code hl_function" href="group___s_p_i___i_n_i_t.html#gad9402c2ef9fda902cd461c0048fa5c89" title="Inicializa o módulo SPI.">spi_init</a>(&amp;dac_cfg)) {</div>
+<div class="line">        <span class="keywordflow">while</span>(1);</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">/* Registra o DAC como escravo ID 0 no pino PB2 */</span></div>
+<div class="line">    <a id="a7" name="a7"></a><a class="code hl_function" href="group___s_p_i___m_a_s_t_e_r.html#ga3312b5d618b5c128b7d16cb63bfc0239" title="Registra um pino de Chip Select (CS) para um dispositivo escravo.">spi_register_slave</a>(0, &amp;PORTB, PB2);</div>
+<div class="line">    </div>
+<div class="line">    <span class="comment">/* Habilita interrupções para o motor assíncrono */</span></div>
+<div class="line">    sei();</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">while</span> (1) {<span class="comment"></span></div>
+<div class="line"><span class="comment">        /**</span></div>
+<div class="line"><span class="comment">         * @brief Formatação do Frame de 16 bits do MCP4921:</span></div>
+<div class="line"><span class="comment">         * - bit 15: 0 (Escrever no registrador)</span></div>
+<div class="line"><span class="comment">         * - bit 14: 1 (Vref Bufferizado)</span></div>
+<div class="line"><span class="comment">         * - bit 13: 1 (Ganho 1x)</span></div>
+<div class="line"><span class="comment">         * - bit 12: 1 (Saída Ativa)</span></div>
+<div class="line"><span class="comment">         * - bits 11-0: Dados (12 bits)</span></div>
+<div class="line"><span class="comment">         */</span></div>
+<div class="line">        uint16_t command = 0x3000 | (<a class="code hl_variable" href="example2_8c.html#a9711231c27eb5b80f85226026e02c4bb" title="Variável estática para armazenar o valor digital do DAC (0 a 4095).">dac_value</a> &amp; 0x0FFF);</div>
+<div class="line"> </div>
+<div class="line">        uint8_t buffer[2];</div>
+<div class="line">        buffer[0] = (uint8_t)(command &gt;&gt; 8);   <span class="comment">/* Byte mais significativo (MSB) */</span></div>
+<div class="line">        buffer[1] = (uint8_t)(command &amp; 0xFF); <span class="comment">//* Byte menos significativo (LSB) */</span></div>
+<div class="line"> </div>
+<div class="line">        <span class="comment">/* --- Início da Transação --- */</span></div>
+<div class="line">        <a id="a8" name="a8"></a><a class="code hl_function" href="group___s_p_i___m_a_s_t_e_r.html#gab2d834030e3fe4c4ffc10253b35882e3" title="Seleciona um dispositivo escravo (coloca CS em nível baixo).">spi_select_device</a>(0); <span class="comment">/* Abaixa o pino CS */</span></div>
+<div class="line"><span class="comment"></span> </div>
+<div class="line"><span class="comment">        /** </span></div>
+<div class="line"><span class="comment">         * @brief Envio Multi-byte.</span></div>
+<div class="line"><span class="comment">         * @param keep_cs_low Definido como true para evitar que o CS suba entre os bytes.</span></div>
+<div class="line"><span class="comment">         */</span></div>
+<div class="line">        <a id="a9" name="a9"></a><a class="code hl_function" href="group___s_p_i___a_s_y_n_c.html#ga7c5cd5d59e430d3366bb96ef93c417a9" title="Inicia uma transação multi-byte assíncrona.">spi_write_multi</a>(buffer, 2, <span class="keyword">true</span>);</div>
+<div class="line"> </div>
+<div class="line">        <span class="comment">/* Aguarda o driver terminar o envio físico dos buffers */</span></div>
+<div class="line">        <span class="keywordflow">while</span> (<a id="a10" name="a10"></a><a class="code hl_function" href="group___s_p_i___a_s_y_n_c.html#gaa9fa3d0d9a19bee52b8b2b89e7739ff2" title="Verifica se o módulo está processando alguma transmissão.">spi_is_busy</a>());</div>
+<div class="line"> </div>
+<div class="line">        <a id="a11" name="a11"></a><a class="code hl_function" href="group___s_p_i___m_a_s_t_e_r.html#gaf49ef2f6f68799d64ef1beb73957fcd8" title="Desativa o dispositivo escravo atual (coloca CS em nível alto).">spi_deselect_device</a>(); <span class="comment">/* Levanta o pino CS para o DAC processar o dado */</span></div>
+<div class="line">        <span class="comment">/* --- Fim da Transação --- */</span></div>
+<div class="line"> </div>
+<div class="line">        <span class="comment">/* Incrementa a rampa (degraus de 64). Retorna a 0 ao atingir 4096. */</span></div>
+<div class="line">        <a class="code hl_variable" href="example2_8c.html#a9711231c27eb5b80f85226026e02c4bb" title="Variável estática para armazenar o valor digital do DAC (0 a 4095).">dac_value</a> = (<a class="code hl_variable" href="example2_8c.html#a9711231c27eb5b80f85226026e02c4bb" title="Variável estática para armazenar o valor digital do DAC (0 a 4095).">dac_value</a> + 64) &amp; 0x0FFF;</div>
+<div class="line"> </div>
+<div class="line">        _delay_ms(500);</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --> </div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- HTML footer for doxygen 1.16.1-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">
+      Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 | 
+      Desenvolvido por <b>Tiago Henrique dos Santos - Ci&ecirc;ncia El&eacute;trica</b>
+    </li>
+  </ul>
+</div>
+</body>
+</html>

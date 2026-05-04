@@ -1,0 +1,282 @@
+<!-- HTML header for doxygen 1.16.1-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta charset="utf-8">
+<title>Biblioteca SPI AVR: Código-Fonte de examples/example1_master.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="custom_styles.css" rel="stylesheet" type="text/css" />
+<link href="custom_styles.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+  <table cellspacing="0" cellpadding="0" style="width: 100%; border: none;">
+   <tbody>
+   <tr style="height: 80px;"> 
+    <td id="projectlogo" style="width: 80px; padding: 10px;">
+      <!-- O Doxygen tira o caminho 'img/' ao copiar, então usamos apenas o nome -->
+      <img alt="Logo" src="FIGURA2.png" style="height: 60px !important; width: auto !important; display: block;"/>
+    </td>
+    <td id="projectalign" style="padding-left: 0.5em; vertical-align: middle;">
+     <div id="projectname" style="font-size: 1.6em; font-weight: bold;">Driver SPI - YouTube: Ci&ecirc;ncia El&eacute;trica</div>
+     <div id="projectbrief" style="font-size: 1em; opacity: 0.8;">Biblioteca Otimizada para Microcontroladores AVR</div>
+    </td>
+   </tr>
+   </tbody>
+  </table>
+</div>
+<!-- Gerado por Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Busca',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('example1__master_8c_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">example1_master.c</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="example1__master_8c.html">Ir para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * @file    example1_master.c</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> * @author  Tiago Henrique dos Santos - Ciência Elétrica</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * @brief   Exemplo SPI Master: Controle de fluxo e telemetria via UART.</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> * </span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> * @details </span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> * **Objetivos do Teste:**</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> * 1. Validar o Baud Rate de 125 kHz (Fosc/128).</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> * 2. Demonstrar o envio assíncrono (non-blocking) de comandos via interrupção.</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"> * 3. Validar a recepção Full-Duplex (receber resposta do Slave enquanto envia).</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"> * </span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"> * **Resultado Esperado:**</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> * - O terminal serial deve exibir &quot;Enviando: XX | Recebido: YY&quot;.</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> * - O primeiro byte recebido será tipicamente 0x00 (inicialização).</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> * - Os bytes subsequentes refletirão a resposta processada pelo Slave no ciclo anterior.</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> * </span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> * @example example1_master.c</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="example1__master_8c.html#a43bafb28b29491ec7f871319b5a3b2f8">   19</a></span><span class="preprocessor">#define F_CPU 16000000UL</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;avr/io.h&gt;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &lt;util/delay.h&gt;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;avr/interrupt.h&gt;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &quot;<a class="code" href="spi_8h.html" title="Interface pública (API) da biblioteca SPI para microcontroladores AVR.">spi.h</a>&quot;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment"></span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">/** </span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment"> * @brief Flag de erro para sinalizar overflow detectado na ISR.</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="example1__master_8c.html#a9cd26b88e86ddcadc97d20c168a6273f">   28</a></span><span class="keyword">volatile</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="example1__master_8c.html#a9cd26b88e86ddcadc97d20c168a6273f" title="Flag de erro para sinalizar overflow detectado na ISR.">flag_overflow_isr</a> = <span class="keyword">false</span>; <span class="comment">// Global para teste</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">/* Protótipos das funções auxiliares de UART */</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keywordtype">void</span> <a class="code hl_function" href="example1__master_8c.html#a0c0ca72359ddf28dcd15900dfba19343" title="Inicializa a UART0 a 9600 bps.">uart_init</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keywordtype">void</span> <a class="code hl_function" href="example1__master_8c.html#ae52facc0a56086a365bb0018160d8d71" title="Envia uma string via UART.">uart_puts</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *s);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keywordtype">void</span> <a class="code hl_function" href="example1__master_8c.html#ac0f988e6b39a10eb1b4f67dd657373bb" title="Envia um valor de 8 bits em formato hexadecimal.">uart_puthex8</a>(uint8_t val);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment"></span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment"> * @brief Ponto de entrada do exemplo Master.</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment"> */</span></div>
+<div class="foldopen" id="foldopen00038" data-start="{" data-end="}">
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="example1__master_8c.html#a840291bc02cba5474a4cb46a9b9566fe">   38</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="example1__master_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Ponto de entrada do exemplo Master.">main</a>(<span class="keywordtype">void</span>) {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <a class="code hl_function" href="example1__master_8c.html#a0c0ca72359ddf28dcd15900dfba19343" title="Inicializa a UART0 a 9600 bps.">uart_init</a>();</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <a class="code hl_function" href="example1__master_8c.html#ae52facc0a56086a365bb0018160d8d71" title="Envia uma string via UART.">uart_puts</a>(<span class="stringliteral">&quot;--- SPI MASTER: 125kHz Mode ---\r\n&quot;</span>);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment"></span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">    /** </span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">     * @note Configuração SPI Master:</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">     * - Modo Assíncrono habilitado (use_interrupt = true).</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">     * - Clock de 125 kHz (ideal para longas distâncias ou periféricos lentos).</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <a class="code hl_struct" href="structspi__config__t.html" title="Estrutura de configuração para inicialização do SPI.">spi_config_t</a> master_cfg = {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        .mode           = <a class="code hl_enumvalue" href="spi__types_8h.html#ac4b206a51636d91c5cffcbcee458c3cbae68a8adf6e5b67a7bdbe9526b15dae99">SPI_MODE_MASTER</a>,</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        .clock_div      = <a class="code hl_enumvalue" href="spi__types_8h.html#a720de0c75c95328e740d889e93498a1fabe662fb48fdb1486df522a5949cdd331">SPI_CLOCK_DIV_128</a>, <span class="comment">// 125 kHz @ 16MHz</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        .cpol           = 0,                 <span class="comment">// Mode 0</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        .cpha           = 0,</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        .bit_order      = SPI_ORDER_MSB_FIRST,</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        .use_interrupt  = <span class="keyword">true</span>,              <span class="comment">// Motor assíncrono habilitado</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        .rx_callback    = 0,                 <span class="comment">// Leitura manual via buffer RX</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        .pins = {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            .port = &amp;PORTB,</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            .mosi_pin = PB3,</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            .miso_pin = PB4,</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            .sck_pin = PB5,</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            .ss_pin = PB2</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        }</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    };</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="comment">/* Inicializa o driver */</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="group___s_p_i___i_n_i_t.html#gad9402c2ef9fda902cd461c0048fa5c89" title="Inicializa o módulo SPI.">spi_init</a>(&amp;master_cfg)) {</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        <a class="code hl_function" href="example1__master_8c.html#ae52facc0a56086a365bb0018160d8d71" title="Envia uma string via UART.">uart_puts</a>(<span class="stringliteral">&quot;Erro na inicializacao SPI\r\n&quot;</span>);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="keywordflow">while</span>(1);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    }</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="comment">/* Registra o escravo 0 no pino SS (PB2) */</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <a class="code hl_function" href="group___s_p_i___m_a_s_t_e_r.html#ga3312b5d618b5c128b7d16cb63bfc0239" title="Registra um pino de Chip Select (CS) para um dispositivo escravo.">spi_register_slave</a>(0, &amp;PORTB, PB2);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="comment">/* Habilita interrupções globais */</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    sei();</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    uint8_t tx_data = 0xA5;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    uint8_t rx_data = 0;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keywordflow">while</span> (1) {</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <a class="code hl_function" href="example1__master_8c.html#ae52facc0a56086a365bb0018160d8d71" title="Envia uma string via UART.">uart_puts</a>(<span class="stringliteral">&quot;Enviando: &quot;</span>); <a class="code hl_function" href="example1__master_8c.html#ac0f988e6b39a10eb1b4f67dd657373bb" title="Envia um valor de 8 bits em formato hexadecimal.">uart_puthex8</a>(tx_data);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="comment">/* Seleciona o dispositivo escravo (CS em nível baixo) */</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        <a class="code hl_function" href="group___s_p_i___m_a_s_t_e_r.html#gab2d834030e3fe4c4ffc10253b35882e3" title="Seleciona um dispositivo escravo (coloca CS em nível baixo).">spi_select_device</a>(0); <span class="comment">// Seleciona o device</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <span class="comment">/* Envio assíncrono: O byte vai para o buffer e a ISR gerencia a transmissão */</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <a class="code hl_function" href="group___s_p_i___a_s_y_n_c.html#ga5667e88be47d87c48a22117c8a8c3cb5" title="Enfileira um byte para transmissão assíncrona.">spi_write_async</a>(tx_data);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <span class="comment">/* Aguarda a conclusão da transmissão antes de ler o buffer RX */</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        <span class="keywordflow">while</span> (<a class="code hl_function" href="group___s_p_i___a_s_y_n_c.html#gaa9fa3d0d9a19bee52b8b2b89e7739ff2" title="Verifica se o módulo está processando alguma transmissão.">spi_is_busy</a>());</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        <span class="comment">/* Verifica se houve resposta do Slave no buffer de recepção */</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="group___s_p_i___a_s_y_n_c.html#gaf7c63fb3650bcece7c5c89b775b7f072" title="Lê um byte do buffer de recepção.">spi_rx_read</a>(&amp;rx_data)) {</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            <a class="code hl_function" href="example1__master_8c.html#ae52facc0a56086a365bb0018160d8d71" title="Envia uma string via UART.">uart_puts</a>(<span class="stringliteral">&quot; | Recebido do Slave: &quot;</span>);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            <a class="code hl_function" href="example1__master_8c.html#ac0f988e6b39a10eb1b4f67dd657373bb" title="Envia um valor de 8 bits em formato hexadecimal.">uart_puthex8</a>(rx_data);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            <a class="code hl_function" href="example1__master_8c.html#ae52facc0a56086a365bb0018160d8d71" title="Envia uma string via UART.">uart_puts</a>(<span class="stringliteral">&quot;\r\n&quot;</span>);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        }</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        tx_data++;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        _delay_ms(500); <span class="comment">// Delay para facilitar a leitura no monitor serial</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    }</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>}</div>
+</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment">/* ============================================================================</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="comment">   Implementação das Funções UART (Telemetria)</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="comment">   ========================================================================== */</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="comment"></span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment">/** @brief Inicializa a UART0 a 9600 bps. */</span></div>
+<div class="foldopen" id="foldopen00108" data-start="{" data-end="}">
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="example1__master_8c.html#a0c0ca72359ddf28dcd15900dfba19343">  108</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="example1__master_8c.html#a0c0ca72359ddf28dcd15900dfba19343" title="Inicializa a UART0 a 9600 bps.">uart_init</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>{    </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    uint16_t ubrr = 103;<span class="comment">// Cálculo do UBRR para 9600 bps, modo normal - UBRR = (F_CPU / (16 * BAUD)) - 1</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    UBRR0H = (uint8_t)(ubrr &gt;&gt; 8);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    UBRR0L = (uint8_t)ubrr;    </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    UCSR0B = (1 &lt;&lt; RXEN0) | (1 &lt;&lt; TXEN0) | (1 &lt;&lt; RXCIE0); <span class="comment">// Habilita transmissãoo, recepção e interrupção Rx</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    UCSR0C = (1 &lt;&lt; UCSZ01) | (1 &lt;&lt; UCSZ00); <span class="comment">// Formato do frame: 8 bits, 1 stop bit, sem paridade</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>}</div>
+</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="comment"></span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="comment">/** @brief Envia um caractere via UART. */</span></div>
+<div class="foldopen" id="foldopen00118" data-start="{" data-end="}">
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="example1__master_8c.html#aa599232c1438c5addd971e05e1dd46a2">  118</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="example1__master_8c.html#aa599232c1438c5addd971e05e1dd46a2" title="Envia um caractere via UART.">uart_putc</a>(<span class="keywordtype">char</span> c)</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>{</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <span class="keywordflow">while</span> (!(UCSR0A &amp; (1 &lt;&lt; UDRE0)));      <span class="comment">// espera buffer vazio</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    UDR0 = c;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>}</div>
+</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="comment"></span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="comment">/** @brief Envia uma string via UART. */</span></div>
+<div class="foldopen" id="foldopen00125" data-start="{" data-end="}">
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="example1__master_8c.html#ae52facc0a56086a365bb0018160d8d71">  125</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="example1__master_8c.html#ae52facc0a56086a365bb0018160d8d71" title="Envia uma string via UART.">uart_puts</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *s)</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>{</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    <span class="keywordflow">while</span> (*s) <a class="code hl_function" href="example1__master_8c.html#aa599232c1438c5addd971e05e1dd46a2" title="Envia um caractere via UART.">uart_putc</a>(*s++);</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>}</div>
+</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="comment"></span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="comment">/** @brief Envia um valor de 8 bits em formato hexadecimal. */</span></div>
+<div class="foldopen" id="foldopen00131" data-start="{" data-end="}">
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="example1__master_8c.html#ac0f988e6b39a10eb1b4f67dd657373bb">  131</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="example1__master_8c.html#ac0f988e6b39a10eb1b4f67dd657373bb" title="Envia um valor de 8 bits em formato hexadecimal.">uart_puthex8</a>(uint8_t val)</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>{</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    <span class="keyword">const</span> <span class="keywordtype">char</span> hex[] = <span class="stringliteral">&quot;0123456789ABCDEF&quot;</span>;</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    <a class="code hl_function" href="example1__master_8c.html#aa599232c1438c5addd971e05e1dd46a2" title="Envia um caractere via UART.">uart_putc</a>(hex[(val &gt;&gt; 4) &amp; 0x0F]);</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    <a class="code hl_function" href="example1__master_8c.html#aa599232c1438c5addd971e05e1dd46a2" title="Envia um caractere via UART.">uart_putc</a>(hex[val &amp; 0x0F]);</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>}</div>
+</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="foldopen" id="foldopen00138" data-start="{" data-end="}">
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno"><a class="line" href="example1__master_8c.html#a8baf5eef46e8c97517f7cc1b9c027397">  138</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="example1__master_8c.html#a8baf5eef46e8c97517f7cc1b9c027397">uart_putnewline</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>{</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    <a class="code hl_function" href="example1__master_8c.html#aa599232c1438c5addd971e05e1dd46a2" title="Envia um caractere via UART.">uart_putc</a>(<span class="charliteral">&#39;\r&#39;</span>);</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    <a class="code hl_function" href="example1__master_8c.html#aa599232c1438c5addd971e05e1dd46a2" title="Envia um caractere via UART.">uart_putc</a>(<span class="charliteral">&#39;\n&#39;</span>);</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>}</div>
+</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="comment"></span> </div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="comment"> * @brief Exemplo de função de callback (Opcional).</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="comment"> * @details Executada dentro da ISR SPI sempre que um byte novo chega.</span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><span class="comment"> */</span></div>
+<div class="foldopen" id="foldopen00148" data-start="{" data-end="}">
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno"><a class="line" href="example1__master_8c.html#ac7edcec893fbf5526d09f0a894e03aa5">  148</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="example1__master_8c.html#ac7edcec893fbf5526d09f0a894e03aa5" title="Exemplo de função de callback (Opcional).">rx_callback</a>(uint8_t received_byte, <span class="keywordtype">bool</span> overflow_detected)</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>{</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    <span class="keywordflow">if</span> (overflow_detected) {</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        <a class="code hl_variable" href="example1__master_8c.html#a9cd26b88e86ddcadc97d20c168a6273f" title="Flag de erro para sinalizar overflow detectado na ISR.">flag_overflow_isr</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    }</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>}</div>
+</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- HTML footer for doxygen 1.16.1-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_d28a4824dc47e487b107a5db32ef43c4.html">examples</a></li><li class="navelem"><a href="example1__master_8c.html">example1_master.c</a></li>
+    <li class="footer">
+      Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 | 
+      Desenvolvido por <b>Tiago Henrique dos Santos - Ci&ecirc;ncia El&eacute;trica</b>
+    </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,534 @@
+<!-- HTML header for doxygen 1.16.1-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta charset="utf-8">
+<title>Biblioteca SPI AVR: Referência do Arquivo examples/example1_master.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="custom_styles.css" rel="stylesheet" type="text/css" />
+<link href="custom_styles.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+  <table cellspacing="0" cellpadding="0" style="width: 100%; border: none;">
+   <tbody>
+   <tr style="height: 80px;"> 
+    <td id="projectlogo" style="width: 80px; padding: 10px;">
+      <!-- O Doxygen tira o caminho 'img/' ao copiar, então usamos apenas o nome -->
+      <img alt="Logo" src="FIGURA2.png" style="height: 60px !important; width: auto !important; display: block;"/>
+    </td>
+    <td id="projectalign" style="padding-left: 0.5em; vertical-align: middle;">
+     <div id="projectname" style="font-size: 1.6em; font-weight: bold;">Driver SPI - YouTube: Ci&ecirc;ncia El&eacute;trica</div>
+     <div id="projectbrief" style="font-size: 1em; opacity: 0.8;">Biblioteca Otimizada para Microcontroladores AVR</div>
+    </td>
+   </tr>
+   </tbody>
+  </table>
+</div>
+<!-- Gerado por Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Busca',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('example1__master_8c.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Referência do Arquivo example1_master.c</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Exemplo SPI Master: Controle de fluxo e telemetria via UART.  
+<a href="#details">Mais...</a></p>
+<div class="textblock"><code>#include &lt;avr/io.h&gt;</code><br />
+<code>#include &lt;util/delay.h&gt;</code><br />
+<code>#include &lt;avr/interrupt.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="spi_8h_source.html">spi.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Gráfico de dependência de inclusões para example1_master.c:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="example1__master_8c__incl.svg" width="384" height="262"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<p><a href="example1__master_8c_source.html">Ir para o código-fonte desse arquivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+Definições e Macros</h2></td></tr>
+<tr class="memitem:a43bafb28b29491ec7f871319b5a3b2f8" id="r_a43bafb28b29491ec7f871319b5a3b2f8"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a43bafb28b29491ec7f871319b5a3b2f8">F_CPU</a>&#160;&#160;&#160;16000000UL</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a0c0ca72359ddf28dcd15900dfba19343" id="r_a0c0ca72359ddf28dcd15900dfba19343"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a0c0ca72359ddf28dcd15900dfba19343">uart_init</a> (void)</td></tr>
+<tr class="memdesc:a0c0ca72359ddf28dcd15900dfba19343"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicializa a UART0 a 9600 bps.  <br /></td></tr>
+<tr class="memitem:ae52facc0a56086a365bb0018160d8d71" id="r_ae52facc0a56086a365bb0018160d8d71"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae52facc0a56086a365bb0018160d8d71">uart_puts</a> (const char *s)</td></tr>
+<tr class="memdesc:ae52facc0a56086a365bb0018160d8d71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Envia uma string via UART.  <br /></td></tr>
+<tr class="memitem:ac0f988e6b39a10eb1b4f67dd657373bb" id="r_ac0f988e6b39a10eb1b4f67dd657373bb"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac0f988e6b39a10eb1b4f67dd657373bb">uart_puthex8</a> (uint8_t val)</td></tr>
+<tr class="memdesc:ac0f988e6b39a10eb1b4f67dd657373bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Envia um valor de 8 bits em formato hexadecimal.  <br /></td></tr>
+<tr class="memitem:a840291bc02cba5474a4cb46a9b9566fe" id="r_a840291bc02cba5474a4cb46a9b9566fe"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a840291bc02cba5474a4cb46a9b9566fe">main</a> (void)</td></tr>
+<tr class="memdesc:a840291bc02cba5474a4cb46a9b9566fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ponto de entrada do exemplo Master.  <br /></td></tr>
+<tr class="memitem:aa599232c1438c5addd971e05e1dd46a2" id="r_aa599232c1438c5addd971e05e1dd46a2"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa599232c1438c5addd971e05e1dd46a2">uart_putc</a> (char c)</td></tr>
+<tr class="memdesc:aa599232c1438c5addd971e05e1dd46a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Envia um caractere via UART.  <br /></td></tr>
+<tr class="memitem:a8baf5eef46e8c97517f7cc1b9c027397" id="r_a8baf5eef46e8c97517f7cc1b9c027397"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a8baf5eef46e8c97517f7cc1b9c027397">uart_putnewline</a> (void)</td></tr>
+<tr class="memitem:ac7edcec893fbf5526d09f0a894e03aa5" id="r_ac7edcec893fbf5526d09f0a894e03aa5"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac7edcec893fbf5526d09f0a894e03aa5">rx_callback</a> (uint8_t received_byte, bool overflow_detected)</td></tr>
+<tr class="memdesc:ac7edcec893fbf5526d09f0a894e03aa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exemplo de função de callback (Opcional).  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variáveis</h2></td></tr>
+<tr class="memitem:a9cd26b88e86ddcadc97d20c168a6273f" id="r_a9cd26b88e86ddcadc97d20c168a6273f"><td class="memItemLeft">volatile bool&#160;</td><td class="memItemRight"><a class="el" href="#a9cd26b88e86ddcadc97d20c168a6273f">flag_overflow_isr</a> = false</td></tr>
+<tr class="memdesc:a9cd26b88e86ddcadc97d20c168a6273f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag de erro para sinalizar overflow detectado na ISR.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Exemplo SPI Master: Controle de fluxo e telemetria via UART. </p>
+<dl class="section author"><dt>Autor</dt><dd>Tiago Henrique dos Santos - Ciência Elétrica </dd></dl>
+<p><b>Objetivos do Teste:</b></p><ol type="1">
+<li>Validar o Baud Rate de 125 kHz (Fosc/128).</li>
+<li>Demonstrar o envio assíncrono (non-blocking) de comandos via interrupção.</li>
+<li>Validar a recepção Full-Duplex (receber resposta do Slave enquanto envia).</li>
+</ol>
+<p><b>Resultado Esperado:</b></p><ul>
+<li>O terminal serial deve exibir "Enviando: XX | Recebido: YY".</li>
+<li>O primeiro byte recebido será tipicamente 0x00 (inicialização).</li>
+<li>Os bytes subsequentes refletirão a resposta processada pelo Slave no ciclo anterior. </li>
+</ul>
+
+<p class="definition">Definição no arquivo <a class="el" href="example1__master_8c_source.html">example1_master.c</a>.</p>
+</div><a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Definições e macros</h2>
+<a id="a43bafb28b29491ec7f871319b5a3b2f8" name="a43bafb28b29491ec7f871319b5a3b2f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43bafb28b29491ec7f871319b5a3b2f8">&#9670;&#160;</a></span>F_CPU</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define F_CPU&#160;&#160;&#160;16000000UL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definição na linha <a class="el" href="example1__master_8c_source.html#l00019">19</a> do arquivo <a class="el" href="example1__master_8c_source.html">example1_master.c</a>.</p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Funções</h2>
+<a id="a840291bc02cba5474a4cb46a9b9566fe" name="a840291bc02cba5474a4cb46a9b9566fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a840291bc02cba5474a4cb46a9b9566fe">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ponto de entrada do exemplo Master. </p>
+<dl class="section note"><dt>Observação</dt><dd>Configuração SPI Master:<ul>
+<li>Modo Assíncrono habilitado (use_interrupt = true).</li>
+<li>Clock de 125 kHz (ideal para longas distâncias ou periféricos lentos).</li>
+</ul>
+</dd></dl>
+<dl class="section examples"><dt>Exemplos</dt><dd><a class="el" href="example1_master_8c-example.html#a4">example1_master.c</a>, <a class="el" href="example1_slave_8c-example.html#a3">example1_slave.c</a>, <a class="el" href="example2_8c-example.html#a1">example2.c</a> e <a class="el" href="example3_8c-example.html#a4">example3.c</a>.</dd>
+</dl>
+
+<p class="definition">Definição na linha <a class="el" href="example1__master_8c_source.html#l00038">38</a> do arquivo <a class="el" href="example1__master_8c_source.html">example1_master.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   38</span>               {</div>
+<div class="line"><span class="lineno">   39</span>    <a class="code hl_function" href="#a0c0ca72359ddf28dcd15900dfba19343" title="Inicializa a UART0 a 9600 bps.">uart_init</a>();</div>
+<div class="line"><span class="lineno">   40</span>    <a class="code hl_function" href="#ae52facc0a56086a365bb0018160d8d71" title="Envia uma string via UART.">uart_puts</a>(<span class="stringliteral">&quot;--- SPI MASTER: 125kHz Mode ---\r\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   41</span><span class="comment"></span> </div>
+<div class="line"><span class="lineno">   42</span><span class="comment">    /** </span></div>
+<div class="line"><span class="lineno">   43</span><span class="comment">     * @note Configuração SPI Master:</span></div>
+<div class="line"><span class="lineno">   44</span><span class="comment">     * - Modo Assíncrono habilitado (use_interrupt = true).</span></div>
+<div class="line"><span class="lineno">   45</span><span class="comment">     * - Clock de 125 kHz (ideal para longas distâncias ou periféricos lentos).</span></div>
+<div class="line"><span class="lineno">   46</span><span class="comment">     */</span></div>
+<div class="line"><span class="lineno">   47</span>    <a class="code hl_struct" href="structspi__config__t.html" title="Estrutura de configuração para inicialização do SPI.">spi_config_t</a> master_cfg = {</div>
+<div class="line"><span class="lineno">   48</span>        .mode           = <a class="code hl_enumvalue" href="spi__types_8h.html#ac4b206a51636d91c5cffcbcee458c3cbae68a8adf6e5b67a7bdbe9526b15dae99">SPI_MODE_MASTER</a>,</div>
+<div class="line"><span class="lineno">   49</span>        .clock_div      = <a class="code hl_enumvalue" href="spi__types_8h.html#a720de0c75c95328e740d889e93498a1fabe662fb48fdb1486df522a5949cdd331">SPI_CLOCK_DIV_128</a>, <span class="comment">// 125 kHz @ 16MHz</span></div>
+<div class="line"><span class="lineno">   50</span>        .cpol           = 0,                 <span class="comment">// Mode 0</span></div>
+<div class="line"><span class="lineno">   51</span>        .cpha           = 0,</div>
+<div class="line"><span class="lineno">   52</span>        .bit_order      = SPI_ORDER_MSB_FIRST,</div>
+<div class="line"><span class="lineno">   53</span>        .use_interrupt  = <span class="keyword">true</span>,              <span class="comment">// Motor assíncrono habilitado</span></div>
+<div class="line"><span class="lineno">   54</span>        .rx_callback    = 0,                 <span class="comment">// Leitura manual via buffer RX</span></div>
+<div class="line"><span class="lineno">   55</span>        .pins = {</div>
+<div class="line"><span class="lineno">   56</span>            .port = &amp;PORTB,</div>
+<div class="line"><span class="lineno">   57</span>            .mosi_pin = PB3,</div>
+<div class="line"><span class="lineno">   58</span>            .miso_pin = PB4,</div>
+<div class="line"><span class="lineno">   59</span>            .sck_pin = PB5,</div>
+<div class="line"><span class="lineno">   60</span>            .ss_pin = PB2</div>
+<div class="line"><span class="lineno">   61</span>        }</div>
+<div class="line"><span class="lineno">   62</span>    };</div>
+<div class="line"><span class="lineno">   63</span> </div>
+<div class="line"><span class="lineno">   64</span>    <span class="comment">/* Inicializa o driver */</span></div>
+<div class="line"><span class="lineno">   65</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="group___s_p_i___i_n_i_t.html#gad9402c2ef9fda902cd461c0048fa5c89" title="Inicializa o módulo SPI.">spi_init</a>(&amp;master_cfg)) {</div>
+<div class="line"><span class="lineno">   66</span>        <a class="code hl_function" href="#ae52facc0a56086a365bb0018160d8d71" title="Envia uma string via UART.">uart_puts</a>(<span class="stringliteral">&quot;Erro na inicializacao SPI\r\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   67</span>        <span class="keywordflow">while</span>(1);</div>
+<div class="line"><span class="lineno">   68</span>    }</div>
+<div class="line"><span class="lineno">   69</span> </div>
+<div class="line"><span class="lineno">   70</span>    <span class="comment">/* Registra o escravo 0 no pino SS (PB2) */</span></div>
+<div class="line"><span class="lineno">   71</span>    <a class="code hl_function" href="group___s_p_i___m_a_s_t_e_r.html#ga3312b5d618b5c128b7d16cb63bfc0239" title="Registra um pino de Chip Select (CS) para um dispositivo escravo.">spi_register_slave</a>(0, &amp;PORTB, PB2);</div>
+<div class="line"><span class="lineno">   72</span>    </div>
+<div class="line"><span class="lineno">   73</span>    <span class="comment">/* Habilita interrupções globais */</span></div>
+<div class="line"><span class="lineno">   74</span>    sei();</div>
+<div class="line"><span class="lineno">   75</span> </div>
+<div class="line"><span class="lineno">   76</span>    uint8_t tx_data = 0xA5;</div>
+<div class="line"><span class="lineno">   77</span>    uint8_t rx_data = 0;</div>
+<div class="line"><span class="lineno">   78</span> </div>
+<div class="line"><span class="lineno">   79</span>    <span class="keywordflow">while</span> (1) {</div>
+<div class="line"><span class="lineno">   80</span>        <a class="code hl_function" href="#ae52facc0a56086a365bb0018160d8d71" title="Envia uma string via UART.">uart_puts</a>(<span class="stringliteral">&quot;Enviando: &quot;</span>); <a class="code hl_function" href="#ac0f988e6b39a10eb1b4f67dd657373bb" title="Envia um valor de 8 bits em formato hexadecimal.">uart_puthex8</a>(tx_data);</div>
+<div class="line"><span class="lineno">   81</span> </div>
+<div class="line"><span class="lineno">   82</span>        <span class="comment">/* Seleciona o dispositivo escravo (CS em nível baixo) */</span></div>
+<div class="line"><span class="lineno">   83</span>        <a class="code hl_function" href="group___s_p_i___m_a_s_t_e_r.html#gab2d834030e3fe4c4ffc10253b35882e3" title="Seleciona um dispositivo escravo (coloca CS em nível baixo).">spi_select_device</a>(0); <span class="comment">// Seleciona o device</span></div>
+<div class="line"><span class="lineno">   84</span> </div>
+<div class="line"><span class="lineno">   85</span>        <span class="comment">/* Envio assíncrono: O byte vai para o buffer e a ISR gerencia a transmissão */</span></div>
+<div class="line"><span class="lineno">   86</span>        <a class="code hl_function" href="group___s_p_i___a_s_y_n_c.html#ga5667e88be47d87c48a22117c8a8c3cb5" title="Enfileira um byte para transmissão assíncrona.">spi_write_async</a>(tx_data);</div>
+<div class="line"><span class="lineno">   87</span> </div>
+<div class="line"><span class="lineno">   88</span>        <span class="comment">/* Aguarda a conclusão da transmissão antes de ler o buffer RX */</span></div>
+<div class="line"><span class="lineno">   89</span>        <span class="keywordflow">while</span> (<a class="code hl_function" href="group___s_p_i___a_s_y_n_c.html#gaa9fa3d0d9a19bee52b8b2b89e7739ff2" title="Verifica se o módulo está processando alguma transmissão.">spi_is_busy</a>());</div>
+<div class="line"><span class="lineno">   90</span> </div>
+<div class="line"><span class="lineno">   91</span>        <span class="comment">/* Verifica se houve resposta do Slave no buffer de recepção */</span></div>
+<div class="line"><span class="lineno">   92</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="group___s_p_i___a_s_y_n_c.html#gaf7c63fb3650bcece7c5c89b775b7f072" title="Lê um byte do buffer de recepção.">spi_rx_read</a>(&amp;rx_data)) {</div>
+<div class="line"><span class="lineno">   93</span>            <a class="code hl_function" href="#ae52facc0a56086a365bb0018160d8d71" title="Envia uma string via UART.">uart_puts</a>(<span class="stringliteral">&quot; | Recebido do Slave: &quot;</span>);</div>
+<div class="line"><span class="lineno">   94</span>            <a class="code hl_function" href="#ac0f988e6b39a10eb1b4f67dd657373bb" title="Envia um valor de 8 bits em formato hexadecimal.">uart_puthex8</a>(rx_data);</div>
+<div class="line"><span class="lineno">   95</span>            <a class="code hl_function" href="#ae52facc0a56086a365bb0018160d8d71" title="Envia uma string via UART.">uart_puts</a>(<span class="stringliteral">&quot;\r\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   96</span>        }</div>
+<div class="line"><span class="lineno">   97</span> </div>
+<div class="line"><span class="lineno">   98</span>        tx_data++;</div>
+<div class="line"><span class="lineno">   99</span>        _delay_ms(500); <span class="comment">// Delay para facilitar a leitura no monitor serial</span></div>
+<div class="line"><span class="lineno">  100</span>    }</div>
+<div class="line"><span class="lineno">  101</span>}</div>
+</div><!-- fragment --><div class="dynheader">
+Este é o diagrama das funções utilizadas por essa função:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="example1__master_8c_a840291bc02cba5474a4cb46a9b9566fe_cgraph.svg" width="751" height="570"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ac7edcec893fbf5526d09f0a894e03aa5" name="ac7edcec893fbf5526d09f0a894e03aa5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7edcec893fbf5526d09f0a894e03aa5">&#9670;&#160;</a></span>rx_callback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rx_callback </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>received_byte</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>overflow_detected</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Exemplo de função de callback (Opcional). </p>
+<p>Executada dentro da ISR SPI sempre que um byte novo chega. </p>
+<dl class="section examples"><dt>Exemplos</dt><dd><a class="el" href="example1_master_8c-example.html#a16">example1_master.c</a>.</dd>
+</dl>
+
+<p class="definition">Definição na linha <a class="el" href="example1__master_8c_source.html#l00148">148</a> do arquivo <a class="el" href="example1__master_8c_source.html">example1_master.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  149</span>{</div>
+<div class="line"><span class="lineno">  150</span>    <span class="keywordflow">if</span> (overflow_detected) {</div>
+<div class="line"><span class="lineno">  151</span>        <a class="code hl_variable" href="#a9cd26b88e86ddcadc97d20c168a6273f" title="Flag de erro para sinalizar overflow detectado na ISR.">flag_overflow_isr</a> = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  152</span>    }</div>
+<div class="line"><span class="lineno">  153</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a0c0ca72359ddf28dcd15900dfba19343" name="a0c0ca72359ddf28dcd15900dfba19343"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c0ca72359ddf28dcd15900dfba19343">&#9670;&#160;</a></span>uart_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void uart_init </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inicializa a UART0 a 9600 bps. </p>
+<dl class="section examples"><dt>Exemplos</dt><dd><a class="el" href="example1_master_8c-example.html#a1">example1_master.c</a> e <a class="el" href="example3_8c-example.html#a0">example3.c</a>.</dd>
+</dl>
+
+<p class="definition">Definição na linha <a class="el" href="example1__master_8c_source.html#l00108">108</a> do arquivo <a class="el" href="example1__master_8c_source.html">example1_master.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  109</span>{    </div>
+<div class="line"><span class="lineno">  110</span>    uint16_t ubrr = 103;<span class="comment">// Cálculo do UBRR para 9600 bps, modo normal - UBRR = (F_CPU / (16 * BAUD)) - 1</span></div>
+<div class="line"><span class="lineno">  111</span>    UBRR0H = (uint8_t)(ubrr &gt;&gt; 8);</div>
+<div class="line"><span class="lineno">  112</span>    UBRR0L = (uint8_t)ubrr;    </div>
+<div class="line"><span class="lineno">  113</span>    UCSR0B = (1 &lt;&lt; RXEN0) | (1 &lt;&lt; TXEN0) | (1 &lt;&lt; RXCIE0); <span class="comment">// Habilita transmissãoo, recepção e interrupção Rx</span></div>
+<div class="line"><span class="lineno">  114</span>    UCSR0C = (1 &lt;&lt; UCSZ01) | (1 &lt;&lt; UCSZ00); <span class="comment">// Formato do frame: 8 bits, 1 stop bit, sem paridade</span></div>
+<div class="line"><span class="lineno">  115</span>}</div>
+</div><!-- fragment -->
+<p class="reference">Referenciado(a) por <a class="el" href="#a840291bc02cba5474a4cb46a9b9566fe">main()</a>.</p>
+<div class="dynheader">
+Esse é o diagrama das funções que utilizam essa função:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="example1__master_8c_a0c0ca72359ddf28dcd15900dfba19343_icgraph.svg" width="176" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="aa599232c1438c5addd971e05e1dd46a2" name="aa599232c1438c5addd971e05e1dd46a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa599232c1438c5addd971e05e1dd46a2">&#9670;&#160;</a></span>uart_putc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void uart_putc </td>
+          <td>(</td>
+          <td class="paramtype">char</td>          <td class="paramname"><span class="paramname"><em>c</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Envia um caractere via UART. </p>
+<dl class="section examples"><dt>Exemplos</dt><dd><a class="el" href="example1_master_8c-example.html#a14">example1_master.c</a> e <a class="el" href="example3_8c-example.html#a17">example3.c</a>.</dd>
+</dl>
+
+<p class="definition">Definição na linha <a class="el" href="example1__master_8c_source.html#l00118">118</a> do arquivo <a class="el" href="example1__master_8c_source.html">example1_master.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  119</span>{</div>
+<div class="line"><span class="lineno">  120</span>    <span class="keywordflow">while</span> (!(UCSR0A &amp; (1 &lt;&lt; UDRE0)));      <span class="comment">// espera buffer vazio</span></div>
+<div class="line"><span class="lineno">  121</span>    UDR0 = c;</div>
+<div class="line"><span class="lineno">  122</span>}</div>
+</div><!-- fragment -->
+<p class="reference">Referenciado(a) por <a class="el" href="#ac0f988e6b39a10eb1b4f67dd657373bb">uart_puthex8()</a>, <a class="el" href="#a8baf5eef46e8c97517f7cc1b9c027397">uart_putnewline()</a> e <a class="el" href="#ae52facc0a56086a365bb0018160d8d71">uart_puts()</a>.</p>
+<div class="dynheader">
+Esse é o diagrama das funções que utilizam essa função:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="example1__master_8c_aa599232c1438c5addd971e05e1dd46a2_icgraph.svg" width="344" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ac0f988e6b39a10eb1b4f67dd657373bb" name="ac0f988e6b39a10eb1b4f67dd657373bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0f988e6b39a10eb1b4f67dd657373bb">&#9670;&#160;</a></span>uart_puthex8()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void uart_puthex8 </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>val</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Envia um valor de 8 bits em formato hexadecimal. </p>
+<dl class="section examples"><dt>Exemplos</dt><dd><a class="el" href="example1_master_8c-example.html#a3">example1_master.c</a> e <a class="el" href="example3_8c-example.html#a2">example3.c</a>.</dd>
+</dl>
+
+<p class="definition">Definição na linha <a class="el" href="example1__master_8c_source.html#l00131">131</a> do arquivo <a class="el" href="example1__master_8c_source.html">example1_master.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  132</span>{</div>
+<div class="line"><span class="lineno">  133</span>    <span class="keyword">const</span> <span class="keywordtype">char</span> hex[] = <span class="stringliteral">&quot;0123456789ABCDEF&quot;</span>;</div>
+<div class="line"><span class="lineno">  134</span>    <a class="code hl_function" href="#aa599232c1438c5addd971e05e1dd46a2" title="Envia um caractere via UART.">uart_putc</a>(hex[(val &gt;&gt; 4) &amp; 0x0F]);</div>
+<div class="line"><span class="lineno">  135</span>    <a class="code hl_function" href="#aa599232c1438c5addd971e05e1dd46a2" title="Envia um caractere via UART.">uart_putc</a>(hex[val &amp; 0x0F]);</div>
+<div class="line"><span class="lineno">  136</span>}</div>
+</div><!-- fragment -->
+<p class="reference">Referenciado(a) por <a class="el" href="#a840291bc02cba5474a4cb46a9b9566fe">main()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções utilizadas por essa função:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="example1__master_8c_ac0f988e6b39a10eb1b4f67dd657373bb_cgraph.svg" width="231" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Esse é o diagrama das funções que utilizam essa função:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="example1__master_8c_ac0f988e6b39a10eb1b4f67dd657373bb_icgraph.svg" width="204" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a8baf5eef46e8c97517f7cc1b9c027397" name="a8baf5eef46e8c97517f7cc1b9c027397"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8baf5eef46e8c97517f7cc1b9c027397">&#9670;&#160;</a></span>uart_putnewline()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void uart_putnewline </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Exemplos</dt><dd><a class="el" href="example1_master_8c-example.html#a15">example1_master.c</a> e <a class="el" href="example3_8c-example.html#a3">example3.c</a>.</dd>
+</dl>
+
+<p class="definition">Definição na linha <a class="el" href="example1__master_8c_source.html#l00138">138</a> do arquivo <a class="el" href="example1__master_8c_source.html">example1_master.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  139</span>{</div>
+<div class="line"><span class="lineno">  140</span>    <a class="code hl_function" href="#aa599232c1438c5addd971e05e1dd46a2" title="Envia um caractere via UART.">uart_putc</a>(<span class="charliteral">&#39;\r&#39;</span>);</div>
+<div class="line"><span class="lineno">  141</span>    <a class="code hl_function" href="#aa599232c1438c5addd971e05e1dd46a2" title="Envia um caractere via UART.">uart_putc</a>(<span class="charliteral">&#39;\n&#39;</span>);</div>
+<div class="line"><span class="lineno">  142</span>}</div>
+</div><!-- fragment -->
+<p class="reference">Referenciado(a) por <a class="el" href="example3_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções utilizadas por essa função:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="example1__master_8c_a8baf5eef46e8c97517f7cc1b9c027397_cgraph.svg" width="247" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Esse é o diagrama das funções que utilizam essa função:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="example1__master_8c_a8baf5eef46e8c97517f7cc1b9c027397_icgraph.svg" width="220" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ae52facc0a56086a365bb0018160d8d71" name="ae52facc0a56086a365bb0018160d8d71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae52facc0a56086a365bb0018160d8d71">&#9670;&#160;</a></span>uart_puts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void uart_puts </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>s</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Envia uma string via UART. </p>
+<dl class="section examples"><dt>Exemplos</dt><dd><a class="el" href="example1_master_8c-example.html#a2">example1_master.c</a> e <a class="el" href="example3_8c-example.html#a1">example3.c</a>.</dd>
+</dl>
+
+<p class="definition">Definição na linha <a class="el" href="example1__master_8c_source.html#l00125">125</a> do arquivo <a class="el" href="example1__master_8c_source.html">example1_master.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  126</span>{</div>
+<div class="line"><span class="lineno">  127</span>    <span class="keywordflow">while</span> (*s) <a class="code hl_function" href="#aa599232c1438c5addd971e05e1dd46a2" title="Envia um caractere via UART.">uart_putc</a>(*s++);</div>
+<div class="line"><span class="lineno">  128</span>}</div>
+</div><!-- fragment -->
+<p class="reference">Referenciado(a) por <a class="el" href="#a840291bc02cba5474a4cb46a9b9566fe">main()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções utilizadas por essa função:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="example1__master_8c_ae52facc0a56086a365bb0018160d8d71_cgraph.svg" width="210" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Esse é o diagrama das funções que utilizam essa função:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="example1__master_8c_ae52facc0a56086a365bb0018160d8d71_icgraph.svg" width="184" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Variáveis</h2>
+<a id="a9cd26b88e86ddcadc97d20c168a6273f" name="a9cd26b88e86ddcadc97d20c168a6273f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cd26b88e86ddcadc97d20c168a6273f">&#9670;&#160;</a></span>flag_overflow_isr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile bool flag_overflow_isr = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Flag de erro para sinalizar overflow detectado na ISR. </p>
+<dl class="section examples"><dt>Exemplos</dt><dd><a class="el" href="example1_master_8c-example.html#_a0">example1_master.c</a>.</dd>
+</dl>
+
+<p class="definition">Definição na linha <a class="el" href="example1__master_8c_source.html#l00028">28</a> do arquivo <a class="el" href="example1__master_8c_source.html">example1_master.c</a>.</p>
+
+<p class="reference">Referenciado(a) por <a class="el" href="#ac7edcec893fbf5526d09f0a894e03aa5">rx_callback()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- HTML footer for doxygen 1.16.1-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_d28a4824dc47e487b107a5db32ef43c4.html">examples</a></li><li class="navelem"><a href="example1__master_8c.html">example1_master.c</a></li>
+    <li class="footer">
+      Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 | 
+      Desenvolvido por <b>Tiago Henrique dos Santos - Ci&ecirc;ncia El&eacute;trica</b>
+    </li>
+  </ul>
+</div>
+</body>
+</html>

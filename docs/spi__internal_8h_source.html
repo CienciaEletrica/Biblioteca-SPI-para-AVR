@@ -1,0 +1,331 @@
+<!-- HTML header for doxygen 1.16.1-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta charset="utf-8">
+<title>Biblioteca SPI AVR: Código-Fonte de inc/spi_internal.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="custom_styles.css" rel="stylesheet" type="text/css" />
+<link href="custom_styles.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+  <table cellspacing="0" cellpadding="0" style="width: 100%; border: none;">
+   <tbody>
+   <tr style="height: 80px;"> 
+    <td id="projectlogo" style="width: 80px; padding: 10px;">
+      <!-- O Doxygen tira o caminho 'img/' ao copiar, então usamos apenas o nome -->
+      <img alt="Logo" src="FIGURA2.png" style="height: 60px !important; width: auto !important; display: block;"/>
+    </td>
+    <td id="projectalign" style="padding-left: 0.5em; vertical-align: middle;">
+     <div id="projectname" style="font-size: 1.6em; font-weight: bold;">Driver SPI - YouTube: Ci&ecirc;ncia El&eacute;trica</div>
+     <div id="projectbrief" style="font-size: 1em; opacity: 0.8;">Biblioteca Otimizada para Microcontroladores AVR</div>
+    </td>
+   </tr>
+   </tbody>
+  </table>
+</div>
+<!-- Gerado por Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Busca',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('spi__internal_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">spi_internal.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="spi__internal_8h.html">Ir para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * @file    spi_internal.h</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> * @brief   Definições e funções de uso INTERNO da biblioteca SPI.</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * @internal</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> * </span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> * @details Este arquivo contém macros para manipulação direta de hardware, </span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> *          máquina de estados interna e funções inline de alta performance </span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> *          para os buffers circulares.</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"> * @note    NÃO inclua este arquivo na sua aplicação. Use apenas @ref spi.h.</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"> * </span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"> * @attention Referência: ATmega328P datasheet - Seção 19 (SPI).</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#ifndef SPI_INTERNAL_H</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#define SPI_INTERNAL_H</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;<a class="code" href="spi__types_8h.html" title="Definições de tipos, enums e estruturas para a biblioteca SPI.">spi_types.h</a>&quot;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;avr/interrupt.h&gt;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;stddef.h&gt;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"></span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"> * @defgroup SPI_HW_MACROS Macros de Hardware</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment"> * @brief Acesso direto aos registradores SPCR, SPSR e SPDR.</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment"> * @{</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="group___s_p_i___h_w___m_a_c_r_o_s.html#gab0fa1e911682d029595306c974d8e172">   27</a></span><span class="preprocessor">#define SPI_HW_ENABLE()             do { SPCR |=  (1 &lt;&lt; SPE);  } while (0)</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="group___s_p_i___h_w___m_a_c_r_o_s.html#ga1ceb876911148ac29ac6674390a07d3c">   28</a></span><span class="preprocessor">#define SPI_HW_DISABLE()            do { SPCR &amp;= ~(1 &lt;&lt; SPE);  } while (0)</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="group___s_p_i___h_w___m_a_c_r_o_s.html#gac626ae614404567937ed53a9754e70ed">   30</a></span><span class="preprocessor">#define SPI_HW_SET_MASTER()         do { SPCR |=  (1 &lt;&lt; MSTR); } while (0)</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="group___s_p_i___h_w___m_a_c_r_o_s.html#ga516e6f94213f88175c5308b6a5d987eb">   31</a></span><span class="preprocessor">#define SPI_HW_SET_SLAVE()          do { SPCR &amp;= ~(1 &lt;&lt; MSTR); } while (0)</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="group___s_p_i___h_w___m_a_c_r_o_s.html#gaa2484e2f315db9f82101f5f7842eac80">   33</a></span><span class="preprocessor">#define SPI_HW_INTERRUPT_ENABLE()   do { SPCR |=  (1 &lt;&lt; SPIE); } while (0)</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="group___s_p_i___h_w___m_a_c_r_o_s.html#ga9d91ab610acc072d006dbd82505507b6">   34</a></span><span class="preprocessor">#define SPI_HW_INTERRUPT_DISABLE()  do { SPCR &amp;= ~(1 &lt;&lt; SPIE); } while (0)</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment"></span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">/** @brief Verifica se a flag de interrupção (SPIF) está setada */</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="group___s_p_i___h_w___m_a_c_r_o_s.html#ga3c0b3d69ed0a47275bfd647a10dd1beb">   37</a></span><span class="preprocessor">#define SPI_HW_IS_INTERRUPT_FLAG_SET()  (SPSR &amp; (1 &lt;&lt; SPIF))</span><span class="comment"></span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">/** @brief Limpa a flag SPIF (requer leitura do SPSR seguida de leitura do SPDR) */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="group___s_p_i___h_w___m_a_c_r_o_s.html#ga29f171d8a268999ae11def642d69043f">   39</a></span><span class="preprocessor">#define SPI_HW_CLEAR_INTERRUPT_FLAG()   do { (void)SPSR; (void)SPDR; } while (0)</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment"></span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">/** @brief Detecta colisão de escrita (WCOL) */</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="group___s_p_i___h_w___m_a_c_r_o_s.html#ga8a1e3b507c503e73a42448008ddc403d">   42</a></span><span class="preprocessor">#define SPI_HW_WRITE_COLLISION_DETECTED()   (SPSR &amp; (1 &lt;&lt; WCOL))</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="group___s_p_i___h_w___m_a_c_r_o_s.html#gaf62518d2a98802eb957fb3c613aa39d0">   44</a></span><span class="preprocessor">#define SPI_HW_DOUBLE_SPEED_ENABLE()    do { SPSR |=  (1 &lt;&lt; SPI2X); } while (0)</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="group___s_p_i___h_w___m_a_c_r_o_s.html#ga1bc3c2ec7cc673e932d9fe09c123e59f">   45</a></span><span class="preprocessor">#define SPI_HW_DOUBLE_SPEED_DISABLE()   do { SPSR &amp;= ~(1 &lt;&lt; SPI2X); } while (0)</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="group___s_p_i___h_w___m_a_c_r_o_s.html#ga3b213e86f2a10a2c3198e51502aec25e">   47</a></span><span class="preprocessor">#define SPI_HW_WRITE_DATA(data)         do { SPDR = (data); } while (0) </span><span class="comment">/**&lt; Escreve no registrador de dados (Inicia TX) */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="group___s_p_i___h_w___m_a_c_r_o_s.html#ga256a16287e402998597f865791bd142c">   48</a></span><span class="preprocessor">#define SPI_HW_READ_DATA()              (SPDR) </span><span class="comment">/**&lt; Lê o registrador de dados recebidos */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment"></span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">/** @brief Máscara para bits de clock SPR0 e SPR1 no registrador SPCR */</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="group___s_p_i___h_w___m_a_c_r_o_s.html#ga978d4a94e35237705164f079fec28b04">   51</a></span><span class="preprocessor">#define SPI_HW_CLOCK_BITS(div)  (((div) &amp; 0x03) &lt;&lt; SPR0)</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment"></span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment"> * @brief Aplica divisor de clock e modo Double Speed.</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment"> * @param div Divisor (0..3).</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment"> * @param double_speed Booleano para modo 2x.</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment"> */</span></div>
+<div class="foldopen" id="foldopen00058" data-start="" data-end="">
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="group___s_p_i___h_w___m_a_c_r_o_s.html#ga0c932004fac1b7e730a98521ce6c67b8">   58</a></span><span class="preprocessor">#define SPI_HW_APPLY_CLOCK_DIV(div, double_speed)   \</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">    do {                                            \</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">        SPCR = (SPCR &amp; ~((1&lt;&lt;SPR1)|(1&lt;&lt;SPR0))) | SPI_HW_CLOCK_BITS(div); \</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">        if (double_speed) SPI_HW_DOUBLE_SPEED_ENABLE(); else SPI_HW_DOUBLE_SPEED_DISABLE(); \</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">    } while (0)</span></div>
+</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment"></span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">/** @brief Configura Polaridade (CPOL) e Fase (CPHA) */</span></div>
+<div class="foldopen" id="foldopen00065" data-start="" data-end="">
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="group___s_p_i___h_w___m_a_c_r_o_s.html#ga77bea7062cce537bd64f84eb84d735b9">   65</a></span><span class="preprocessor">#define SPI_HW_SET_CPOL_CPHA(cpol, cpha) \</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">    do {                                 \</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="preprocessor">        SPCR = (SPCR &amp; ~((1&lt;&lt;CPOL)|(1&lt;&lt;CPHA))) | ((cpol)&lt;&lt;CPOL) | ((cpha)&lt;&lt;CPHA); \</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="preprocessor">    } while (0)</span></div>
+</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment"></span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">/** @brief Configura ordem dos bits (MSB ou LSB first) */</span></div>
+<div class="foldopen" id="foldopen00071" data-start="" data-end="">
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="group___s_p_i___h_w___m_a_c_r_o_s.html#ga47d960273a3dc2c6b288a1bcf4aecff1">   71</a></span><span class="preprocessor">#define SPI_HW_SET_DATA_ORDER(order) \</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="preprocessor">    do {                             \</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="preprocessor">        if (order == SPI_ORDER_LSB_FIRST) SPCR |=  (1 &lt;&lt; DORD); \</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="preprocessor">        else                              SPCR &amp;= ~(1 &lt;&lt; DORD); \</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="preprocessor">    } while (0)</span></div>
+</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment"></span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment">/** @} */</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment"></span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment"> * @brief Estados internos da máquina de operação do driver.</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment"> */</span></div>
+<div class="foldopen" id="foldopen00082" data-start="{" data-end="};">
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="spi__internal_8h.html#ad1b95dd811b5effd79e4ae0872001158">   82</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="spi__internal_8h.html#ad1b95dd811b5effd79e4ae0872001158a4e4eea93b1bb05788c9590bbe319b23c">   83</a></span>    <a class="code hl_enumvalue" href="spi__internal_8h.html#ad1b95dd811b5effd79e4ae0872001158a4e4eea93b1bb05788c9590bbe319b23c">SPI_STATE_IDLE</a>,                 <span class="comment">/**&lt; Módulo ocioso. */</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="spi__internal_8h.html#ad1b95dd811b5effd79e4ae0872001158ace71c6d6db4fafc3d9c450d9637eb96a">   84</a></span>    <a class="code hl_enumvalue" href="spi__internal_8h.html#ad1b95dd811b5effd79e4ae0872001158ace71c6d6db4fafc3d9c450d9637eb96a">SPI_STATE_TX_ACTIVE</a>,            <span class="comment">/**&lt; Transmissão em curso. */</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="spi__internal_8h.html#ad1b95dd811b5effd79e4ae0872001158a34630fac18dafad4e475e210f5a9f617">   85</a></span>    <a class="code hl_enumvalue" href="spi__internal_8h.html#ad1b95dd811b5effd79e4ae0872001158a34630fac18dafad4e475e210f5a9f617">SPI_STATE_TX_LAST_BYTE</a>,         <span class="comment">/**&lt; Aguardando último ciclo de clock. */</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="spi__internal_8h.html#ad1b95dd811b5effd79e4ae0872001158a88b2ab0cca7e4795a02876d28ae27510">   86</a></span>    <a class="code hl_enumvalue" href="spi__internal_8h.html#ad1b95dd811b5effd79e4ae0872001158a88b2ab0cca7e4795a02876d28ae27510">SPI_STATE_ERROR_COLLISION</a>       <span class="comment">/**&lt; Erro de colisão detectado. */</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>} <a class="code hl_enumeration" href="spi__internal_8h.html#ad1b95dd811b5effd79e4ae0872001158" title="Estados internos da máquina de operação do driver.">spi_internal_state_t</a>;</div>
+</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment"></span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment">/** @brief Estado atual do driver (definido no spi.c) */</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="keyword">extern</span> <span class="keyword">volatile</span> <a class="code hl_enumeration" href="spi__internal_8h.html#ad1b95dd811b5effd79e4ae0872001158" title="Estados internos da máquina de operação do driver.">spi_internal_state_t</a> <a class="code hl_variable" href="spi__internal_8h.html#a1fd14a1eeedd317516e19c6de4010a48" title="Estado atual do driver (definido no spi.c).">spi_state</a>;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="comment"></span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="comment"> * @defgroup SPI_BUFFER_INTERNAL Funções de Buffer (Inline)</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment"> * @brief Manipulação de buffers circulares otimizada para 8 bits.</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment"> * @{</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="comment"></span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="comment"> * @brief Calcula o próximo índice do buffer circular.</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment"> * @note O tamanho do buffer deve ser obrigatoriamente potência de 2.</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment"> */</span></div>
+<div class="foldopen" id="foldopen00102" data-start="{" data-end="}">
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="group___s_p_i___b_u_f_f_e_r___i_n_t_e_r_n_a_l.html#gababc053045f0c05b31e334632f2dc0fb">  102</a></span><span class="keyword">static</span> <span class="keyword">inline</span> uint8_t <a class="code hl_function" href="group___s_p_i___b_u_f_f_e_r___i_n_t_e_r_n_a_l.html#gababc053045f0c05b31e334632f2dc0fb" title="Calcula o próximo índice do buffer circular.">spi_buf_next</a>(uint8_t idx, uint8_t buf_size) {</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="keywordflow">return</span> (uint8_t)((idx + 1u) &amp; (uint8_t)(buf_size - 1u));</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>}</div>
+</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="comment"></span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment"> * @brief Adiciona um byte à fila de transmissão.</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="comment"> * @return true se inserido, false se buffer cheio.</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="comment"> */</span></div>
+<div class="foldopen" id="foldopen00110" data-start="{" data-end="}">
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="group___s_p_i___b_u_f_f_e_r___i_n_t_e_r_n_a_l.html#gab47c332d2d9ce5626758ec73ff01e40f">  110</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="group___s_p_i___b_u_f_f_e_r___i_n_t_e_r_n_a_l.html#gab47c332d2d9ce5626758ec73ff01e40f" title="Adiciona um byte à fila de transmissão.">spi_tx_enqueue</a>(uint8_t <span class="keywordtype">byte</span>) {</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    uint8_t next_head = <a class="code hl_function" href="group___s_p_i___b_u_f_f_e_r___i_n_t_e_r_n_a_l.html#gababc053045f0c05b31e334632f2dc0fb" title="Calcula o próximo índice do buffer circular.">spi_buf_next</a>(<a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.tx_head, <a class="code hl_define" href="group___s_p_i___c_o_n_f_i_g___c_o_n_s_t_s.html#gaeb11fa6162c55c5a74ec27b0551ae82b" title="Tamanho do buffer de transmissão (TX).">SPI_TX_BUFFER_SIZE</a>);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="keywordflow">if</span> (next_head == <a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.tx_tail) {</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        <a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.tx_overflow = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    }</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.tx_buffer[<a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.tx_head] = byte;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.tx_head = next_head;            <span class="comment">// escrita at�mica (8 bits)</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>}</div>
+</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="comment"></span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="comment"> * @brief Remove um byte da fila de transmissão.</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="comment"> * @param[out] byte Ponteiro para armazenar o dado removido.</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="comment"> * @return true se havia dado para remover.</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="comment"> */</span></div>
+<div class="foldopen" id="foldopen00128" data-start="{" data-end="}">
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="group___s_p_i___b_u_f_f_e_r___i_n_t_e_r_n_a_l.html#ga9eb832ea6e4deb5d067f69c9192b0b32">  128</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="group___s_p_i___b_u_f_f_e_r___i_n_t_e_r_n_a_l.html#ga9eb832ea6e4deb5d067f69c9192b0b32" title="Remove um byte da fila de transmissão.">spi_tx_dequeue</a>(uint8_t *<span class="keywordtype">byte</span>) {</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.tx_head == <a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.tx_tail) {</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    }</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    *<span class="keywordtype">byte</span> = <a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.tx_buffer[<a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.tx_tail];</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    <a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.tx_tail = <a class="code hl_function" href="group___s_p_i___b_u_f_f_e_r___i_n_t_e_r_n_a_l.html#gababc053045f0c05b31e334632f2dc0fb" title="Calcula o próximo índice do buffer circular.">spi_buf_next</a>(<a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.tx_tail, <a class="code hl_define" href="group___s_p_i___c_o_n_f_i_g___c_o_n_s_t_s.html#gaeb11fa6162c55c5a74ec27b0551ae82b" title="Tamanho do buffer de transmissão (TX).">SPI_TX_BUFFER_SIZE</a>);</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>}</div>
+</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="comment"></span> </div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="comment"> * @brief Adiciona um byte recebido à fila RX (chamado na ISR).</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="comment"> */</span></div>
+<div class="foldopen" id="foldopen00141" data-start="{" data-end="}">
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno"><a class="line" href="group___s_p_i___b_u_f_f_e_r___i_n_t_e_r_n_a_l.html#ga82e736d319c4516104fe3d6dbcb42a32">  141</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="group___s_p_i___b_u_f_f_e_r___i_n_t_e_r_n_a_l.html#ga82e736d319c4516104fe3d6dbcb42a32" title="Adiciona um byte recebido à fila RX (chamado na ISR).">spi_rx_enqueue</a>(uint8_t <span class="keywordtype">byte</span>) {</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    uint8_t next = <a class="code hl_function" href="group___s_p_i___b_u_f_f_e_r___i_n_t_e_r_n_a_l.html#gababc053045f0c05b31e334632f2dc0fb" title="Calcula o próximo índice do buffer circular.">spi_buf_next</a>(<a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.rx_head, <a class="code hl_define" href="group___s_p_i___c_o_n_f_i_g___c_o_n_s_t_s.html#ga5ba945af79c56dd7edc827c5c354b651" title="Tamanho do buffer de recepção (RX).">SPI_RX_BUFFER_SIZE</a>);</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    <span class="keywordflow">if</span> (next == <a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.rx_tail) {</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        <a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.rx_overflow = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    }</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    <a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.rx_buffer[<a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.rx_head] = byte;</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    <a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.rx_head = next;</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>}</div>
+</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="comment"></span> </div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="comment"> * @brief Extrai um byte da fila RX para a aplicação.</span></div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span><span class="comment"> */</span></div>
+<div class="foldopen" id="foldopen00157" data-start="{" data-end="}">
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno"><a class="line" href="group___s_p_i___b_u_f_f_e_r___i_n_t_e_r_n_a_l.html#ga21653571743b2c7dd79691c3c1a17990">  157</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="group___s_p_i___b_u_f_f_e_r___i_n_t_e_r_n_a_l.html#ga21653571743b2c7dd79691c3c1a17990" title="Extrai um byte da fila RX para a aplicação.">spi_rx_dequeue</a>(uint8_t *<span class="keywordtype">byte</span>) {</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.rx_head == <a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.rx_tail) {</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    }</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    *<span class="keywordtype">byte</span> = <a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.rx_buffer[<a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.rx_tail];</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    <a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.rx_tail = <a class="code hl_function" href="group___s_p_i___b_u_f_f_e_r___i_n_t_e_r_n_a_l.html#gababc053045f0c05b31e334632f2dc0fb" title="Calcula o próximo índice do buffer circular.">spi_buf_next</a>(<a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.rx_tail, <a class="code hl_define" href="group___s_p_i___c_o_n_f_i_g___c_o_n_s_t_s.html#ga5ba945af79c56dd7edc827c5c354b651" title="Tamanho do buffer de recepção (RX).">SPI_RX_BUFFER_SIZE</a>);</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>}</div>
+</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span><span class="comment"></span> </div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span><span class="comment">/** @} */</span></div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="comment"></span> </div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="comment"> * @defgroup SPI_INTERNAL_PROTOS Protótipos Internos</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="comment"> * @brief Funções implementadas em spi.c para controle de hardware.</span></div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="comment"> * @{</span></div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span><span class="comment"></span> </div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span><span class="comment">/** @brief Sincroniza registradores do AVR com @ref spi.config */</span></div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span><span class="keywordtype">void</span> <a class="code hl_function" href="group___s_p_i___i_n_t_e_r_n_a_l___p_r_o_t_o_s.html#ga449cd570fc792c387aacaef5c58a5d67" title="Sincroniza registradores do AVR com spi.config.">spi_hw_apply_config</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span><span class="comment"></span> </div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="comment">/** @brief Configura direção dos pinos MOSI/MISO/SCK/SS */</span></div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><span class="keywordtype">void</span> <a class="code hl_function" href="group___s_p_i___i_n_t_e_r_n_a_l___p_r_o_t_o_s.html#ga63ee202e30ff6afe6667c7155c63aa2d" title="Configura direção dos pinos MOSI/MISO/SCK/SS.">spi_hw_init_pins</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structspi__config__t.html" title="Estrutura de configuração para inicialização do SPI.">spi_config_t</a> *cfg);</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span><span class="comment"></span> </div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span><span class="comment">/** @brief Controle de hardware para Chip Select */</span></div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span><span class="keywordtype">void</span> <a class="code hl_function" href="group___s_p_i___i_n_t_e_r_n_a_l___p_r_o_t_o_s.html#gaf444e00ab7250d625bc670dd4e21328c" title="Controle de hardware para Chip Select.">spi_hw_select_slave</a>(uint8_t <span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span><span class="keywordtype">void</span> <a class="code hl_function" href="group___s_p_i___i_n_t_e_r_n_a_l___p_r_o_t_o_s.html#ga71e76125efbe8d9f1dd3d519613cb652" title="Sobe o pino de Chip Select do escravo atual.">spi_hw_deselect_slave</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="comment"></span> </div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span><span class="comment">/** @brief Inicia o primeiro byte de uma sequência de transmissão */</span></div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><span class="keywordtype">bool</span> <a class="code hl_function" href="group___s_p_i___i_n_t_e_r_n_a_l___p_r_o_t_o_s.html#ga30307a7e6e65f6a80a803d724b09f4f3" title="Inicia o primeiro byte de uma sequência de transmissão.">spi_hw_start_tx_pipeline</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span><span class="comment"></span> </div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span><span class="comment">/** @brief Lógica central executada a cada byte concluído na ISR */</span></div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno"><a class="line" href="group___s_p_i___i_n_t_e_r_n_a_l___p_r_o_t_o_s.html#ga4503da71a9cf86afaf14568b6013ee55">  189</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="group___s_p_i___i_n_t_e_r_n_a_l___p_r_o_t_o_s.html#ga4503da71a9cf86afaf14568b6013ee55" title="Lógica central executada a cada byte concluído na ISR.">spi_hw_handle_transfer_complete</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="comment"></span> </div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span><span class="comment">/** @brief Tenta recuperar o estado do driver após erro de colisão */</span></div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span><span class="keywordtype">void</span> <a class="code hl_function" href="group___s_p_i___i_n_t_e_r_n_a_l___p_r_o_t_o_s.html#ga4ccfd9c55f4d277c322b1d2354d75c66" title="Tenta recuperar o estado do driver após erro de colisão.">spi_hw_recover_collision</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span><span class="comment"></span> </div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span><span class="comment">/** @brief Carrega dado no SPDR sem disparar clock (Modo Slave) */</span></div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno"><a class="line" href="group___s_p_i___i_n_t_e_r_n_a_l___p_r_o_t_o_s.html#ga89eb00084e1a7eba2bd746eed8fd1738">  195</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___s_p_i___i_n_t_e_r_n_a_l___p_r_o_t_o_s.html#ga89eb00084e1a7eba2bd746eed8fd1738" title="Carrega dado no SPDR sem disparar clock (Modo Slave).">spi_hw_slave_preload</a>(uint8_t dummy);</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span><span class="comment"></span> </div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="comment">/** @} */</span></div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="preprocessor">#endif </span><span class="comment">/* SPI_INTERNAL_H */</span><span class="preprocessor"></span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- HTML footer for doxygen 1.16.1-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li><li class="navelem"><a href="spi__internal_8h.html">spi_internal.h</a></li>
+    <li class="footer">
+      Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 | 
+      Desenvolvido por <b>Tiago Henrique dos Santos - Ci&ecirc;ncia El&eacute;trica</b>
+    </li>
+  </ul>
+</div>
+</body>
+</html>

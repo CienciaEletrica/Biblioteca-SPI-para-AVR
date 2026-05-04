@@ -1,0 +1,385 @@
+<!-- HTML header for doxygen 1.16.1-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta charset="utf-8">
+<title>Biblioteca SPI AVR: Funções de Buffer (Inline)</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="custom_styles.css" rel="stylesheet" type="text/css" />
+<link href="custom_styles.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+  <table cellspacing="0" cellpadding="0" style="width: 100%; border: none;">
+   <tbody>
+   <tr style="height: 80px;"> 
+    <td id="projectlogo" style="width: 80px; padding: 10px;">
+      <!-- O Doxygen tira o caminho 'img/' ao copiar, então usamos apenas o nome -->
+      <img alt="Logo" src="FIGURA2.png" style="height: 60px !important; width: auto !important; display: block;"/>
+    </td>
+    <td id="projectalign" style="padding-left: 0.5em; vertical-align: middle;">
+     <div id="projectname" style="font-size: 1.6em; font-weight: bold;">Driver SPI - YouTube: Ci&ecirc;ncia El&eacute;trica</div>
+     <div id="projectbrief" style="font-size: 1em; opacity: 0.8;">Biblioteca Otimizada para Microcontroladores AVR</div>
+    </td>
+   </tr>
+   </tbody>
+  </table>
+</div>
+<!-- Gerado por Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Busca',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('group___s_p_i___b_u_f_f_e_r___i_n_t_e_r_n_a_l.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Funções de Buffer (Inline) </div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Manipulação de buffers circulares otimizada para 8 bits.  
+<a href="#details">Mais...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:gababc053045f0c05b31e334632f2dc0fb" id="r_gababc053045f0c05b31e334632f2dc0fb"><td class="memItemLeft">static uint8_t&#160;</td><td class="memItemRight"><a class="el" href="#gababc053045f0c05b31e334632f2dc0fb">spi_buf_next</a> (uint8_t idx, uint8_t buf_size)</td></tr>
+<tr class="memdesc:gababc053045f0c05b31e334632f2dc0fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcula o próximo índice do buffer circular.  <br /></td></tr>
+<tr class="memitem:gab47c332d2d9ce5626758ec73ff01e40f" id="r_gab47c332d2d9ce5626758ec73ff01e40f"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#gab47c332d2d9ce5626758ec73ff01e40f">spi_tx_enqueue</a> (uint8_t byte)</td></tr>
+<tr class="memdesc:gab47c332d2d9ce5626758ec73ff01e40f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adiciona um byte à fila de transmissão.  <br /></td></tr>
+<tr class="memitem:ga9eb832ea6e4deb5d067f69c9192b0b32" id="r_ga9eb832ea6e4deb5d067f69c9192b0b32"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#ga9eb832ea6e4deb5d067f69c9192b0b32">spi_tx_dequeue</a> (uint8_t *byte)</td></tr>
+<tr class="memdesc:ga9eb832ea6e4deb5d067f69c9192b0b32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove um byte da fila de transmissão.  <br /></td></tr>
+<tr class="memitem:ga82e736d319c4516104fe3d6dbcb42a32" id="r_ga82e736d319c4516104fe3d6dbcb42a32"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#ga82e736d319c4516104fe3d6dbcb42a32">spi_rx_enqueue</a> (uint8_t byte)</td></tr>
+<tr class="memdesc:ga82e736d319c4516104fe3d6dbcb42a32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adiciona um byte recebido à fila RX (chamado na ISR).  <br /></td></tr>
+<tr class="memitem:ga21653571743b2c7dd79691c3c1a17990" id="r_ga21653571743b2c7dd79691c3c1a17990"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#ga21653571743b2c7dd79691c3c1a17990">spi_rx_dequeue</a> (uint8_t *byte)</td></tr>
+<tr class="memdesc:ga21653571743b2c7dd79691c3c1a17990"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extrai um byte da fila RX para a aplicação.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Manipulação de buffers circulares otimizada para 8 bits. </p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Funções</h2>
+<a id="gababc053045f0c05b31e334632f2dc0fb" name="gababc053045f0c05b31e334632f2dc0fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gababc053045f0c05b31e334632f2dc0fb">&#9670;&#160;</a></span>spi_buf_next()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t spi_buf_next </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>idx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>buf_size</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calcula o próximo índice do buffer circular. </p>
+<dl class="section note"><dt>Observação</dt><dd>O tamanho do buffer deve ser obrigatoriamente potência de 2. </dd></dl>
+
+<p class="definition">Definição na linha <a class="el" href="spi__internal_8h_source.html#l00102">102</a> do arquivo <a class="el" href="spi__internal_8h_source.html">spi_internal.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  102</span>                                                                  {</div>
+<div class="line"><span class="lineno">  103</span>    <span class="keywordflow">return</span> (uint8_t)((idx + 1u) &amp; (uint8_t)(buf_size - 1u));</div>
+<div class="line"><span class="lineno">  104</span>}</div>
+</div><!-- fragment -->
+<p class="reference">Referenciado(a) por <a class="el" href="#ga21653571743b2c7dd79691c3c1a17990">spi_rx_dequeue()</a>, <a class="el" href="#ga82e736d319c4516104fe3d6dbcb42a32">spi_rx_enqueue()</a>, <a class="el" href="group___s_p_i___a_s_y_n_c.html#gaf7c63fb3650bcece7c5c89b775b7f072">spi_rx_read()</a>, <a class="el" href="#ga9eb832ea6e4deb5d067f69c9192b0b32">spi_tx_dequeue()</a>, <a class="el" href="#gab47c332d2d9ce5626758ec73ff01e40f">spi_tx_enqueue()</a> e <a class="el" href="group___s_p_i___a_s_y_n_c.html#ga5667e88be47d87c48a22117c8a8c3cb5">spi_write_async()</a>.</p>
+<div class="dynheader">
+Esse é o diagrama das funções que utilizam essa função:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="group___s_p_i___b_u_f_f_e_r___i_n_t_e_r_n_a_l_gababc053045f0c05b31e334632f2dc0fb_icgraph.svg" width="896" height="291"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ga21653571743b2c7dd79691c3c1a17990" name="ga21653571743b2c7dd79691c3c1a17990"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga21653571743b2c7dd79691c3c1a17990">&#9670;&#160;</a></span>spi_rx_dequeue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spi_rx_dequeue </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *</td>          <td class="paramname"><span class="paramname"><em>byte</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Extrai um byte da fila RX para a aplicação. </p>
+
+<p class="definition">Definição na linha <a class="el" href="spi__internal_8h_source.html#l00157">157</a> do arquivo <a class="el" href="spi__internal_8h_source.html">spi_internal.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  157</span>                                                 {</div>
+<div class="line"><span class="lineno">  158</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.rx_head == <a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.rx_tail) {</div>
+<div class="line"><span class="lineno">  159</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  160</span>    }</div>
+<div class="line"><span class="lineno">  161</span> </div>
+<div class="line"><span class="lineno">  162</span>    *<span class="keywordtype">byte</span> = <a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.rx_buffer[<a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.rx_tail];</div>
+<div class="line"><span class="lineno">  163</span>    <a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.rx_tail = <a class="code hl_function" href="#gababc053045f0c05b31e334632f2dc0fb" title="Calcula o próximo índice do buffer circular.">spi_buf_next</a>(<a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.rx_tail, <a class="code hl_define" href="group___s_p_i___c_o_n_f_i_g___c_o_n_s_t_s.html#ga5ba945af79c56dd7edc827c5c354b651" title="Tamanho do buffer de recepção (RX).">SPI_RX_BUFFER_SIZE</a>);</div>
+<div class="line"><span class="lineno">  164</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  165</span>}</div>
+</div><!-- fragment --><div class="dynheader">
+Este é o diagrama das funções utilizadas por essa função:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="group___s_p_i___b_u_f_f_e_r___i_n_t_e_r_n_a_l_ga21653571743b2c7dd79691c3c1a17990_cgraph.svg" width="267" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ga82e736d319c4516104fe3d6dbcb42a32" name="ga82e736d319c4516104fe3d6dbcb42a32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga82e736d319c4516104fe3d6dbcb42a32">&#9670;&#160;</a></span>spi_rx_enqueue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spi_rx_enqueue </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>byte</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Adiciona um byte recebido à fila RX (chamado na ISR). </p>
+
+<p class="definition">Definição na linha <a class="el" href="spi__internal_8h_source.html#l00141">141</a> do arquivo <a class="el" href="spi__internal_8h_source.html">spi_internal.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  141</span>                                                {</div>
+<div class="line"><span class="lineno">  142</span>    uint8_t next = <a class="code hl_function" href="#gababc053045f0c05b31e334632f2dc0fb" title="Calcula o próximo índice do buffer circular.">spi_buf_next</a>(<a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.rx_head, <a class="code hl_define" href="group___s_p_i___c_o_n_f_i_g___c_o_n_s_t_s.html#ga5ba945af79c56dd7edc827c5c354b651" title="Tamanho do buffer de recepção (RX).">SPI_RX_BUFFER_SIZE</a>);</div>
+<div class="line"><span class="lineno">  143</span> </div>
+<div class="line"><span class="lineno">  144</span>    <span class="keywordflow">if</span> (next == <a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.rx_tail) {</div>
+<div class="line"><span class="lineno">  145</span>        <a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.rx_overflow = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  146</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  147</span>    }</div>
+<div class="line"><span class="lineno">  148</span> </div>
+<div class="line"><span class="lineno">  149</span>    <a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.rx_buffer[<a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.rx_head] = byte;</div>
+<div class="line"><span class="lineno">  150</span>    <a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.rx_head = next;</div>
+<div class="line"><span class="lineno">  151</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  152</span>}</div>
+</div><!-- fragment -->
+<p class="reference">Referenciado(a) por <a class="el" href="spi_8c.html#af9cad97352f5ba9bbd800446131125a6">ISR()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções utilizadas por essa função:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="group___s_p_i___b_u_f_f_e_r___i_n_t_e_r_n_a_l_ga82e736d319c4516104fe3d6dbcb42a32_cgraph.svg" width="267" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Esse é o diagrama das funções que utilizam essa função:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="group___s_p_i___b_u_f_f_e_r___i_n_t_e_r_n_a_l_ga82e736d319c4516104fe3d6dbcb42a32_icgraph.svg" width="216" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ga9eb832ea6e4deb5d067f69c9192b0b32" name="ga9eb832ea6e4deb5d067f69c9192b0b32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9eb832ea6e4deb5d067f69c9192b0b32">&#9670;&#160;</a></span>spi_tx_dequeue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spi_tx_dequeue </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *</td>          <td class="paramname"><span class="paramname"><em>byte</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Remove um byte da fila de transmissão. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">byte</td><td>Ponteiro para armazenar o dado removido. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>true se havia dado para remover. </dd></dl>
+
+<p class="definition">Definição na linha <a class="el" href="spi__internal_8h_source.html#l00128">128</a> do arquivo <a class="el" href="spi__internal_8h_source.html">spi_internal.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  128</span>                                                 {</div>
+<div class="line"><span class="lineno">  129</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.tx_head == <a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.tx_tail) {</div>
+<div class="line"><span class="lineno">  130</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  131</span>    }</div>
+<div class="line"><span class="lineno">  132</span> </div>
+<div class="line"><span class="lineno">  133</span>    *<span class="keywordtype">byte</span> = <a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.tx_buffer[<a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.tx_tail];</div>
+<div class="line"><span class="lineno">  134</span>    <a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.tx_tail = <a class="code hl_function" href="#gababc053045f0c05b31e334632f2dc0fb" title="Calcula o próximo índice do buffer circular.">spi_buf_next</a>(<a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.tx_tail, <a class="code hl_define" href="group___s_p_i___c_o_n_f_i_g___c_o_n_s_t_s.html#gaeb11fa6162c55c5a74ec27b0551ae82b" title="Tamanho do buffer de transmissão (TX).">SPI_TX_BUFFER_SIZE</a>);</div>
+<div class="line"><span class="lineno">  135</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  136</span>}</div>
+</div><!-- fragment -->
+<p class="reference">Referenciado(a) por <a class="el" href="spi_8c.html#af9cad97352f5ba9bbd800446131125a6">ISR()</a> e <a class="el" href="group___s_p_i___i_n_t_e_r_n_a_l___p_r_o_t_o_s.html#ga30307a7e6e65f6a80a803d724b09f4f3">spi_hw_start_tx_pipeline()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções utilizadas por essa função:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="group___s_p_i___b_u_f_f_e_r___i_n_t_e_r_n_a_l_ga9eb832ea6e4deb5d067f69c9192b0b32_cgraph.svg" width="267" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Esse é o diagrama das funções que utilizam essa função:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="group___s_p_i___b_u_f_f_e_r___i_n_t_e_r_n_a_l_ga9eb832ea6e4deb5d067f69c9192b0b32_icgraph.svg" width="752" height="114"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="gab47c332d2d9ce5626758ec73ff01e40f" name="gab47c332d2d9ce5626758ec73ff01e40f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab47c332d2d9ce5626758ec73ff01e40f">&#9670;&#160;</a></span>spi_tx_enqueue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spi_tx_enqueue </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>byte</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Adiciona um byte à fila de transmissão. </p>
+<dl class="section return"><dt>Retorna</dt><dd>true se inserido, false se buffer cheio. </dd></dl>
+
+<p class="definition">Definição na linha <a class="el" href="spi__internal_8h_source.html#l00110">110</a> do arquivo <a class="el" href="spi__internal_8h_source.html">spi_internal.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  110</span>                                                {</div>
+<div class="line"><span class="lineno">  111</span>    uint8_t next_head = <a class="code hl_function" href="#gababc053045f0c05b31e334632f2dc0fb" title="Calcula o próximo índice do buffer circular.">spi_buf_next</a>(<a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.tx_head, <a class="code hl_define" href="group___s_p_i___c_o_n_f_i_g___c_o_n_s_t_s.html#gaeb11fa6162c55c5a74ec27b0551ae82b" title="Tamanho do buffer de transmissão (TX).">SPI_TX_BUFFER_SIZE</a>);</div>
+<div class="line"><span class="lineno">  112</span> </div>
+<div class="line"><span class="lineno">  113</span>    <span class="keywordflow">if</span> (next_head == <a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.tx_tail) {</div>
+<div class="line"><span class="lineno">  114</span>        <a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.tx_overflow = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  115</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  116</span>    }</div>
+<div class="line"><span class="lineno">  117</span> </div>
+<div class="line"><span class="lineno">  118</span>    <a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.tx_buffer[<a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.tx_head] = byte;</div>
+<div class="line"><span class="lineno">  119</span>    <a class="code hl_variable" href="spi__types_8h.html#a4d456f5e22be0581636447731caa2e83" title="Instância única do driver SPI.">spi</a>.tx_head = next_head;            <span class="comment">// escrita at�mica (8 bits)</span></div>
+<div class="line"><span class="lineno">  120</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  121</span>}</div>
+</div><!-- fragment --><div class="dynheader">
+Este é o diagrama das funções utilizadas por essa função:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="group___s_p_i___b_u_f_f_e_r___i_n_t_e_r_n_a_l_gab47c332d2d9ce5626758ec73ff01e40f_cgraph.svg" width="267" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- HTML footer for doxygen 1.16.1-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">
+      Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 | 
+      Desenvolvido por <b>Tiago Henrique dos Santos - Ci&ecirc;ncia El&eacute;trica</b>
+    </li>
+  </ul>
+</div>
+</body>
+</html>

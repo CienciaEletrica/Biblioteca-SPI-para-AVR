@@ -1,0 +1,286 @@
+<!-- HTML header for doxygen 1.16.1-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta charset="utf-8">
+<title>Biblioteca SPI AVR: Referência do Arquivo inc/spi_internal.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="custom_styles.css" rel="stylesheet" type="text/css" />
+<link href="custom_styles.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+  <table cellspacing="0" cellpadding="0" style="width: 100%; border: none;">
+   <tbody>
+   <tr style="height: 80px;"> 
+    <td id="projectlogo" style="width: 80px; padding: 10px;">
+      <!-- O Doxygen tira o caminho 'img/' ao copiar, então usamos apenas o nome -->
+      <img alt="Logo" src="FIGURA2.png" style="height: 60px !important; width: auto !important; display: block;"/>
+    </td>
+    <td id="projectalign" style="padding-left: 0.5em; vertical-align: middle;">
+     <div id="projectname" style="font-size: 1.6em; font-weight: bold;">Driver SPI - YouTube: Ci&ecirc;ncia El&eacute;trica</div>
+     <div id="projectbrief" style="font-size: 1em; opacity: 0.8;">Biblioteca Otimizada para Microcontroladores AVR</div>
+    </td>
+   </tr>
+   </tbody>
+  </table>
+</div>
+<!-- Gerado por Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Busca',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('spi__internal_8h.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Referência do Arquivo spi_internal.h</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Definições e funções de uso INTERNO da biblioteca SPI.  
+<a href="#details">Mais...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="spi__types_8h_source.html">spi_types.h</a>&quot;</code><br />
+<code>#include &lt;avr/interrupt.h&gt;</code><br />
+<code>#include &lt;stddef.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Gráfico de dependência de inclusões para spi_internal.h:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="spi__internal_8h__incl.svg" width="399" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Este grafo mostra quais arquivos estão direta ou indiretamente relacionados com esse arquivo:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="spi__internal_8h__dep__incl.svg" width="131" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<p><a href="spi__internal_8h_source.html">Ir para o código-fonte desse arquivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+Definições e Macros</h2></td></tr>
+<tr class="memitem:gab0fa1e911682d029595306c974d8e172" id="r_gab0fa1e911682d029595306c974d8e172"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="group___s_p_i___h_w___m_a_c_r_o_s.html#gab0fa1e911682d029595306c974d8e172">SPI_HW_ENABLE</a>()</td></tr>
+<tr class="memitem:ga1ceb876911148ac29ac6674390a07d3c" id="r_ga1ceb876911148ac29ac6674390a07d3c"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="group___s_p_i___h_w___m_a_c_r_o_s.html#ga1ceb876911148ac29ac6674390a07d3c">SPI_HW_DISABLE</a>()</td></tr>
+<tr class="memitem:gac626ae614404567937ed53a9754e70ed" id="r_gac626ae614404567937ed53a9754e70ed"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="group___s_p_i___h_w___m_a_c_r_o_s.html#gac626ae614404567937ed53a9754e70ed">SPI_HW_SET_MASTER</a>()</td></tr>
+<tr class="memitem:ga516e6f94213f88175c5308b6a5d987eb" id="r_ga516e6f94213f88175c5308b6a5d987eb"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="group___s_p_i___h_w___m_a_c_r_o_s.html#ga516e6f94213f88175c5308b6a5d987eb">SPI_HW_SET_SLAVE</a>()</td></tr>
+<tr class="memitem:gaa2484e2f315db9f82101f5f7842eac80" id="r_gaa2484e2f315db9f82101f5f7842eac80"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="group___s_p_i___h_w___m_a_c_r_o_s.html#gaa2484e2f315db9f82101f5f7842eac80">SPI_HW_INTERRUPT_ENABLE</a>()</td></tr>
+<tr class="memitem:ga9d91ab610acc072d006dbd82505507b6" id="r_ga9d91ab610acc072d006dbd82505507b6"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="group___s_p_i___h_w___m_a_c_r_o_s.html#ga9d91ab610acc072d006dbd82505507b6">SPI_HW_INTERRUPT_DISABLE</a>()</td></tr>
+<tr class="memitem:ga3c0b3d69ed0a47275bfd647a10dd1beb" id="r_ga3c0b3d69ed0a47275bfd647a10dd1beb"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="group___s_p_i___h_w___m_a_c_r_o_s.html#ga3c0b3d69ed0a47275bfd647a10dd1beb">SPI_HW_IS_INTERRUPT_FLAG_SET</a>()</td></tr>
+<tr class="memdesc:ga3c0b3d69ed0a47275bfd647a10dd1beb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica se a flag de interrupção (SPIF) está setada.  <br /></td></tr>
+<tr class="memitem:ga29f171d8a268999ae11def642d69043f" id="r_ga29f171d8a268999ae11def642d69043f"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="group___s_p_i___h_w___m_a_c_r_o_s.html#ga29f171d8a268999ae11def642d69043f">SPI_HW_CLEAR_INTERRUPT_FLAG</a>()</td></tr>
+<tr class="memdesc:ga29f171d8a268999ae11def642d69043f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Limpa a flag SPIF (requer leitura do SPSR seguida de leitura do SPDR).  <br /></td></tr>
+<tr class="memitem:ga8a1e3b507c503e73a42448008ddc403d" id="r_ga8a1e3b507c503e73a42448008ddc403d"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="group___s_p_i___h_w___m_a_c_r_o_s.html#ga8a1e3b507c503e73a42448008ddc403d">SPI_HW_WRITE_COLLISION_DETECTED</a>()</td></tr>
+<tr class="memdesc:ga8a1e3b507c503e73a42448008ddc403d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detecta colisão de escrita (WCOL).  <br /></td></tr>
+<tr class="memitem:gaf62518d2a98802eb957fb3c613aa39d0" id="r_gaf62518d2a98802eb957fb3c613aa39d0"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="group___s_p_i___h_w___m_a_c_r_o_s.html#gaf62518d2a98802eb957fb3c613aa39d0">SPI_HW_DOUBLE_SPEED_ENABLE</a>()</td></tr>
+<tr class="memitem:ga1bc3c2ec7cc673e932d9fe09c123e59f" id="r_ga1bc3c2ec7cc673e932d9fe09c123e59f"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="group___s_p_i___h_w___m_a_c_r_o_s.html#ga1bc3c2ec7cc673e932d9fe09c123e59f">SPI_HW_DOUBLE_SPEED_DISABLE</a>()</td></tr>
+<tr class="memitem:ga3b213e86f2a10a2c3198e51502aec25e" id="r_ga3b213e86f2a10a2c3198e51502aec25e"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="group___s_p_i___h_w___m_a_c_r_o_s.html#ga3b213e86f2a10a2c3198e51502aec25e">SPI_HW_WRITE_DATA</a>(data)</td></tr>
+<tr class="memitem:ga256a16287e402998597f865791bd142c" id="r_ga256a16287e402998597f865791bd142c"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="group___s_p_i___h_w___m_a_c_r_o_s.html#ga256a16287e402998597f865791bd142c">SPI_HW_READ_DATA</a>()</td></tr>
+<tr class="memitem:ga978d4a94e35237705164f079fec28b04" id="r_ga978d4a94e35237705164f079fec28b04"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="group___s_p_i___h_w___m_a_c_r_o_s.html#ga978d4a94e35237705164f079fec28b04">SPI_HW_CLOCK_BITS</a>(div)</td></tr>
+<tr class="memdesc:ga978d4a94e35237705164f079fec28b04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Máscara para bits de clock SPR0 e SPR1 no registrador SPCR.  <br /></td></tr>
+<tr class="memitem:ga0c932004fac1b7e730a98521ce6c67b8" id="r_ga0c932004fac1b7e730a98521ce6c67b8"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="group___s_p_i___h_w___m_a_c_r_o_s.html#ga0c932004fac1b7e730a98521ce6c67b8">SPI_HW_APPLY_CLOCK_DIV</a>(div,  double_speed)</td></tr>
+<tr class="memdesc:ga0c932004fac1b7e730a98521ce6c67b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aplica divisor de clock e modo Double Speed.  <br /></td></tr>
+<tr class="memitem:ga77bea7062cce537bd64f84eb84d735b9" id="r_ga77bea7062cce537bd64f84eb84d735b9"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="group___s_p_i___h_w___m_a_c_r_o_s.html#ga77bea7062cce537bd64f84eb84d735b9">SPI_HW_SET_CPOL_CPHA</a>(cpol,  cpha)</td></tr>
+<tr class="memdesc:ga77bea7062cce537bd64f84eb84d735b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configura Polaridade (CPOL) e Fase (CPHA).  <br /></td></tr>
+<tr class="memitem:ga47d960273a3dc2c6b288a1bcf4aecff1" id="r_ga47d960273a3dc2c6b288a1bcf4aecff1"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="group___s_p_i___h_w___m_a_c_r_o_s.html#ga47d960273a3dc2c6b288a1bcf4aecff1">SPI_HW_SET_DATA_ORDER</a>(order)</td></tr>
+<tr class="memdesc:ga47d960273a3dc2c6b288a1bcf4aecff1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configura ordem dos bits (MSB ou LSB first).  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerações</h2></td></tr>
+<tr class="memitem:ad1b95dd811b5effd79e4ae0872001158" id="r_ad1b95dd811b5effd79e4ae0872001158"><td class="memItemLeft">enum &#160;</td><td class="memItemRight"><a class="el" href="#ad1b95dd811b5effd79e4ae0872001158">spi_internal_state_t</a> { <br />
+&#160;&#160;<a class="el" href="#ad1b95dd811b5effd79e4ae0872001158a4e4eea93b1bb05788c9590bbe319b23c">SPI_STATE_IDLE</a>
+, <br />
+&#160;&#160;<a class="el" href="#ad1b95dd811b5effd79e4ae0872001158ace71c6d6db4fafc3d9c450d9637eb96a">SPI_STATE_TX_ACTIVE</a>
+, <br />
+&#160;&#160;<a class="el" href="#ad1b95dd811b5effd79e4ae0872001158a34630fac18dafad4e475e210f5a9f617">SPI_STATE_TX_LAST_BYTE</a>
+, <br />
+&#160;&#160;<a class="el" href="#ad1b95dd811b5effd79e4ae0872001158a88b2ab0cca7e4795a02876d28ae27510">SPI_STATE_ERROR_COLLISION</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:ad1b95dd811b5effd79e4ae0872001158"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estados internos da máquina de operação do driver.  <a href="#ad1b95dd811b5effd79e4ae0872001158">Mais...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:gababc053045f0c05b31e334632f2dc0fb" id="r_gababc053045f0c05b31e334632f2dc0fb"><td class="memItemLeft">static uint8_t&#160;</td><td class="memItemRight"><a class="el" href="group___s_p_i___b_u_f_f_e_r___i_n_t_e_r_n_a_l.html#gababc053045f0c05b31e334632f2dc0fb">spi_buf_next</a> (uint8_t idx, uint8_t buf_size)</td></tr>
+<tr class="memdesc:gababc053045f0c05b31e334632f2dc0fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcula o próximo índice do buffer circular.  <br /></td></tr>
+<tr class="memitem:gab47c332d2d9ce5626758ec73ff01e40f" id="r_gab47c332d2d9ce5626758ec73ff01e40f"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="group___s_p_i___b_u_f_f_e_r___i_n_t_e_r_n_a_l.html#gab47c332d2d9ce5626758ec73ff01e40f">spi_tx_enqueue</a> (uint8_t byte)</td></tr>
+<tr class="memdesc:gab47c332d2d9ce5626758ec73ff01e40f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adiciona um byte à fila de transmissão.  <br /></td></tr>
+<tr class="memitem:ga9eb832ea6e4deb5d067f69c9192b0b32" id="r_ga9eb832ea6e4deb5d067f69c9192b0b32"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="group___s_p_i___b_u_f_f_e_r___i_n_t_e_r_n_a_l.html#ga9eb832ea6e4deb5d067f69c9192b0b32">spi_tx_dequeue</a> (uint8_t *byte)</td></tr>
+<tr class="memdesc:ga9eb832ea6e4deb5d067f69c9192b0b32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove um byte da fila de transmissão.  <br /></td></tr>
+<tr class="memitem:ga82e736d319c4516104fe3d6dbcb42a32" id="r_ga82e736d319c4516104fe3d6dbcb42a32"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="group___s_p_i___b_u_f_f_e_r___i_n_t_e_r_n_a_l.html#ga82e736d319c4516104fe3d6dbcb42a32">spi_rx_enqueue</a> (uint8_t byte)</td></tr>
+<tr class="memdesc:ga82e736d319c4516104fe3d6dbcb42a32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adiciona um byte recebido à fila RX (chamado na ISR).  <br /></td></tr>
+<tr class="memitem:ga21653571743b2c7dd79691c3c1a17990" id="r_ga21653571743b2c7dd79691c3c1a17990"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="group___s_p_i___b_u_f_f_e_r___i_n_t_e_r_n_a_l.html#ga21653571743b2c7dd79691c3c1a17990">spi_rx_dequeue</a> (uint8_t *byte)</td></tr>
+<tr class="memdesc:ga21653571743b2c7dd79691c3c1a17990"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extrai um byte da fila RX para a aplicação.  <br /></td></tr>
+<tr class="memitem:ga449cd570fc792c387aacaef5c58a5d67" id="r_ga449cd570fc792c387aacaef5c58a5d67"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group___s_p_i___i_n_t_e_r_n_a_l___p_r_o_t_o_s.html#ga449cd570fc792c387aacaef5c58a5d67">spi_hw_apply_config</a> (void)</td></tr>
+<tr class="memdesc:ga449cd570fc792c387aacaef5c58a5d67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sincroniza registradores do AVR com spi.config.  <br /></td></tr>
+<tr class="memitem:ga63ee202e30ff6afe6667c7155c63aa2d" id="r_ga63ee202e30ff6afe6667c7155c63aa2d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group___s_p_i___i_n_t_e_r_n_a_l___p_r_o_t_o_s.html#ga63ee202e30ff6afe6667c7155c63aa2d">spi_hw_init_pins</a> (const <a class="el" href="structspi__config__t.html">spi_config_t</a> *cfg)</td></tr>
+<tr class="memdesc:ga63ee202e30ff6afe6667c7155c63aa2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configura direção dos pinos MOSI/MISO/SCK/SS.  <br /></td></tr>
+<tr class="memitem:gaf444e00ab7250d625bc670dd4e21328c" id="r_gaf444e00ab7250d625bc670dd4e21328c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group___s_p_i___i_n_t_e_r_n_a_l___p_r_o_t_o_s.html#gaf444e00ab7250d625bc670dd4e21328c">spi_hw_select_slave</a> (uint8_t id)</td></tr>
+<tr class="memdesc:gaf444e00ab7250d625bc670dd4e21328c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Controle de hardware para Chip Select.  <br /></td></tr>
+<tr class="memitem:ga71e76125efbe8d9f1dd3d519613cb652" id="r_ga71e76125efbe8d9f1dd3d519613cb652"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group___s_p_i___i_n_t_e_r_n_a_l___p_r_o_t_o_s.html#ga71e76125efbe8d9f1dd3d519613cb652">spi_hw_deselect_slave</a> (void)</td></tr>
+<tr class="memdesc:ga71e76125efbe8d9f1dd3d519613cb652"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sobe o pino de Chip Select do escravo atual.  <br /></td></tr>
+<tr class="memitem:ga30307a7e6e65f6a80a803d724b09f4f3" id="r_ga30307a7e6e65f6a80a803d724b09f4f3"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="group___s_p_i___i_n_t_e_r_n_a_l___p_r_o_t_o_s.html#ga30307a7e6e65f6a80a803d724b09f4f3">spi_hw_start_tx_pipeline</a> (void)</td></tr>
+<tr class="memdesc:ga30307a7e6e65f6a80a803d724b09f4f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicia o primeiro byte de uma sequência de transmissão.  <br /></td></tr>
+<tr class="memitem:ga4503da71a9cf86afaf14568b6013ee55" id="r_ga4503da71a9cf86afaf14568b6013ee55"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="group___s_p_i___i_n_t_e_r_n_a_l___p_r_o_t_o_s.html#ga4503da71a9cf86afaf14568b6013ee55">spi_hw_handle_transfer_complete</a> (void)</td></tr>
+<tr class="memdesc:ga4503da71a9cf86afaf14568b6013ee55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lógica central executada a cada byte concluído na ISR.  <br /></td></tr>
+<tr class="memitem:ga4ccfd9c55f4d277c322b1d2354d75c66" id="r_ga4ccfd9c55f4d277c322b1d2354d75c66"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group___s_p_i___i_n_t_e_r_n_a_l___p_r_o_t_o_s.html#ga4ccfd9c55f4d277c322b1d2354d75c66">spi_hw_recover_collision</a> (void)</td></tr>
+<tr class="memdesc:ga4ccfd9c55f4d277c322b1d2354d75c66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tenta recuperar o estado do driver após erro de colisão.  <br /></td></tr>
+<tr class="memitem:ga89eb00084e1a7eba2bd746eed8fd1738" id="r_ga89eb00084e1a7eba2bd746eed8fd1738"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group___s_p_i___i_n_t_e_r_n_a_l___p_r_o_t_o_s.html#ga89eb00084e1a7eba2bd746eed8fd1738">spi_hw_slave_preload</a> (uint8_t dummy)</td></tr>
+<tr class="memdesc:ga89eb00084e1a7eba2bd746eed8fd1738"><td class="mdescLeft">&#160;</td><td class="mdescRight">Carrega dado no SPDR sem disparar clock (Modo Slave).  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variáveis</h2></td></tr>
+<tr class="memitem:a1fd14a1eeedd317516e19c6de4010a48" id="r_a1fd14a1eeedd317516e19c6de4010a48"><td class="memItemLeft">volatile <a class="el" href="#ad1b95dd811b5effd79e4ae0872001158">spi_internal_state_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#a1fd14a1eeedd317516e19c6de4010a48">spi_state</a></td></tr>
+<tr class="memdesc:a1fd14a1eeedd317516e19c6de4010a48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estado atual do driver (definido no <a class="el" href="spi_8c.html" title="Implementação completa do driver SPI para microcontroladores AVR.">spi.c</a>).  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Definições e funções de uso INTERNO da biblioteca SPI. </p>
+
+<p class="definition">Definição no arquivo <a class="el" href="spi__internal_8h_source.html">spi_internal.h</a>.</p>
+</div><a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">Enumerações</h2>
+<a id="ad1b95dd811b5effd79e4ae0872001158" name="ad1b95dd811b5effd79e4ae0872001158"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1b95dd811b5effd79e4ae0872001158">&#9670;&#160;</a></span>spi_internal_state_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ad1b95dd811b5effd79e4ae0872001158">spi_internal_state_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Estados internos da máquina de operação do driver. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumeradores</th></tr><tr><td class="fieldname"><a id="ad1b95dd811b5effd79e4ae0872001158a4e4eea93b1bb05788c9590bbe319b23c" name="ad1b95dd811b5effd79e4ae0872001158a4e4eea93b1bb05788c9590bbe319b23c"></a>SPI_STATE_IDLE&#160;</td><td class="fielddoc"><p>Módulo ocioso. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad1b95dd811b5effd79e4ae0872001158ace71c6d6db4fafc3d9c450d9637eb96a" name="ad1b95dd811b5effd79e4ae0872001158ace71c6d6db4fafc3d9c450d9637eb96a"></a>SPI_STATE_TX_ACTIVE&#160;</td><td class="fielddoc"><p>Transmissão em curso. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad1b95dd811b5effd79e4ae0872001158a34630fac18dafad4e475e210f5a9f617" name="ad1b95dd811b5effd79e4ae0872001158a34630fac18dafad4e475e210f5a9f617"></a>SPI_STATE_TX_LAST_BYTE&#160;</td><td class="fielddoc"><p>Aguardando último ciclo de clock. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad1b95dd811b5effd79e4ae0872001158a88b2ab0cca7e4795a02876d28ae27510" name="ad1b95dd811b5effd79e4ae0872001158a88b2ab0cca7e4795a02876d28ae27510"></a>SPI_STATE_ERROR_COLLISION&#160;</td><td class="fielddoc"><p>Erro de colisão detectado. </p>
+</td></tr>
+</table>
+
+<p class="definition">Definição na linha <a class="el" href="spi__internal_8h_source.html#l00082">82</a> do arquivo <a class="el" href="spi__internal_8h_source.html">spi_internal.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   82</span>             {</div>
+<div class="line"><span class="lineno">   83</span>    <a class="code hl_enumvalue" href="#ad1b95dd811b5effd79e4ae0872001158a4e4eea93b1bb05788c9590bbe319b23c">SPI_STATE_IDLE</a>,                 <span class="comment">/**&lt; Módulo ocioso. */</span></div>
+<div class="line"><span class="lineno">   84</span>    <a class="code hl_enumvalue" href="#ad1b95dd811b5effd79e4ae0872001158ace71c6d6db4fafc3d9c450d9637eb96a">SPI_STATE_TX_ACTIVE</a>,            <span class="comment">/**&lt; Transmissão em curso. */</span></div>
+<div class="line"><span class="lineno">   85</span>    <a class="code hl_enumvalue" href="#ad1b95dd811b5effd79e4ae0872001158a34630fac18dafad4e475e210f5a9f617">SPI_STATE_TX_LAST_BYTE</a>,         <span class="comment">/**&lt; Aguardando último ciclo de clock. */</span></div>
+<div class="line"><span class="lineno">   86</span>    <a class="code hl_enumvalue" href="#ad1b95dd811b5effd79e4ae0872001158a88b2ab0cca7e4795a02876d28ae27510">SPI_STATE_ERROR_COLLISION</a>       <span class="comment">/**&lt; Erro de colisão detectado. */</span></div>
+<div class="line"><span class="lineno">   87</span>} <a class="code hl_enumeration" href="#ad1b95dd811b5effd79e4ae0872001158" title="Estados internos da máquina de operação do driver.">spi_internal_state_t</a>;</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Variáveis</h2>
+<a id="a1fd14a1eeedd317516e19c6de4010a48" name="a1fd14a1eeedd317516e19c6de4010a48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fd14a1eeedd317516e19c6de4010a48">&#9670;&#160;</a></span>spi_state</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile <a class="el" href="#ad1b95dd811b5effd79e4ae0872001158">spi_internal_state_t</a> spi_state</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Estado atual do driver (definido no <a class="el" href="spi_8c.html" title="Implementação completa do driver SPI para microcontroladores AVR.">spi.c</a>). </p>
+<p>Estado atual do driver (definido no <a class="el" href="spi_8c.html" title="Implementação completa do driver SPI para microcontroladores AVR.">spi.c</a>).</p>
+<p>Controla o fluxo da ISR e a transição entre estados ocioso e ativo. </p>
+
+<p class="definition">Definição na linha <a class="el" href="spi_8c_source.html#l00038">38</a> do arquivo <a class="el" href="spi_8c_source.html">spi.c</a>.</p>
+
+<p class="reference">Referenciado(a) por <a class="el" href="spi_8c.html#af9cad97352f5ba9bbd800446131125a6">ISR()</a>, <a class="el" href="group___s_p_i___i_n_t_e_r_n_a_l___p_r_o_t_o_s.html#ga4ccfd9c55f4d277c322b1d2354d75c66">spi_hw_recover_collision()</a>, <a class="el" href="group___s_p_i___i_n_t_e_r_n_a_l___p_r_o_t_o_s.html#ga30307a7e6e65f6a80a803d724b09f4f3">spi_hw_start_tx_pipeline()</a>, <a class="el" href="group___s_p_i___a_s_y_n_c.html#gaa9fa3d0d9a19bee52b8b2b89e7739ff2">spi_is_busy()</a>, <a class="el" href="group___s_p_i___a_s_y_n_c.html#gaf278870417819cf590a1b39d4eb3c4a5">spi_tx_flush()</a> e <a class="el" href="group___s_p_i___a_s_y_n_c.html#ga5667e88be47d87c48a22117c8a8c3cb5">spi_write_async()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- HTML footer for doxygen 1.16.1-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li><li class="navelem"><a href="spi__internal_8h.html">spi_internal.h</a></li>
+    <li class="footer">
+      Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 | 
+      Desenvolvido por <b>Tiago Henrique dos Santos - Ci&ecirc;ncia El&eacute;trica</b>
+    </li>
+  </ul>
+</div>
+</body>
+</html>
